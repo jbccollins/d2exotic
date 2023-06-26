@@ -26,15 +26,12 @@ export default function AdvancedDecryptionSection({
       <div className="flex flex-wrap ml-10 mt-6">
         {DestinyClassIdList.map((destinyClassId) => {
           return (
-            <div key={destinyClassId} className="flex items-center m-2 w-96">
+            <div key={destinyClassId} className="flex m-2 w-96">
               {/* <div>{getDestinyClass(destinyClassId).name}</div> */}
               <div>
                 {ArmorSlotIdList.map((armorSlotId) => {
                   return (
-                    <div
-                      key={armorSlotId}
-                      className="flex items-center m-2 w-96"
-                    >
+                    <div key={armorSlotId} className="flex m-2 w-96">
                       {/* <div>{getArmorSlot(armorSlotId).name}</div> */}
                       <div>
                         {exotics[destinyClassId][armorSlotId].map((exotic) => {
