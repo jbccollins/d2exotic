@@ -1,6 +1,6 @@
 import { getAdvancedDecryptionEngram } from "@d2e/types/AdvancedDecryptionEngram";
 import { ArmorSlotIdList } from "@d2e/types/ArmorSlot";
-import { DestinyClassIdList } from "@d2e/types/DestinyClass";
+import { DestinyClassIdList, getDestinyClass } from "@d2e/types/DestinyClass";
 import { getExoticsByAdvancedDecryptionEngramId } from "@d2e/types/ExoticArmor";
 import { EAdvancedDecryptionEngramId } from "@d2e/types/IdEnums";
 import BungieImage from "./BungieImage";
@@ -18,40 +18,39 @@ export default function AdvancedDecryptionSection({
     advancedDecryptionEngramId
   );
   return (
-    <div className="mb-10">
-      <div className="flex justify-left items-center">
+    <div className="section [&:nth-child(odd)]:bg-gray-800 [&:nth-child(even)]:bg-gray-900 p-8">
+      <div className="section-header flex justify-left items-center">
         <BungieImage src={advancedDecryptionEngram.icon} />
-        <div className="ml-4 text-2xl">{advancedDecryptionEngram.name}</div>
+        <div className="text-3xl ml-4">{advancedDecryptionEngram.name}</div>
       </div>
-      <div className="flex flex-wrap ml-10 mt-6">
+      <div className="section-content flex flex-wrap justify-left">
         {DestinyClassIdList.map((destinyClassId) => {
           return (
-            <div key={destinyClassId} className="flex m-2 w-96">
-              {/* <div>{getDestinyClass(destinyClassId).name}</div> */}
-              <div>
+            <div className="destiny-class mt-8" key={destinyClassId}>
+              <div className="flex-1 text-2xl ml-2">
+                {getDestinyClass(destinyClassId).name}
+              </div>
+              <div className="destiny-class-exotics-wrapper flex flex-wrap flex-col">
                 {ArmorSlotIdList.map((armorSlotId) => {
                   return (
-                    <div key={armorSlotId} className="flex m-2 w-96">
-                      {/* <div>{getArmorSlot(armorSlotId).name}</div> */}
-                      <div>
-                        {exotics[destinyClassId][armorSlotId].map((exotic) => {
-                          return (
-                            <div
-                              key={exotic.hash}
-                              className="exotic-item flex items-center m-2 w-96"
-                            >
-                              <BungieImage
-                                style={{
-                                  height: 64,
-                                  width: 64,
-                                }}
-                                src={exotic.icon}
-                              />
-                              <div className="ml-2 text-xl">{exotic.name}</div>
-                            </div>
-                          );
-                        })}
-                      </div>
+                    <div key={armorSlotId} className="flex flex-wrap flex-col">
+                      {exotics[destinyClassId][armorSlotId].map((exotic) => {
+                        return (
+                          <div
+                            key={exotic.hash}
+                            className="exotic-item flex items-center m-2 w-96"
+                          >
+                            <BungieImage
+                              style={{
+                                height: 64,
+                                width: 64,
+                              }}
+                              src={exotic.icon}
+                            />
+                            <div className="ml-2 text-xl">{exotic.name}</div>
+                          </div>
+                        );
+                      })}
                     </div>
                   );
                 })}
