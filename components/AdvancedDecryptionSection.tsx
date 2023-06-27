@@ -38,7 +38,7 @@ export default function AdvancedDecryptionSection({
                           return (
                             <div
                               key={exotic.hash}
-                              className="flex items-center m-2 w-96"
+                              className="exotic-item flex items-center m-2 w-96"
                             >
                               <BungieImage
                                 style={{
