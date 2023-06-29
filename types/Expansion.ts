@@ -1,7 +1,7 @@
 import { ValidateEnumList } from "@d2e/globals";
 import { EExpansionId } from "./IdEnums";
 
-export const ArmorStatIdList = ValidateEnumList(Object.values(EExpansionId), [
+export const ExpansionIdList = ValidateEnumList(Object.values(EExpansionId), [
   EExpansionId.RedWar,
   EExpansionId.Forsaken,
   EExpansionId.Shadowkeep,
@@ -72,7 +72,7 @@ export const getExpansion = (id: EExpansionId): Expansion => {
   return ExpansionIdToExpansionMapping[id];
 };
 
-const getExpansionBySeasonHash = (
+export const getExpansionBySeasonHash = (
   seasonHash: number
 ): Expansion | undefined => {
   return Object.values(ExpansionIdToExpansionMapping).find((expansion) =>

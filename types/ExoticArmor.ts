@@ -1,10 +1,14 @@
 import { ExoticArmorHashToExoticArmorMapping } from "@d2e/generation/ExoticArmor/generated/mapping";
-import { getAdvancedDecryptionEngram } from "./AdvancedDecryptionEngram";
+import { IntrinsicAttributes } from "@d2e/generation/ExoticArmor/staticMetadata";
+import { getAdvancedDecryptionEngramById } from "./AdvancedDecryptionEngram";
+import { ArmorSlotIdList } from "./ArmorSlot";
+import { DestinyClassIdList } from "./DestinyClass";
 import { getExpansion } from "./Expansion";
 import {
   EAdvancedDecryptionEngramId,
   EArmorSlotId,
   EDestinyClassId,
+  EExpansionId,
 } from "./IdEnums";
 
 export type ExoticArmor = {
@@ -15,7 +19,9 @@ export type ExoticArmor = {
   seasonHash: number;
   icon: string;
   destinyClassId: EDestinyClassId;
-};
+  isFocusable: boolean;
+  expansionIdCampaignCompletionRequired?: EExpansionId;
+} & IntrinsicAttributes;
 
 const getDefaultDestinyClassValue = (): Record<
   EArmorSlotId,
@@ -37,7 +43,7 @@ export const getExoticsByAdvancedDecryptionEngramId = (
     [EDestinyClassId.Warlock]: getDefaultDestinyClassValue(),
   };
 
-  const advancedDecryptionEngram = getAdvancedDecryptionEngram(
+  const advancedDecryptionEngram = getAdvancedDecryptionEngramById(
     advancedDecryptionEngramId
   );
   const expansionId = advancedDecryptionEngram.expansionId;
@@ -56,5 +62,31 @@ export const getExoticsByAdvancedDecryptionEngramId = (
       }
     }
   );
+  return result;
+};
+
+export const getExotics = (): Record<
+  EDestinyClassId,
+  Record<EArmorSlotId, ExoticArmor[]>
+> => {
+  const result: Record<EDestinyClassId, Record<EArmorSlotId, ExoticArmor[]>> = {
+    [EDestinyClassId.Hunter]: getDefaultDestinyClassValue(),
+    [EDestinyClassId.Titan]: getDefaultDestinyClassValue(),
+    [EDestinyClassId.Warlock]: getDefaultDestinyClassValue(),
+  };
+  Object.values(ExoticArmorHashToExoticArmorMapping).forEach(
+    (exoticArmorItem) => {
+      result[exoticArmorItem.destinyClassId][exoticArmorItem.armorSlotId].push(
+        exoticArmorItem
+      );
+    }
+  );
+  DestinyClassIdList.forEach((destinyClassId) => {
+    ArmorSlotIdList.forEach((armorSlotId) => {
+      result[destinyClassId][armorSlotId] = result[destinyClassId][
+        armorSlotId
+      ].sort((a, b) => a.name.localeCompare(b.name));
+    });
+  });
   return result;
 };

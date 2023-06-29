@@ -20,25 +20,24 @@ import {
   DestinyCollectibleDefinition,
   DestinyInventoryItemDefinition,
   DestinySandboxPerkDefinition,
+  DestinySeasonDefinition,
 } from "bungie-api-ts/destiny2";
 import { promises as fs } from "fs";
 import lodash from "lodash";
 import path from "path";
 import { generateExoticArmorMapping } from "./generateExoticArmorMapping";
+import { getIntrinsicAttributes } from "./staticMetadata";
 
 const buildExoticArmorData = (
   item: DestinyInventoryItemDefinition,
   sandboxPerkDefinitions: Record<number, DestinySandboxPerkDefinition>,
-  worldDropExoticHashes: number[]
+  worldDropExoticHashes: number[],
+  mostRecentSeasonHash: number
 ): ExoticArmor => {
   const iconWatermarkId = extractArmorIconWatermarkIdFromUrl(
     item.iconWatermark
   );
-  if (item.displayProperties.name === "Transversive Steps") {
-    console.log(item.seasonHash);
-  }
 
-  const derp = [22, 47, 20];
   const armorSlotItemCategoryHash = item.itemCategoryHashes
     ? item.itemCategoryHashes.filter((x) =>
         validArmorSlotItemCategoryHashes.includes(x)
@@ -60,19 +59,25 @@ const buildExoticArmorData = (
       `Item ${item.displayProperties.name} has no valid destinyClassItemCategoryHash`
     );
   }
-  return {
+
+  const seasonHash = getSeasonHashFromIconWatermarkId(iconWatermarkId);
+  const intrinsicAttributes = getIntrinsicAttributes(item.hash) ?? {};
+  const res = {
     name: item.displayProperties.name,
     hash: item.hash,
     armorSlotId: getArmorSlotByItemCategoryHash(armorSlotItemCategoryHash).id,
     isWorldDrop: item.collectibleHash
       ? worldDropExoticHashes.includes(item.collectibleHash)
       : false,
-    seasonHash: getSeasonHashFromIconWatermarkId(iconWatermarkId),
+    seasonHash,
     icon: bungieNetPath(item.displayProperties.icon),
     destinyClassId: getDestinyClassByItemCategoryHash(
       destinyClassItemCategoryHash
     ).id,
+    isFocusable: seasonHash !== mostRecentSeasonHash,
+    ...intrinsicAttributes,
   };
+  return res;
 };
 
 export async function run() {
@@ -97,6 +102,20 @@ export async function run() {
     number,
     DestinyCollectibleDefinition
   >;
+
+  const seasonDefinitions = destinySeasonDefinitions as Record<
+    number,
+    DestinySeasonDefinition
+  >;
+
+  const seasons = lodash(seasonDefinitions)
+    .values()
+    .value()
+    .filter((x) => !x.displayProperties.name.toLowerCase().includes("redacted"))
+    .sort((a, b) => a.seasonNumber - b.seasonNumber);
+
+  // Most recent season is not focusable
+  const mostRecentSeasonHash = seasons[seasons.length - 1].hash;
 
   // World drop exotics. This includes exotic weapons
   const worldDropExotics = lodash(collectibleDefinitions)
@@ -123,7 +142,8 @@ export async function run() {
       buildExoticArmorData(
         exoticArmorItem,
         sandboxPerkDefinitions,
-        worldDropExoticHashes
+        worldDropExoticHashes,
+        mostRecentSeasonHash
       )
     );
   });

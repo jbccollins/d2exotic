@@ -70,3 +70,8 @@ export const extractArmorIconWatermarkIdFromUrl = (url: string | undefined) => {
   }
   return null;
 };
+
+export const getIconWatermarkUrlFromId = (id: string | null) => {
+  if (!id) return null;
+  return `https://www.bungie.net/common/destiny2_content/icons/${id}.png`;
+};

@@ -4,7 +4,12 @@ import {
   getVal,
 } from "@d2e/generation/utils";
 import { ExoticArmor } from "@d2e/types/ExoticArmor";
-import { EArmorSlotId, EDestinyClassId } from "@d2e/types/IdEnums";
+import {
+  EArmorSlotId,
+  EArmorStatId,
+  EDestinyClassId,
+  EExpansionId,
+} from "@d2e/types/IdEnums";
 
 export const generateExoticArmorMapping = (
   exoticArmorItems: ExoticArmor[]
@@ -15,6 +20,16 @@ export const generateExoticArmorMapping = (
       enumDefinition: EDestinyClassId,
       enumName: "EDestinyClassId",
     },
+    intrinsicFocus: {
+      enumDefinition: EArmorStatId,
+      enumName: "EArmorStatId",
+      isOptional: true,
+    },
+    expansionIdCampaignCompletionRequired: {
+      enumDefinition: EExpansionId,
+      enumName: "EExpansionId",
+      isOptional: true,
+    },
   };
 
   const serializedExoticArmorItems: Record<string, unknown>[] = [];
@@ -24,11 +39,13 @@ export const generateExoticArmorMapping = (
       unknown
     >;
     Object.keys(enumsToSerialize).forEach((key) => {
+      const isOptional = getVal(key, enumsToSerialize)?.isOptional ?? false;
       const serializedResult = getSerializableValue(
         getVal(key, exoticArmorItem),
         getVal(key, enumsToSerialize)?.enumDefinition,
         getVal(key, enumsToSerialize)?.enumName
       );
+      if (isOptional && serializedResult === "SERIALIZEDnull") return;
       serializedExoticArmorItem[key] = serializedResult;
     });
     serializedExoticArmorItems.push(serializedExoticArmorItem);
@@ -48,8 +65,7 @@ export const generateExoticArmorMapping = (
 	// Do not manually make changes to this file.
 
 	import { ExoticArmor } from "@d2e/types/ExoticArmor";
-	import { EArmorSlotId } from "@d2e/types/IdEnums";
-  import { EDestinyClassId } from "@d2e/types/IdEnums";
+	import { EArmorSlotId, EDestinyClassId, EArmorStatId, EExpansionId } from "@d2e/types/IdEnums";
 
 	export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> = {
 		${exoticArmorIdToExoticArmorMappingString.join(" ")}

@@ -1,4 +1,5 @@
 import { ValidateEnumList } from "@d2e/globals";
+import { getExpansionBySeasonHash } from "./Expansion";
 import {
   EAdvancedDecryptionEngramId,
   EArmorSlotId,
@@ -115,8 +116,34 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
   },
 };
 
-export const getAdvancedDecryptionEngram = (
+export const getAdvancedDecryptionEngramById = (
   id: EAdvancedDecryptionEngramId
 ) => {
   return AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping[id];
+};
+
+export const getAdvancedDecryptionEngramsByExpansionId = (
+  expansionId: EExpansionId
+) => {
+  return Object.values(
+    AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping
+  ).filter(
+    (advancedDecryptionEngram) =>
+      advancedDecryptionEngram.expansionId === expansionId
+  );
+};
+
+export const getAdvancedDecryptionEngram = (
+  seasonHash: number,
+  armorSlotId: EArmorSlotId
+): AdvancedDecryptionEngram | undefined => {
+  const expansion = getExpansionBySeasonHash(seasonHash);
+  if (!expansion) {
+    return undefined;
+  }
+  const engrams = getAdvancedDecryptionEngramsByExpansionId(expansion.id);
+  if (!engrams) {
+    return undefined;
+  }
+  return engrams.find((x) => x.armorSlotIdList.includes(armorSlotId));
 };

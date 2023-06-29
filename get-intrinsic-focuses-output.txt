@@ -1,0 +1,123 @@
+DestinyInventoryItemDefinition already downloaded
+DestinyPlugSetDefinition already downloaded
+Loading manifest...
+ACD/0 Feedback Fence           -
+Abeyant Leap                   -
+Actium War Rig                 -
+Aeon Safe                      -
+Aeon Soul                      -
+Aeon Swift                     -
+An Insurmountable Skullfort    Strength
+Antaeus Wards                  -
+Apotheosis Veil                Intellect
+Arbor Warden                   -
+Armamentarium                  Discipline
+Ashen Wake                     Discipline
+Assassin's Cowl                -
+Astrocyte Verse                -
+Athrys's Embrace               Strength
+Ballidorse Wrathweavers        -
+Blight Ranger                  -
+Boots of the Assembler         -
+Cadmus Ridge Lancecap          -
+Caliban's Hand                 -
+Celestial Nighthawk            Intellect
+Cenotaph Mask                  -
+Chromatic Fire                 -
+Citan's Ramparts               Resilience
+Claws of Ahamkara              Strength
+Contraverse Hold               Discipline
+Crest of Alpha Lupi            -
+Crown of Tempests              -
+Cuirass of the Falling Star    Intellect
+Cyrtarachne's Facade           -
+Dawn Chorus                    -
+Doom Fang Pauldron             -
+Dunemarchers                   -
+Eternal Warrior                Intellect
+Eye of Another World           -
+Fallen Sunstar                 -
+Felwinter's Helm               -
+Foetracer                      -
+Fr0st-EE5                      -
+Gemini Jester                  Mobility
+Geomag Stabilizers             -
+Getaway Artist                 Discipline
+Graviton Forfeit               -
+Gwisin Vest                    Intellect
+Gyrfalcon's Hauberk            -
+Hallowfire Heart               -
+Heart of Inmost Light          -
+Helm of Saint-14               Intellect
+Hoarfrost-Z                    -
+Icefall Mantle                 Resilience
+Karnstein Armlets              -
+Khepri's Horn                  -
+Khepri's Sting                 Strength
+Knucklehead Radar              -
+Liar's Handshake               -
+Lion Rampant                   -
+Loreley Splendor Helm          -
+Lucky Pants                    -
+Lucky Raspberry                Discipline
+Lunafaction Boots              Recovery
+Mantle of Battle Harmony       -
+Mask of Bakris                 Mobility
+Mask of the Quiet One          -
+Mechaneer's Tricksleeves       -
+Mk. 44 Stand Asides            -
+Necrotic Grip                  -
+Nezarec's Sin                  -
+No Backup Plans                -
+Nothing Manacles               Discipline
+Oathkeeper                     -
+Omnioculus                     -
+One-Eyed Mask                  -
+Ophidia Spathe                 Strength
+Ophidian Aspect                -
+Orpheus Rig                    Intellect
+Osmiomancy Gloves              -
+Peacekeepers                   -
+Peregrine Greaves              Strength
+Phoenix Cradle                 -
+Phoenix Protocol               Intellect
+Point-Contact Cannon Brace     -
+Precious Scars                 -
+Promethium Spur                Intellect
+Radiant Dance Machines         -
+Raiden Flux                    Intellect
+Raiju's Harness                Intellect
+Rain of Fire                   -
+Renewal Grasps                 -
+Sanguine Alchemy               Recovery
+Sealed Ahamkara Grasps         -
+Secant Filaments               -
+Second Chance                  -
+Severance Enclosure            -
+Shards of Galanor              Intellect
+Shinobu's Vow                  Discipline
+Skull of Dire Ahamkara         Intellect
+Speedloader Slacks             -
+St0mp-EE5                      -
+Star-Eater Scales              Intellect
+Starfire Protocol              Discipline
+Stormdancer's Brace            Intellect
+Stronghold                     -
+Sunbracers                     -
+Swarmers                       -
+Synthoceps                     -
+The Bombardiers                Mobility
+The Dragon's Shadow            Mobility
+The Path of Burning Steps      -
+The Sixth Coyote               Mobility
+The Stag                       -
+Transversive Steps             -
+Triton Vice                    -
+Ursa Furiosa                   Intellect (Partial)
+Verity's Brow                  -
+Vesper of Radius               Recovery
+Wings of Sacred Dawn           -
+Winter's Guile                 -
+Wormgod Caress                 -
+Wormhusk Crown                 Mobility
+Young Ahamkara's Spine         Discipline
