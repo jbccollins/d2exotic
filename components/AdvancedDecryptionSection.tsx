@@ -34,23 +34,25 @@ export default function AdvancedDecryptionSection({
                 {ArmorSlotIdList.map((armorSlotId) => {
                   return (
                     <div key={armorSlotId} className="flex flex-wrap flex-col">
-                      {exotics[destinyClassId][armorSlotId].map((exotic) => {
-                        return (
-                          <div
-                            key={exotic.hash}
-                            className="exotic-item flex items-center m-2 w-84"
-                          >
-                            <BungieImage
-                              style={{
-                                height: 64,
-                                width: 64,
-                              }}
-                              src={exotic.icon}
-                            />
-                            <div className="ml-2 text-xl">{exotic.name}</div>
-                          </div>
-                        );
-                      })}
+                      {exotics[destinyClassId][armorSlotId]
+                        .filter((x) => x.isFocusable)
+                        .map((exotic) => {
+                          return (
+                            <div
+                              key={exotic.hash}
+                              className="exotic-item flex items-center m-2 w-84"
+                            >
+                              <BungieImage
+                                style={{
+                                  height: 64,
+                                  width: 64,
+                                }}
+                                src={exotic.icon}
+                              />
+                              <div className="ml-2 text-xl">{exotic.name}</div>
+                            </div>
+                          );
+                        })}
                     </div>
                   );
                 })}
