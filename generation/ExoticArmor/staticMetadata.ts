@@ -5,6 +5,7 @@ export type IntrinsicAttributes = {
   intrinsicFocus?: EArmorStatId;
   isPartialIntrinsicFocus?: boolean;
   expansionIdCampaignCompletionRequired?: EExpansionId;
+  legendaryCampaignSource?: EExpansionId;
 };
 // Armor Hash -> Intrinsic Attributes
 export const IntrinsicAttributes: Record<number, IntrinsicAttributes> = {
@@ -604,6 +605,54 @@ export const IntrinsicAttributes: Record<number, IntrinsicAttributes> = {
   1537074069: {
     // Phoenix Cradle
     expansionIdCampaignCompletionRequired: EExpansionId.Shadowkeep,
+  },
+  1322544481: {
+    // Hoarfrost-Z
+    legendaryCampaignSource: EExpansionId.WitchQueen,
+  },
+  3316517958: {
+    // Loreley Splendor Helm,
+    legendaryCampaignSource: EExpansionId.WitchQueen,
+  },
+  3259193988: {
+    // Osmiomancy Gloves
+    legendaryCampaignSource: EExpansionId.WitchQueen,
+  },
+  511888814: {
+    // Secant Filaments
+    legendaryCampaignSource: EExpansionId.WitchQueen,
+  },
+  2169905051: {
+    // Renewal Grasps
+    legendaryCampaignSource: EExpansionId.WitchQueen,
+  },
+  1703551922: {
+    // Blight Ranger
+    legendaryCampaignSource: EExpansionId.WitchQueen,
+  },
+  3831935023: {
+    // Ballidorse Wrathweavers
+    legendaryCampaignSource: EExpansionId.Lightfall,
+  },
+  2463947681: {
+    // Swarmers
+    legendaryCampaignSource: EExpansionId.Lightfall,
+  },
+  3637722482: {
+    // Abeyant Leap
+    legendaryCampaignSource: EExpansionId.Lightfall,
+  },
+  3574051505: {
+    // Cadmus Ridge Lancecap
+    legendaryCampaignSource: EExpansionId.Lightfall,
+  },
+  192896783: {
+    // "Cyrtarachne's Facade"
+    legendaryCampaignSource: EExpansionId.Lightfall,
+  },
+  2390471904: {
+    // Sppedloader Slacks
+    legendaryCampaignSource: EExpansionId.Lightfall,
   },
 };
 

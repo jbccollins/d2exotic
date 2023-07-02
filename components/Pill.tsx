@@ -15,7 +15,12 @@ export const Pill = (props: PillProps) => {
           <img width={24} height={24} src={props.icon} />
         </div>
       )}
-      <div className={`pill-text${props.icon ? " ml-8" : ""}`}>
+      <div
+        style={{ fontSize: 14 }}
+        className={`pill-text${
+          props.icon ? (props.text.length > 0 ? " ml-8" : " ml-6") : ""
+        }`}
+      >
         {props.text}
       </div>
     </div>

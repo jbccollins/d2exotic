@@ -231,7 +231,7 @@ export default function ExoticList({}: ExoticListProps) {
                                   <div className="mt-2">
                                     <Pill
                                       text={`Required DLC: ${expansion?.name}`}
-                                      color="#823e09"
+                                      color="#8B0000"
                                     />
                                   </div>
                                 )}

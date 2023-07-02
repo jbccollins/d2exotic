@@ -30,6 +30,11 @@ export const generateExoticArmorMapping = (
       enumName: "EExpansionId",
       isOptional: true,
     },
+    legendaryCampaignSource: {
+      enumDefinition: EExpansionId,
+      enumName: "EExpansionId",
+      isOptional: true,
+    },
   };
 
   const serializedExoticArmorItems: Record<string, unknown>[] = [];

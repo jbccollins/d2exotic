@@ -77,7 +77,7 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
         </Box>
       )}
       {!isLeaf && (
-        <Collapse in={open || !collapsible} timeout="auto" unmountOnExit>
+        <Collapse in={open || !collapsible} timeout={0} unmountOnExit>
           <Box
             className={`children`}
             sx={{ display: "flex", flexWrap: "wrap" }}
@@ -86,8 +86,8 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
               <Box
                 key={childGroup.id}
                 sx={{
-                  padding: theme.spacing(1),
-                  maxWidth: "400px",
+                  padding: theme.spacing(0.5),
+                  maxWidth: "420px",
                 }}
               >
                 <NestedGroup group={childGroup} depth={_depth + 1} />

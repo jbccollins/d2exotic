@@ -87,6 +87,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/cc4f9b05185e4430b6c0ca42cc7a5c1d.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [193869520]: {
       name: "St0mp-EE5",
@@ -227,6 +228,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/bc6ee62eb2ace0a0a44347a3824e95dd.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [609852545]: {
       name: "Fr0st-EE5",
@@ -471,6 +473,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/e1c35c4941cc7848e2b5de7bacd17232.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [1341951177]: {
       name: "Heart of Inmost Light",
@@ -657,6 +660,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/209d99f147c6d1a88812cebc4c0f2f92.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [1703598057]: {
       name: "Point-Contact Cannon Brace",
@@ -809,6 +813,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/4943351eeea32eacd98c50e33c840416.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [2177524718]: {
       name: "The Stag",
@@ -937,6 +942,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/cb2d44c8d1459ea43b0ea82976cf66e0.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [2415768376]: {
       name: "Athrys's Embrace",
@@ -985,6 +991,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/6913d8a2546e53f6bbcba482e487477b.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [2563444729]: {
       name: "ACD/0 Feedback Fence",
@@ -1194,6 +1201,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/50c84155502586d5b852ce853131ee48.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [3267996858]: {
       name: "No Backup Plans",
@@ -1238,6 +1246,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/aeda17ea7c8071b1156258b09f4219f3.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [3381022969]: {
       name: "Crown of Tempests",
@@ -1341,6 +1350,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/ed6d637a92b13503599f791d2ecba14a.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [3627185503]: {
       name: "Ophidian Aspect",
@@ -1365,6 +1375,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/8ca0dc9ac4166580356aa2d1f243e009.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [3787517196]: {
       name: "Sunbracers",
@@ -1389,6 +1400,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/0b6052a09f8d04089eda67529392d770.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [3844826440]: {
       name: "Karnstein Armlets",

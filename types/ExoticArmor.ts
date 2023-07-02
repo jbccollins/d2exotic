@@ -4,7 +4,7 @@ import {
   AdvancedDecrpytionEngramIdList,
   getAdvancedDecryptionEngramById,
 } from "./AdvancedDecryptionEngram";
-import { ArmorSlotIdList } from "./ArmorSlot";
+import { ArmorSlotIdList, getArmorSlot } from "./ArmorSlot";
 import { DestinyClassIdList, getDestinyClass } from "./DestinyClass";
 import { getExpansion } from "./Expansion";
 import { EGroupById } from "./GroupBy";
@@ -25,6 +25,7 @@ export type ExoticArmor = {
   destinyClassId: EDestinyClassId;
   isFocusable: boolean;
   expansionIdCampaignCompletionRequired?: EExpansionId;
+  legendaryCampaignSource?: EExpansionId;
 } & IntrinsicAttributes;
 
 const getDefaultDestinyClassValue = (): Record<
@@ -93,6 +94,44 @@ const groupExoticsByAdvancedDecryptionId = (
   }).filter((group) => group !== null) as NestedGroup[];
 };
 
+const groupExoticsByDestinyClassId = (
+  exoticArmorItems: ExoticArmor[]
+): NestedGroup[] => {
+  return DestinyClassIdList.map((destinyClassId) => {
+    const destinyClass = getDestinyClass(destinyClassId);
+    const group1: NestedGroup = {
+      name: destinyClass.name,
+      icon: destinyClass.icon,
+      id: destinyClass.id,
+    };
+    const _exoticArmorItems = exoticArmorItems.filter(
+      (exoticArmorItem) => exoticArmorItem.destinyClassId === destinyClassId
+    );
+    const group1Children: NestedGroup[] = [];
+    ArmorSlotIdList.forEach((armorSlotId) => {
+      const armorSlot = getArmorSlot(armorSlotId);
+      const group2: NestedGroup = {
+        name: armorSlot.name,
+        icon: armorSlot.icon,
+        id: armorSlot.id,
+      };
+      const items = _exoticArmorItems.filter(
+        (exoticArmorItem) => exoticArmorItem.armorSlotId === armorSlotId
+      );
+
+      if (items.length > 0) {
+        group2.items = items;
+        group1Children.push(group2);
+      }
+    });
+    if (group1Children.length === 0) {
+      return null;
+    }
+    group1.childGroups = group1Children;
+    return group1;
+  }).filter((group) => group !== null) as NestedGroup[];
+};
+
 export const getExoticArmorNestedGroupList = (
   groupById: EGroupById,
   searchTerm: string
@@ -101,6 +140,8 @@ export const getExoticArmorNestedGroupList = (
   switch (groupById) {
     case EGroupById.AdvancedDecryptionEngram:
       return groupExoticsByAdvancedDecryptionId(exoticArmorItems);
+    case EGroupById.DestinyClass:
+      return groupExoticsByDestinyClassId(exoticArmorItems);
     default:
       return [];
   }
@@ -171,10 +212,6 @@ export function getExoticArmorItemsFilteredBySearchTerm(
       exotic.name.toLowerCase().includes(searchTerm.toLowerCase())
     )
     .sort((a, b) => {
-      const aArmorSlotId = a.armorSlotId;
-      const bArmorSlotId = b.armorSlotId;
-      const aArmorSlotIndex = ArmorSlotIdList.indexOf(aArmorSlotId);
-      const bArmorSlotIndex = ArmorSlotIdList.indexOf(bArmorSlotId);
-      return aArmorSlotIndex - bArmorSlotIndex ?? a.name.localeCompare(b.name);
+      return a.name.localeCompare(b.name);
     });
 }

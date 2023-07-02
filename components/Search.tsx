@@ -38,6 +38,10 @@ export default function Search() {
         onFocus={handleFocus}
         onBlur={handleBlur}
         onChange={(e) => handleChange(e.target.value)}
+        sx={{
+          width: { lg: "40vw", md: "40vw", sm: "150px", xs: "40vw" },
+          maxWidth: 400,
+        }}
       />
       <SearchIcon
         sx={{

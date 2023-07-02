@@ -1,7 +1,7 @@
 export enum EGroupById {
   DestinyClass = "DestinyClass", // Class => Armor Slot
   AdvancedDecryptionEngram = "AdvancedDecryptionEngram", // Advanced Decryption Engram => Class => Armor Slot
-  None = "None", // Name
+  // None = "None", // Name
 }
 
 const GroupByIdToGroupByMapping = {
@@ -13,10 +13,10 @@ const GroupByIdToGroupByMapping = {
     id: EGroupById.DestinyClass,
     name: "Class",
   },
-  [EGroupById.None]: {
-    id: EGroupById.None,
-    name: "None (Order by Name)",
-  },
+  // [EGroupById.None]: {
+  //   id: EGroupById.None,
+  //   name: "None (Order by Name)",
+  // },
 };
 
 export const getGroupBy = (id: EGroupById) => {
@@ -26,5 +26,5 @@ export const getGroupBy = (id: EGroupById) => {
 export const GroupByIdList = [
   EGroupById.AdvancedDecryptionEngram,
   EGroupById.DestinyClass,
-  EGroupById.None,
+  // EGroupById.None,
 ];

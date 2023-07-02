@@ -4,11 +4,7 @@ import { selectShowIntrinsicStats } from "@d2e/redux/slice/showIntrinsicStats";
 import { selectShowRequiredDlc } from "@d2e/redux/slice/showRequiredDlc";
 import { selectShowSources } from "@d2e/redux/slice/showSources";
 import { getAdvancedDecryptionEngram } from "@d2e/types/AdvancedDecryptionEngram";
-import {
-  ArmorStatIdList,
-  EArmorStatGroup,
-  getArmorStat,
-} from "@d2e/types/ArmorStat";
+import { ArmorStatIdList, getArmorStat } from "@d2e/types/ArmorStat";
 import { ExoticArmor } from "@d2e/types/ExoticArmor";
 import { getExpansionBySeasonHash } from "@d2e/types/Expansion";
 import { EExpansionId } from "@d2e/types/IdEnums";
@@ -39,6 +35,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
     seasonHash,
     armorSlotId,
     expansionIdCampaignCompletionRequired,
+    legendaryCampaignSource,
   } = item;
 
   const advancedDecryptionEngram = getAdvancedDecryptionEngram(
@@ -51,7 +48,8 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
   return (
     <div
       key={hash}
-      className="exotic-item-wrapper flex flex-wrap items-center bg-gray-900 p-3 rounded-lg"
+      style={{ backgroundColor: "#121212", maxWidth: 500 }}
+      className="exotic-item-wrapper flex flex-wrap items-center p-3"
     >
       <div className="exotic-item flex items-center w-full">
         <LayeredBungieImage
@@ -73,7 +71,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
       {showRequiredDlc && expansion?.id !== EExpansionId.RedWar && (
         <div className="required-dlc mt-2 flex items-center flex-wrap">
           <div className="text-s mr-2">Required DLC:</div>
-          <Pill color="#4b2751" text={`${expansion?.name}`} />
+          <Pill color="#7d0202" text={`${expansion?.name}`} />
         </div>
       )}
       {showIntrinsicStats && intrinsicStats && (
@@ -90,7 +88,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
                 color="#4b2751"
                 icon={armorStat.icon}
                 key={armorStatId}
-                text={`${armorStat.shortName}: ${statValue}`}
+                text={`${statValue}`}
               />
             );
           })}
@@ -103,15 +101,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
             Intrinsic Focus
             {isPartialIntrinsicFocus ? " (Partial)" : ""}:
           </div>
-          <Pill
-            color={
-              intrinsicFocusStat.group === EArmorStatGroup.A
-                ? "#0039a6"
-                : "#13274F"
-            }
-            icon={intrinsicFocusStat.icon}
-            text={`${intrinsicFocusStat.shortName}`}
-          />
+          <Pill color={"#13274F"} icon={intrinsicFocusStat.icon} text={``} />
         </div>
       )}
 
@@ -120,7 +110,22 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
           <div className="sources w-full mt-2">Sources:</div>
 
           {expansionIdCampaignCompletionRequired && (
-            <div className="text-xs text-red-500">{`* Requires ${expansion?.name} campaign completion before this item will drop from any other source`}</div>
+            <>
+              <div
+                style={{ marginBottom: 4 }}
+                className="text-xs text-red-500"
+              >{`* Requires ${expansion?.name} campaign completion before this item will drop from any other source`}</div>
+              <Pill
+                text={`${expansion?.name} campaign completion`}
+                color="#AA6C39"
+              />
+            </>
+          )}
+          {legendaryCampaignSource && (
+            <Pill
+              text={`Legendary ${expansion?.name} campaign completion`}
+              color="#AA6C39"
+            />
           )}
           {isFocusable && advancedDecryptionEngram && (
             <div className="mt-2">
