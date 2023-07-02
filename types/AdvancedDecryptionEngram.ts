@@ -24,6 +24,7 @@ export const AdvancedDecrpytionEngramIdList = ValidateEnumList(
 export type AdvancedDecryptionEngram = {
   id: EAdvancedDecryptionEngramId;
   name: string;
+  shortName: string;
   expansionId: EExpansionId;
   armorSlotIdList: EArmorSlotId[];
   order: number;
@@ -44,6 +45,7 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
   [EAdvancedDecryptionEngramId.RedWarHelm]: {
     id: EAdvancedDecryptionEngramId.RedWarHelm,
     name: "Red War Helm Decryption",
+    shortName: "Red War Helm",
     expansionId: EExpansionId.RedWar,
     armorSlotIdList: [EArmorSlotId.Helm],
     order: 0,
@@ -52,6 +54,7 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
   [EAdvancedDecryptionEngramId.RedWarChest]: {
     id: EAdvancedDecryptionEngramId.RedWarChest,
     name: "Red War Chest Decryption",
+    shortName: "Red War Chest",
     expansionId: EExpansionId.RedWar,
     armorSlotIdList: [EArmorSlotId.Chest],
     order: 1,
@@ -60,6 +63,7 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
   [EAdvancedDecryptionEngramId.RedWarArms]: {
     id: EAdvancedDecryptionEngramId.RedWarArms,
     name: "Red War Arms Decryption",
+    shortName: "Red War Arms",
     expansionId: EExpansionId.RedWar,
     armorSlotIdList: [EArmorSlotId.Arms],
     order: 2,
@@ -69,6 +73,7 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
   [EAdvancedDecryptionEngramId.RedWarLeg]: {
     id: EAdvancedDecryptionEngramId.RedWarLeg,
     name: "Red War Leg Decryption",
+    shortName: "Red War Leg",
     expansionId: EExpansionId.RedWar,
     armorSlotIdList: [EArmorSlotId.Leg],
     order: 3,
@@ -77,6 +82,7 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
   [EAdvancedDecryptionEngramId.Forsaken]: {
     id: EAdvancedDecryptionEngramId.Forsaken,
     name: "Forsaken Armor Decryption",
+    shortName: "Forsaken",
     expansionId: EExpansionId.Forsaken,
     armorSlotIdList: allArmorSlots,
     order: 4,
@@ -85,6 +91,7 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
   [EAdvancedDecryptionEngramId.Shadowkeep]: {
     id: EAdvancedDecryptionEngramId.Shadowkeep,
     name: "Shadowkeep Armor Decryption",
+    shortName: "Shadowkeep",
     expansionId: EExpansionId.Shadowkeep,
     armorSlotIdList: allArmorSlots,
     order: 5,
@@ -93,6 +100,7 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
   [EAdvancedDecryptionEngramId.BeyondLight]: {
     id: EAdvancedDecryptionEngramId.BeyondLight,
     name: "Beyond Light Armor Decryption",
+    shortName: "Beyond Light",
     expansionId: EExpansionId.BeyondLight,
     armorSlotIdList: allArmorSlots,
     order: 6,
@@ -101,6 +109,7 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
   [EAdvancedDecryptionEngramId.WitchQueen]: {
     id: EAdvancedDecryptionEngramId.WitchQueen,
     name: "Witch Queen Armor Decryption",
+    shortName: "Witch Queen",
     expansionId: EExpansionId.WitchQueen,
     armorSlotIdList: allArmorSlots,
     order: 7,
@@ -109,6 +118,7 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
   [EAdvancedDecryptionEngramId.Lightfall]: {
     id: EAdvancedDecryptionEngramId.Lightfall,
     name: "Lightfall Armor Decryption",
+    shortName: "Lightfall",
     expansionId: EExpansionId.Lightfall,
     armorSlotIdList: allArmorSlots,
     order: 8,

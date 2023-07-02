@@ -30,7 +30,7 @@
     "compilerOptions": {
       "module": "commonjs" // because modules fucking suck
     },
-    "require": ["tsconfig-paths/register"] // To make it understand @dlb paths
+    "require": ["tsconfig-paths/register"] // To make it understand @d2e paths
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

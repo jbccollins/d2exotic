@@ -252,7 +252,7 @@ export default function ExoticList({}: ExoticListProps) {
                                   </div>
                                 )}
 
-                                <div className="mt-2">
+                                {/* <div className="mt-2">
                                   <Pill
                                     text={"Solo Legend / Master Lost Sectors"}
                                     color="#AA6C39"
@@ -263,7 +263,7 @@ export default function ExoticList({}: ExoticListProps) {
                                     text={"Vex Strike Force"}
                                     color="#AA6C39"
                                   />
-                                </div>
+                                </div> */}
                                 {isFocusable && !isWorldDrop && (
                                   <div className="mt-2">
                                     <Pill
