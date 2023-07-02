@@ -51,12 +51,16 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
           onClick={() => collapsible && setOpen(!open)}
         >
           {group.name}
-          {collapsible && (
-            <IconButton aria-label="expand row" size="small">
-              {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-            </IconButton>
-          )}
         </Box>
+        {collapsible && (
+          <IconButton
+            aria-label="expand"
+            size="small"
+            onClick={() => collapsible && setOpen(!open)}
+          >
+            {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+          </IconButton>
+        )}
       </Box>
       {isLeaf && (
         <Box>
