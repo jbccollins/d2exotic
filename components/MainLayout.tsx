@@ -59,7 +59,7 @@ function MainLayout() {
   );
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", background: "black" }}>
       <CssBaseline />
       <AppBar
         position="fixed"
@@ -133,7 +133,7 @@ function MainLayout() {
         component="main"
         sx={{
           flexGrow: 1,
-          p: 3,
+          p: 2,
           width: { sm: `calc(100% - ${drawerWidth}px)` },
         }}
       >

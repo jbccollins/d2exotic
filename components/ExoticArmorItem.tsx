@@ -12,6 +12,7 @@ import {
   getIconWatermarkIdFromSeasonHash,
   getIconWatermarkUrlFromId,
 } from "@d2e/types/Season";
+import { Box } from "@mui/material";
 import LayeredBungieImage from "./LayeredBungieImage";
 import { Pill } from "./Pill";
 
@@ -46,12 +47,12 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
 
   const expansion = getExpansionBySeasonHash(seasonHash);
   return (
-    <div
+    <Box
       key={hash}
-      style={{ backgroundColor: "#121212", maxWidth: 500 }}
+      sx={{ backgroundColor: "#121212", maxWidth: 500 }}
       className="exotic-item-wrapper flex flex-wrap items-center p-3"
     >
-      <div className="exotic-item flex items-center w-full">
+      <Box className="exotic-item flex items-center w-full">
         <LayeredBungieImage
           style={{
             height: 64,
@@ -65,18 +66,18 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
           ]}
           src={icon}
         />
-        <div className="ml-2 text-xl">{name}</div>
-      </div>
+        <Box className="ml-2 text-xl">{name}</Box>
+      </Box>
 
       {showRequiredDlc && expansion?.id !== EExpansionId.RedWar && (
-        <div className="required-dlc mt-2 flex items-center flex-wrap">
-          <div className="text-s mr-2">Required DLC:</div>
+        <Box className="required-dlc mt-2 flex items-center flex-wrap">
+          <Box className="text-s mr-2">Required DLC:</Box>
           <Pill color="#7d0202" text={`${expansion?.name}`} />
-        </div>
+        </Box>
       )}
       {showIntrinsicStats && intrinsicStats && (
-        <div className="intrinsic-stats mt-2 flex items-center flex-wrap">
-          <div className="text-s mr-2">Intrinsic Stats:</div>
+        <Box className="intrinsic-stats mt-2 flex items-center flex-wrap">
+          <Box className="text-s mr-2">Intrinsic Stats:</Box>
           {ArmorStatIdList.map((armorStatId) => {
             const statValue = intrinsicStats?.[armorStatId];
             if (!statValue) {
@@ -92,29 +93,29 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
               />
             );
           })}
-        </div>
+        </Box>
       )}
 
       {showIntrinsicFocus && intrinsicFocusStat && (
-        <div className="intrinsic-stats mt-2 flex items-center">
-          <div className="text-s mr-2">
+        <Box className="intrinsic-stats mt-2 flex items-center">
+          <Box className="text-s mr-2">
             Intrinsic Focus
             {isPartialIntrinsicFocus ? " (Partial)" : ""}:
-          </div>
+          </Box>
           <Pill color={"#13274F"} icon={intrinsicFocusStat.icon} text={``} />
-        </div>
+        </Box>
       )}
 
       {showSources && (
-        <div className="pill-wrapper w-full">
-          <div className="sources w-full mt-2">Sources:</div>
+        <Box className="pill-wrapper w-full">
+          <Box className="sources w-full mt-2">Sources:</Box>
 
           {expansionIdCampaignCompletionRequired && (
             <>
-              <div
-                style={{ marginBottom: 4 }}
-                className="text-xs text-red-500"
-              >{`* Requires ${expansion?.name} campaign completion before this item will drop from any other source`}</div>
+              <Box
+                sx={{ marginBottom: 2, marginTop: 1 }}
+                className="text-sm text-red-500"
+              >{`* Requires ${expansion?.name} campaign completion before this item will drop from any other source`}</Box>
               <Pill
                 text={`${expansion?.name} campaign completion`}
                 color="#AA6C39"
@@ -122,45 +123,47 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
             </>
           )}
           {legendaryCampaignSource && (
-            <Pill
-              text={`Legendary ${expansion?.name} campaign completion`}
-              color="#AA6C39"
-            />
+            <Box className="mt-2">
+              <Pill
+                text={`Legendary ${expansion?.name} campaign completion`}
+                color="#AA6C39"
+              />
+            </Box>
           )}
           {isFocusable && advancedDecryptionEngram && (
-            <div className="mt-2">
+            <Box className="mt-2">
               <Pill
                 text={advancedDecryptionEngram.name}
                 color="#AA6C39"
                 icon={advancedDecryptionEngram.icon}
               />
-            </div>
+            </Box>
           )}
           {/* {!isFocusable && (
-            <div className="mt-2">
+            <Box className="mt-2">
               <Pill text="Non-Decryptable" color="darkred" />
-            </div>
+            </Box>
           )} */}
 
-          <div className="mt-2">
+          <Box className="mt-2">
             <Pill text={"Solo Legend / Master Lost Sectors"} color="#AA6C39" />
-          </div>
-          <div className="mt-2">
+          </Box>
+          <Box className="mt-2">
             <Pill text={"Vex Strike Force"} color="#AA6C39" />
-          </div>
+          </Box>
           {isFocusable && !isWorldDrop && (
-            <div className="mt-2">
+            <Box className="mt-2">
               <Pill text={"Unlockable World Drop"} color="#AA6C39" />
-            </div>
+            </Box>
           )}
 
           {isWorldDrop && (
-            <div className="mt-2">
+            <Box className="mt-2">
               <Pill color="darkgreen" text={`World Drop`} />
-            </div>
+            </Box>
           )}
-        </div>
+        </Box>
       )}
-    </div>
+    </Box>
   );
 }
