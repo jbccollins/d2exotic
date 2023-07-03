@@ -7,10 +7,14 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "D2 Exotic",
-  description:
-    'Super simple website to show you which exotic armor pieces can be decrypted from the various "Advanced" decryption engrams at Rahool.',
+  description: "Information about Exotic Armor decryption in Destiny 2",
   icons: {
     icon: "/icon.png",
+  },
+  openGraph: {
+    title: "D2 Exotic",
+    description: "Information about Exotic Armor decryption in Destiny 2",
+    images: ["/icon.png"],
   },
 };
 
