@@ -1,3 +1,5 @@
+import { SeasonIdToSeasonMapping } from "@d2e/generation/Season/generated/mapping";
+
 export type Season = {
   hash: number;
   name: string;
@@ -74,4 +76,8 @@ export const extractArmorIconWatermarkIdFromUrl = (url: string | undefined) => {
 export const getIconWatermarkUrlFromId = (id: string | null) => {
   if (!id) return null;
   return `https://www.bungie.net/common/destiny2_content/icons/${id}.png`;
+};
+
+export const getSeason = (hash: number): Season => {
+  return SeasonIdToSeasonMapping[hash];
 };

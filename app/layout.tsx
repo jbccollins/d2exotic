@@ -9,6 +9,9 @@ export const metadata = {
   title: "D2 Exotic",
   description:
     'Super simple website to show you which exotic armor pieces can be decrypted from the various "Advanced" decryption engrams at Rahool.',
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({

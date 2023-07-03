@@ -63,7 +63,6 @@ const groupExoticsByAdvancedDecryptionId = (
     };
     const _exoticArmorItems = exoticArmorItems.filter(
       (exoticArmorItem) =>
-        exoticArmorItem.isFocusable &&
         seasonHashList.includes(exoticArmorItem.seasonHash) &&
         advancedDecryptionEngram.armorSlotIdList.includes(
           exoticArmorItem.armorSlotId

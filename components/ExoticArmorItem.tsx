@@ -8,10 +8,12 @@ import { getAdvancedDecryptionEngram } from "@d2e/types/AdvancedDecryptionEngram
 import { ArmorStatIdList, getArmorStat } from "@d2e/types/ArmorStat";
 import { ExoticArmor } from "@d2e/types/ExoticArmor";
 import { getExpansionBySeasonHash } from "@d2e/types/Expansion";
+import { EGroupById } from "@d2e/types/GroupBy";
 import { EExpansionId } from "@d2e/types/IdEnums";
 import {
   getIconWatermarkIdFromSeasonHash,
   getIconWatermarkUrlFromId,
+  getSeason,
 } from "@d2e/types/Season";
 import { Box } from "@mui/material";
 import LayeredBungieImage from "./LayeredBungieImage";
@@ -47,7 +49,11 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
   );
   const intrinsicFocusStat = intrinsicFocus && getArmorStat(intrinsicFocus);
 
+  const isUnfocusableAdvancedDecryption =
+    !isFocusable && groupById === EGroupById.AdvancedDecryptionEngram;
+
   const expansion = getExpansionBySeasonHash(seasonHash);
+  const season = getSeason(seasonHash);
 
   return (
     <Box
@@ -55,7 +61,10 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
       sx={{ backgroundColor: "#121212" }}
       className="exotic-item-wrapper flex flex-wrap items-center p-3"
     >
-      <Box className="exotic-item flex items-center w-full">
+      <Box
+        className="exotic-item flex items-center w-full"
+        sx={{ opacity: isUnfocusableAdvancedDecryption ? 0.6 : 1 }}
+      >
         <LayeredBungieImage
           style={{
             height: 64,
@@ -71,6 +80,18 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
         />
         <Box className="ml-2 text-xl">{name}</Box>
       </Box>
+      {isUnfocusableAdvancedDecryption && (
+        <Box
+          sx={{ marginBottom: 0, marginTop: 2 }}
+          className="text-sm text-red-500"
+        >{`* As of ${season.name} (S${
+          season.number
+        }) this item is not obtainable via ${
+          advancedDecryptionEngram?.name
+        }. It will become obtainable via ${
+          advancedDecryptionEngram?.name
+        } next season (S${season.number + 1}).`}</Box>
+      )}
 
       {showRequiredDlc && expansion?.id !== EExpansionId.RedWar && (
         <Box className="required-dlc mt-2 flex items-center flex-wrap">
