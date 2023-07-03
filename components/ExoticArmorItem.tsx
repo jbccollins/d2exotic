@@ -100,7 +100,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
         </Box>
       )}
       {showIntrinsicStats && intrinsicStats && (
-        <Box className="intrinsic-stats mt-2 flex items-center flex-wrap">
+        <Box className="intrinsic-stats mt-2 flex items-center flex-wrap  flex-1 basis-full">
           <Box className="text-s mr-2">Intrinsic Stats:</Box>
           {ArmorStatIdList.map((armorStatId) => {
             const statValue = intrinsicStats?.[armorStatId];
@@ -121,7 +121,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
       )}
 
       {showIntrinsicFocus && intrinsicFocusStat && (
-        <Box className="intrinsic-stats mt-2 flex items-center">
+        <Box className="intrinsic-stats mt-2 flex items-center flex-1 basis-full">
           <Box className="text-s mr-2">
             Intrinsic Focus
             {isPartialIntrinsicFocus ? " (Partial)" : ""}:
@@ -131,7 +131,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
       )}
 
       {showSources && (
-        <Box className="pill-wrapper w-full">
+        <Box className="pill-wrapper w-full  flex-1 basis-full">
           <Box className="sources w-full mt-2">Sources:</Box>
 
           {expansionIdCampaignCompletionRequired && (
