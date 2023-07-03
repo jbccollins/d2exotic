@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: "D2 Exotic",
     description: "Information about Exotic Armor decryption in Destiny 2",
-    images: ["/icon.png"],
+    images: ["/icon_16x9.png"],
   },
 };
 
