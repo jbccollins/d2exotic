@@ -88,6 +88,7 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
                 sx={{
                   padding: theme.spacing(0.5),
                   maxWidth: "420px",
+                  width: "100%",
                 }}
               >
                 <NestedGroup group={childGroup} depth={_depth + 1} />

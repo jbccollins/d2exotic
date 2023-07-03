@@ -1,4 +1,5 @@
 import { useAppSelector } from "@d2e/redux/hooks";
+import { selectGroupById } from "@d2e/redux/slice/groupById";
 import { selectShowIntrinsicFocus } from "@d2e/redux/slice/showIntrinsicFocus";
 import { selectShowIntrinsicStats } from "@d2e/redux/slice/showIntrinsicStats";
 import { selectShowRequiredDlc } from "@d2e/redux/slice/showRequiredDlc";
@@ -24,6 +25,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
   const showIntrinsicStats = useAppSelector(selectShowIntrinsicStats);
   const showRequiredDlc = useAppSelector(selectShowRequiredDlc);
   const showSources = useAppSelector(selectShowSources);
+  const groupById = useAppSelector(selectGroupById);
   const {
     intrinsicStats,
     intrinsicFocus,
@@ -46,10 +48,11 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
   const intrinsicFocusStat = intrinsicFocus && getArmorStat(intrinsicFocus);
 
   const expansion = getExpansionBySeasonHash(seasonHash);
+
   return (
     <Box
       key={hash}
-      sx={{ backgroundColor: "#121212", maxWidth: 500 }}
+      sx={{ backgroundColor: "#121212" }}
       className="exotic-item-wrapper flex flex-wrap items-center p-3"
     >
       <Box className="exotic-item flex items-center w-full">

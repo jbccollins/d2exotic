@@ -63,6 +63,7 @@ const groupExoticsByAdvancedDecryptionId = (
     };
     const _exoticArmorItems = exoticArmorItems.filter(
       (exoticArmorItem) =>
+        exoticArmorItem.isFocusable &&
         seasonHashList.includes(exoticArmorItem.seasonHash) &&
         advancedDecryptionEngram.armorSlotIdList.includes(
           exoticArmorItem.armorSlotId
@@ -175,32 +176,6 @@ export const getExoticsByAdvancedDecryptionEngramId = (
       }
     }
   );
-  return result;
-};
-
-export const getExotics = (): Record<
-  EDestinyClassId,
-  Record<EArmorSlotId, ExoticArmor[]>
-> => {
-  const result: Record<EDestinyClassId, Record<EArmorSlotId, ExoticArmor[]>> = {
-    [EDestinyClassId.Hunter]: getDefaultDestinyClassValue(),
-    [EDestinyClassId.Titan]: getDefaultDestinyClassValue(),
-    [EDestinyClassId.Warlock]: getDefaultDestinyClassValue(),
-  };
-  Object.values(ExoticArmorHashToExoticArmorMapping).forEach(
-    (exoticArmorItem) => {
-      result[exoticArmorItem.destinyClassId][exoticArmorItem.armorSlotId].push(
-        exoticArmorItem
-      );
-    }
-  );
-  DestinyClassIdList.forEach((destinyClassId) => {
-    ArmorSlotIdList.forEach((armorSlotId) => {
-      result[destinyClassId][armorSlotId] = result[destinyClassId][
-        armorSlotId
-      ].sort((a, b) => a.name.localeCompare(b.name));
-    });
-  });
   return result;
 };
 

@@ -13,7 +13,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import * as React from "react";
-import ExoticList from "./ExoticList2";
+import ExoticList from "./ExoticList";
 import Settings from "./Settings";
 const darkTheme = createTheme({
   palette: {
