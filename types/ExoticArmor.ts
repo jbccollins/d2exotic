@@ -186,6 +186,8 @@ export function getExoticArmorItemsFilteredBySearchTerm(
       exotic.name.toLowerCase().includes(searchTerm.toLowerCase())
     )
     .sort((a, b) => {
-      return a.name.localeCompare(b.name);
+      const aArmorSlotIndex = getArmorSlot(a.armorSlotId).order;
+      const bArmorSlotIndex = getArmorSlot(b.armorSlotId).order;
+      return aArmorSlotIndex - bArmorSlotIndex || a.name.localeCompare(b.name);
     });
 }
