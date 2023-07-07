@@ -1,5 +1,6 @@
 import { useAppSelector } from "@d2e/redux/hooks";
 import { selectGroupById } from "@d2e/redux/slice/groupById";
+import { selectShowExoticArmorPerk } from "@d2e/redux/slice/showExoticArmorPerk";
 import { selectShowIntrinsicFocus } from "@d2e/redux/slice/showIntrinsicFocus";
 import { selectShowIntrinsicStats } from "@d2e/redux/slice/showIntrinsicStats";
 import { selectShowRequiredDlc } from "@d2e/redux/slice/showRequiredDlc";
@@ -16,6 +17,7 @@ import {
   getSeason,
 } from "@d2e/types/Season";
 import { Box } from "@mui/material";
+import BungieImage from "./BungieImage";
 import LayeredBungieImage from "./LayeredBungieImage";
 import { Pill } from "./Pill";
 
@@ -27,6 +29,8 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
   const showIntrinsicStats = useAppSelector(selectShowIntrinsicStats);
   const showRequiredDlc = useAppSelector(selectShowRequiredDlc);
   const showSources = useAppSelector(selectShowSources);
+  const showExoticArmorPerk = useAppSelector(selectShowExoticArmorPerk);
+
   const groupById = useAppSelector(selectGroupById);
   const {
     intrinsicStats,
@@ -41,6 +45,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
     armorSlotId,
     expansionIdCampaignCompletionRequired,
     legendaryCampaignSource,
+    exoticArmorPerk,
   } = item;
 
   const advancedDecryptionEngram = getAdvancedDecryptionEngram(
@@ -80,6 +85,19 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
         />
         <Box className="ml-2 text-xl">{name}</Box>
       </Box>
+      {showExoticArmorPerk && exoticArmorPerk && (
+        <Box sx={{ marginTop: "8px" }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <BungieImage height={40} width={40} src={exoticArmorPerk.icon} />
+            <Box sx={{ marginLeft: "4px", fontSize: "18px" }}>
+              {exoticArmorPerk.name}
+            </Box>
+          </Box>
+          <Box sx={{ fontSize: "14px", marginTop: "4px" }}>
+            {exoticArmorPerk.description}
+          </Box>
+        </Box>
+      )}
       {isUnfocusableAdvancedDecryption && (
         <Box
           sx={{ marginBottom: 0, marginTop: 2 }}

@@ -15,6 +15,13 @@ import {
   EExpansionId,
 } from "./IdEnums";
 
+export type ExoticArmorPerk = {
+  name: string;
+  description: string;
+  icon: string;
+  hash: number;
+};
+
 export type ExoticArmor = {
   name: string;
   hash: number;
@@ -26,6 +33,7 @@ export type ExoticArmor = {
   isFocusable: boolean;
   expansionIdCampaignCompletionRequired?: EExpansionId;
   legendaryCampaignSource?: EExpansionId;
+  exoticArmorPerk: ExoticArmorPerk | null;
 } & IntrinsicAttributes;
 
 const getDefaultDestinyClassValue = (): Record<

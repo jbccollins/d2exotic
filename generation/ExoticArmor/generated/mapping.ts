@@ -20,6 +20,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/387f53c382d5e3ef7156e2149f79a57b.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: false,
+      exoticArmorPerk: {
+        name: "Barri-nade",
+        description:
+          "Using your class ability channels defensive Light inward, providing a grenade that creates a barricade on impact.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/bdf3b0602482e65c1a59c77d5f29a8a2.png",
+        hash: 2445247031,
+      },
     },
     [106575079]: {
       name: "Helm of Saint-14",
@@ -30,6 +37,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/00da519dfd936447edd44bd0e472d229.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Starless Night",
+        description:
+          "Targets that enter Ward of Dawn are blinded, while allies that pass through gain a Void overshield. Guarding with Sentinel Shield blinds nearby targets.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d4a23b232372815d738f5009e8da29d4.png",
+        hash: 1331592343,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Resilience: 1,
@@ -45,6 +59,12 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/395d6f306e29ddf0afdd5b1ffaaf1e5f.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Close Enough",
+        description: "Damaging targets with Chaos Reach extends its duration.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/66fcc068afb7cda7082e338debf3c454.png",
+        hash: 1939153390,
+      },
       intrinsicStats: {
         Resilience: 1,
         Recovery: 2,
@@ -59,6 +79,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/0cc53513e37b4f0b5442dff88c3d9a45.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Seriously, Watch Out",
+        description:
+          "Grants an overshield when you're sprinting at full health with Seismic Strike, Hammer Strike, or Shield Bash equipped and charged. Hits with these abilities recharge a portion of your melee energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/cb83f0a06e3144bfa424dc886ccf8f6d.png",
+        hash: 824488952,
+      },
       intrinsicStats: {
         Mobility: 1,
         Resilience: 1,
@@ -73,6 +100,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/5c188812dc0dca96e015d2876e900637.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Strange Protractor",
+        description:
+          "Sprint speed increased. After a short time sprinting, your currently equipped weapon is automatically reloaded.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/381a293f45eb74cdd7d4444a3c7ce7ed.png",
+        hash: 3347978673,
+      },
       intrinsicStats: {
         Mobility: 1,
         Recovery: 1,
@@ -87,6 +121,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/cc4f9b05185e4430b6c0ca42cc7a5c1d.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Acrobat's Focus",
+        description:
+          "Gain Woven Mail when activating grapple. Increased flinch resistance while Woven Mail is active.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/358bc75bc96bdadc33cc25d864848de4.png",
+        hash: 4120041779,
+      },
       legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [193869520]: {
@@ -98,6 +139,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/24e61da37158d8c105650edb74ae2bac.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Hydraulic Boosters",
+        description:
+          "While your Dodge energy is full, increases sprint speed and slide distance and improves High Jump, Strafe Jump, and Triple Jump.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/1f2c8873254a4d9f6e09f243123168ac.png",
+        hash: 1694242450,
+      },
       intrinsicStats: {
         Mobility: 2,
       },
@@ -111,6 +159,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/fa501bf3740c6b0cdc91f2cafd0547a3.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Illegally Modded Holster",
+        description:
+          "When you ready a fully loaded Hand Cannon that deals Kinetic damage or a damage type that matches your subclass energy type, each hit from that Hand Cannon increases the damage of the next shot for a short time against a combatant. Hand Cannons ready faster and are more accurate immediately after swapping to them. Provides a small benefit to the airborne effectiveness stat of Hand Cannons while the buff is active.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/efbc5e963de684734f9761785b51a375.png",
+        hash: 1694242448,
+      },
       intrinsicStats: {
         Mobility: 1,
         Resilience: 1,
@@ -125,6 +180,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/4abdc33a8ff869fc7bdcbdc83fbaba01.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Uncanny Arrows",
+        description:
+          "Provides ability energy for each target tethered by Deadfall anchors. Moebius Quiver has an additional shot.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/392cc994318808b9f3b2bcbec7f285c3.png",
+        hash: 1694242449,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Mobility: 2,
@@ -139,6 +201,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/1a1beec59bf0bfb0475956d19adbb9da.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Embers of Light",
+        description:
+          "Defeating combatants or Guardians while Daybreak is active creates a healing and empowering rift at their location. While standing in any rift, [Solar] Solar weapon final blows grant Rift energy. When your Rift energy is full, final blows consume your Rift energy and create a healing and empowering rift at the target's location.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c47e43df7db6047a5a8b0d9963e5043a.png",
+        hash: 1095471953,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
     },
     [241462141]: {
@@ -150,6 +219,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/5978e308b12744fbe33c11d3296f51e9.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Horns of Doom",
+        description:
+          "Void melee kills give Super energy.\nWhile Sentinel Shield is active, melee kills recharge Shield Throw, which extends your Super on hits.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2711427d59a7abae9059a7b80ff27562.png",
+        hash: 1155472387,
+      },
       intrinsicStats: {
         Resilience: 1,
         Recovery: 1,
@@ -164,6 +240,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/9f51bbad83aeb142eb56d9faf7440662.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Biotic Enhancements",
+        description:
+          "Increased melee lunge range. Improved melee and Super damage when you're surrounded.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/640d76fb6ab52e290116455379194b07.png",
+        hash: 1155472384,
+      },
       intrinsicStats: {
         Resilience: 1,
         Recovery: 1,
@@ -178,6 +261,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/8c81d44ddde6e10ea83f65929c482dcb.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Scatter Charge",
+        description:
+          "You gain an additional Scatter Grenade charge. Enables tracking for Scatter Grenade projectiles.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/80234e3068ab261bc277791427723a11.png",
+        hash: 395373724,
+      },
       intrinsicFocus: EArmorStatId.Discipline,
     },
     [370930766]: {
@@ -189,6 +279,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/97eadd6736bd5146bc28ff6d14bb2d8e.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Tome of Dawn",
+        description:
+          "When Dawnblade is equipped, aiming weapons while you're midair suspends you there for a short time, improving airborne accuracy, reducing incoming flinch, and granting damage resistance. Weapon hits extend this effect's duration. Provides a large benefit to the airborne effectiveness stat of all weapons.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/bca803e50002410309460be0966fabe9.png",
+        hash: 926349160,
+      },
       intrinsicStats: {
         Mobility: 2,
         Recovery: 1,
@@ -203,6 +300,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/e6e10342a97eb3f6b974399ef7214e75.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "See Me, Feel Me",
+        description:
+          "Your Void weapons gain Volatile Rounds after you emerge from being invisible. When you are invisible and defeat a combatant while using a finisher, all of your weapons gain bonus damage; you and your nearby allies gain a reserve overshield and improved class ability regeneration. These reserve overshields can be deployed by using a class ability.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/bd7a131851dd9dad2da3e9f198f67f6e.png",
+        hash: 3809192347,
+      },
     },
     [475652357]: {
       name: "Young Ahamkara's Spine",
@@ -213,6 +317,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Wish-Dragon Teeth",
+        description:
+          "Increases Tripmine Grenade duration and blast radius. Ability damage grants Tripmine Grenade energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/28aa0f30e0e57d914bf5f12345c631f0.png",
+        hash: 481860150,
+      },
       intrinsicFocus: EArmorStatId.Discipline,
       intrinsicStats: {
         Resilience: 1,
@@ -228,6 +339,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/bc6ee62eb2ace0a0a44347a3824e95dd.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Devouring Rift",
+        description:
+          "Casting an empowering rift will grant you Devour. Damage dealt by you and your allies from within your empowering rift will disrupt combatants.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/1d4c0be6150c4ca71bc7add447c5d86c.png",
+        hash: 1341199512,
+      },
       legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [609852545]: {
@@ -239,6 +357,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/c71407afa4e5c092494589f82149c693.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Rapid Cooldown",
+        description:
+          "Increased grenade, melee, and dodge regeneration while sprinting. Dodging increases your sprint speed.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/9b2105255a34673a2b9607f9df1ff2e5.png",
+        hash: 897181301,
+      },
       intrinsicStats: {
         Mobility: 2,
       },
@@ -252,6 +377,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Adamantine Brace",
+        description:
+          "Bow charges can be held indefinitely. Gain a bonus to the Bow's damage when released, based on how long the charge was held. Provides a moderate benefit to the airborne effectiveness stat of Bows.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/23bd5476f6002f913fd511bc62d37826.png",
+        hash: 1449897496,
+      },
       intrinsicStats: {
         Mobility: 1,
         Recovery: 1,
@@ -266,6 +398,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/e266ef647863fafb1541890bcfa4a6c7.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Sharp Edges",
+        description:
+          "Hits and kills with Blade Barrage will return Super energy after the Super ends.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/467f441de1568bd8c6ad437a76671b5f.png",
+        hash: 1449897497,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Mobility: 1,
@@ -281,6 +420,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/5f9662bd35f3a32bedde179474ee8d07.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Relentless Tracker",
+        description:
+          "Visually marks targets. Deals more damage to low-health marked targets. Provides a small benefit to the airborne effectiveness stat of all weapons.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c156b7906217d8b61e7573f9c9cc2dc7.png",
+        hash: 2663272109,
+      },
       intrinsicStats: {
         Mobility: 2,
       },
@@ -294,6 +440,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/8ccf49029d3c36bbdf3fb697163dcc53.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Probability Matrix",
+        description:
+          "Increases the chaining capabilities of Arc Bolt Grenade and has a chance to recharge it each time it deals damage. A full chain always recharges.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/4bedcf0eb0d6fd52d82d3e5f9ff11e4b.png",
+        hash: 593361147,
+      },
       intrinsicFocus: EArmorStatId.Discipline,
       intrinsicStats: {
         Mobility: 2,
@@ -309,6 +462,12 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/dac0f107efc0dc9c887ffef83fc1bf62.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Scissor Fingers",
+        description: "Grants two knives per charge.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/ab27032269b5faa817000b9d22ee751e.png",
+        hash: 3666112472,
+      },
       intrinsicFocus: EArmorStatId.Strength,
       intrinsicStats: {
         Mobility: 2,
@@ -324,6 +483,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/5b7f647435bbe18d2c83d3691758184c.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Feast of Light",
+        description:
+          "You gain additional Super energy from Orbs of Power you pick up. While your Super energy is full, picking up an Orb of Power overcharges your Super, causing you to gain a burst of healing when cast and a bonus to your Super damage. At maximum overcharge, you also gain an overshield.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/b29ab6e87ec85bac4563f3d3a432c451.png",
+        hash: 4048389864,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
     },
     [1030017949]: {
@@ -335,6 +501,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Actual Grandeur",
+        description:
+          "Provides additional damage resistance during Nova Bomb. Nova Bomb kills grant Super energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/02a31f96b28aaf6950dcd041aeb67251.png",
+        hash: 3927963102,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Resilience: 1,
@@ -350,6 +523,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/8ea4e6ce75fcf446b699029aab9d6060.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "New Tricks",
+        description:
+          "Improves Skip Grenade, and you gain an additional Skip Grenade charge. Skip Grenade returns energy when it damages enemies.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/5e71bde3f74560840a67842e5c46a8cc.png",
+        hash: 3907299874,
+      },
       intrinsicFocus: EArmorStatId.Discipline,
       intrinsicStats: {
         Mobility: 1,
@@ -365,6 +545,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/dab1f11f9397222c9cd83925f744bf86.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Insatiable",
+        description:
+          "Immediately regenerate health, melee, grenade, and Rift energy upon activating your Super. Nearby allies recharge class abilities faster.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/5ca9d0fa8f6c97999ac5927c679401af.png",
+        hash: 4174493725,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Resilience: 1,
@@ -380,6 +567,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/926af59fac979ff38b102813ed1e661f.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Linear Actuators",
+        description:
+          "Increases sprint speed. Sprinting builds up a static charge. After melee-attacking an enemy, that charge will chain damage to nearby enemies.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/10eb32a307eaadd26eb0fe4550bcdbfb.png",
+        hash: 3241194942,
+      },
       intrinsicStats: {
         Mobility: 1,
         Resilience: 1,
@@ -394,6 +588,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/9b9cf3c53c26c364532bfda3dd372827.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Misdirection",
+        description:
+          "Dodging disorients nearby enemies and temporarily removes their radar.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/ec0f49f1d1ac107ff075d74f710153f9.png",
+        hash: 4024170927,
+      },
       intrinsicFocus: EArmorStatId.Mobility,
       intrinsicStats: {
         Mobility: 2,
@@ -408,6 +609,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/2e01a8839e2cb3f8c9f53bd01001d838.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Assault Barricade",
+        description:
+          "You and allies can shoot through your Towering Barricade, which has an increased cooldown and reduced health and duration.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/6abd58ac928344895a54a11d6e06dff9.png",
+        hash: 1828251441,
+      },
       intrinsicFocus: EArmorStatId.Resilience,
     },
     [1192890598]: {
@@ -419,6 +627,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/8aacd27b76e68afe6287a3984adeb601.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Sunfire Furnace",
+        description:
+          "Improves the recharge rate of your Solar abilities. Greatly improves recharge rate while your Super is charged. Provides a small benefit to the airborne effectiveness stat of all weapons.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/7066c741806a4c30d4987a63f5b3b2d9.png",
+        hash: 1667892708,
+      },
       intrinsicStats: {
         Mobility: 2,
         Resilience: 1,
@@ -433,6 +648,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/be46f8bd0b86a84be7f77941a3e055fb.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Parting Gift",
+        description:
+          "Dodging leaves behind an explosive that detonates after a short delay, damaging targets around it and creating a secondary effect based on your subclass energy type:\n• [Arc] Blinds targets.\n• [Solar] Scorches targets.\n• [Void] Suppresses targets.\n• [Stasis] Slows targets.\n• [Strand] Severs targets.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/97c352f8ad87a9c7ea68b2a643d821ed.png",
+        hash: 1844314558,
+      },
       intrinsicFocus: EArmorStatId.Mobility,
     },
     [1321354572]: {
@@ -444,6 +666,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/a62c52b937c81cea80d6e67689748606.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Upgraded Sensor Pack",
+        description:
+          "Provides radar while you're aiming. Enhances your radar resolution while crouched.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/6fd9aecd4c810d6dafd2517ebd50cbe0.png",
+        hash: 2663272111,
+      },
       intrinsicStats: {
         Mobility: 1,
         Resilience: 1,
@@ -458,6 +687,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/a7c3ee955c5e8b1c20122206d1bf60ff.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Hawkeye Hack",
+        description:
+          "Modifies Golden Gun to fire a single high-damage shot. Enemies eliminated by the shot explode and grant you Super energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/22e4a1934ecb6b95295ebcc2d5139ff4.png",
+        hash: 2663272110,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Mobility: 1,
@@ -473,6 +709,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/e1c35c4941cc7848e2b5de7bacd17232.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Glacial Fortification",
+        description:
+          "When using the Stasis subclass, your Barricade becomes a wall of Stasis crystals that slows nearby targets when created. Standing behind this barricade will grant you and your allies increased weapon reload speed, stability, and range.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/f093d552bec2248e94fed1a960d62dde.png",
+        hash: 2471523345,
+      },
       legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [1341951177]: {
@@ -484,6 +727,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/34f23604746fc260a2153e93ccfaec7f.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Overflowing Light",
+        description:
+          "Using an ability (grenade, melee, or Barricade) empowers the other two abilities. Empowered means abilities have faster regen, melees and grenades do more damage, and Barricades have more hit points.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/51756fc7603bd72a83d1859d8c33f0b9.png",
+        hash: 1919923227,
+      },
       intrinsicStats: {
         Mobility: 2,
         Resilience: 1,
@@ -498,6 +748,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/5c2dbf43518ab15f556b39bbaac0122b.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Myrmidon's Reach",
+        description:
+          "Gain a second charge of your Shield Throw melee. Your Shield Throw melee now weakens targets and becomes shield-piercing, stunning [Shield-Piercing] Barrier Champions. \n\nWhen you stun a [Shield-Piercing] Barrier Champion with your Shield Throw melee, you regain a melee charge.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d1d0a66bbefc83e8240648d399041a96.png",
+        hash: 1437147326,
+      },
     },
     [1453120846]: {
       name: "The Path of Burning Steps",
@@ -508,6 +765,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/7864518a9a8ab7c352d7a7e4c81e2e52.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Firewalker",
+        description:
+          "Solar final blows periodically grant you an escalating bonus to weapon damage. You are harder to slow or freeze with Stasis, and when you break out, you take no damage from doing so, creating a burst of Solar energy around yourself.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/85c73f064a7e60038b25eecacd71a147.png",
+        hash: 2500502982,
+      },
     },
     [1467044898]: {
       name: "Icefall Mantle",
@@ -518,6 +782,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/8c6e9159014b670c7e316aee4b1df3a8.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Glacial Guard",
+        description:
+          "Replaces your Barricade ability with a personal overshield. When you activate your Barricade, you create a burst around yourself that slows combatants. While you have the overshield, you are slowed and Barricade does not recharge.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/29603482ccb0d4d2be723213df4054a9.png",
+        hash: 185514250,
+      },
       intrinsicFocus: EArmorStatId.Resilience,
     },
     [1474735276]: {
@@ -529,6 +800,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/ae4ee7545ea763ea935f6386d8743361.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Roving Assassin",
+        description:
+          "Each Spectral Blades kill you make before going into stealth will restore more of your Super energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/16e8d034dc489095e8ab84a9540835aa.png",
+        hash: 2192678014,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Mobility: 2,
@@ -544,6 +822,12 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/fe62cafbd9124a2ee12d35dbe6fdde3a.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Double Dodge",
+        description: "Gain a second dodge charge.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/aa2934eb8a1990f6a1e76402ba12f26a.png",
+        hash: 2192678015,
+      },
       intrinsicFocus: EArmorStatId.Mobility,
       intrinsicStats: {
         Mobility: 1,
@@ -560,6 +844,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/b0a005478e56ca375d005c7fdac75384.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Beacons of Empowerment",
+        description:
+          "Sol Invictus lasts twice as long. Allies who pass through your Sunspot are granted Sol Invictus and Solar restoration.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/4a17f2216c0951713c49ea4f08928742.png",
+        hash: 2951499542,
+      },
       expansionIdCampaignCompletionRequired: EExpansionId.Shadowkeep,
     },
     [1591207518]: {
@@ -571,6 +862,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/1c53f341a42cddc22f06ae5948a8b39a.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Auto-Loading Link",
+        description:
+          "Steadily reloads a portion of your equipped Auto Rifle's or Machine Gun's magazine from reserves. Provides a moderate benefit to the airborne effectiveness stat of Auto Rifles and Machine Guns.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/da340d0b0754087bb15d64a8897f5e3b.png",
+        hash: 1667892711,
+      },
       intrinsicStats: {
         Mobility: 1,
         Resilience: 1,
@@ -586,6 +884,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/9ddd5eb2eee64925a01abdc4cd9830ad.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Survival Well",
+        description:
+          "Generates an additional Orb of Power from Supers and a healing pulse when Barricade is activated.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/a5c5979f3630735a03bee7f2d32e9043.png",
+        hash: 1667892710,
+      },
       intrinsicStats: {
         Mobility: 1,
         Resilience: 1,
@@ -601,6 +906,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/d2fdd193c4536cbc9cdaa82e24b7125a.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Light Shift",
+        description:
+          "Replaces your Stasis subclass Dodge ability with a longer range, faster moving shift that partially cloaks you during use. After shifting, your Stasis and Arc weapons deal increased damage for a short time.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/201a9a1773ef1b4babff1e92b8447c69.png",
+        hash: 692285813,
+      },
       intrinsicFocus: EArmorStatId.Mobility,
     },
     [1624882687]: {
@@ -612,6 +924,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/716fa9d4ffc8190e1553e9afa5ff808d.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Soaring Fusilier",
+        description:
+          "Air dodge reloads all of your weapons and improves the airborne effectiveness of Fusion Rifles and Linear Fusion Rifles; final blows with these weapons make you radiant. Provides a moderate benefit to the airborne effectiveness stat of Fusion Rifles and Linear Fusion Rifles.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/1018b32e9bed692b4766d1a870457eed.png",
+        hash: 4222205045,
+      },
     },
     [1654461647]: {
       name: "Aeon Safe",
@@ -622,6 +941,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/7963b44801745431cdd7638c5445fe49.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: null,
       intrinsicStats: {
         Mobility: 1,
         Resilience: 2,
@@ -636,6 +956,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Nightmare Fuel",
+        description:
+          "Dealing melee damage reloads your currently equipped weapon. Charged melee final blows reload all weapons. Provides a large benefit to the airborne effectiveness stat of all weapons, and movement speed and jump height after dealing melee damage.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/eabdd8dd9c1abcdbcaf4b0cbe8e97248.png",
+        hash: 2805134531,
+      },
       intrinsicStats: {
         Mobility: 1,
         Resilience: 1,
@@ -650,6 +977,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/2fedf8f208ae4c7f41ef37597d4a671b.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "The Dance",
+        description:
+          "Activating your dodge ability while near targets allows you to dodge additional times for a short period. Defeating targets extends the duration of the additional dodge.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d1bc9350b3c6a8333936a1fd3ce8922b.png",
+        hash: 117669763,
+      },
     },
     [1703551922]: {
       name: "Blight Ranger",
@@ -660,6 +994,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/209d99f147c6d1a88812cebc4c0f2f92.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Voltaic Mirror",
+        description:
+          "Attacks you redirect with your Arc Staff deal massively increased damage and generate Orbs of Power for your allies. Guarding with your Arc Staff does not consume extra Super energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/011ceced7088a20d9c6d217694d3971a.png",
+        hash: 3556461530,
+      },
       legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [1703598057]: {
@@ -671,6 +1012,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/1a871899e9657793c57c3916ee69d19f.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Hammer of the Gods",
+        description:
+          "Defeating targets with your Thunderclap melee restores melee energy. Targets near you when you use your Thunderclap suffer lightning strikes and become jolted; being amplified increases the damage of these lightning strikes.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/a4ead8e3316d22dbb9fc48e6c643dde3.png",
+        hash: 1969105489,
+      },
     },
     [1725917554]: {
       name: "Vesper of Radius",
@@ -681,6 +1029,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/f8e0d42b08a0a02f172f76d331326a8f.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Planetary Torrent",
+        description:
+          "Rifts periodically release Arc shockwaves. Final blows with these shockwaves create an Arc explosion. While an Arc subclass is equipped, the shockwaves and subsequent explosions blind nearby targets. Rift energy recharges faster when you are surrounded by targets.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/ff55cfecf4c70924d0894b1d8a442a18.png",
+        hash: 1142806944,
+      },
       intrinsicFocus: EArmorStatId.Recovery,
       intrinsicStats: {
         Resilience: 2,
@@ -696,6 +1051,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/cec0919e3c95d134d82f701f2f6b87dd.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Spring-Loaded Mounting",
+        description:
+          "Increases Sidearm ready and reload speed. While you're critically wounded, swapping to a Sidearm increases its damage. Provides a large benefit to the airborne effectiveness stat of Sidearms.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/cbea782469054e260fd336b5222adc23.png",
+        hash: 481860151,
+      },
       intrinsicStats: {
         Mobility: 2,
       },
@@ -709,6 +1071,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/9d29d23f2920b16378127d9603370722.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Bring the Heat",
+        description:
+          "Fusion Grenades now explode on impact and gain increased throw speed. Final blows with Fusion Grenades grant grenade energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/e62825791887bff24c2d044a250169eb.png",
+        hash: 384759954,
+      },
       intrinsicFocus: EArmorStatId.Discipline,
       intrinsicStats: {
         Resilience: 2,
@@ -723,6 +1092,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/3baea5888219c87acd58d177ae70f2c2.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Burning Fists",
+        description:
+          "Melee kills increase melee damage for a period of time. Additional kills extend duration and increase effects.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/89777d9b91d348fc8d24e24edca139ae.png",
+        hash: 384759955,
+      },
       intrinsicStats: {
         Resilience: 1,
         Recovery: 1,
@@ -737,6 +1113,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/a68810bdea4b8c45696315b1e07a9e7e.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Ursine Guard",
+        description:
+          "Move faster while guarding when Sentinel Shield is active. Guarded damage converts to Super energy when the Super ends.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c792f09ce9d03c03064724af10be0349.png",
+        hash: 4190535237,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Resilience: 2,
@@ -752,6 +1135,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/54d230429642573df3c8030ba90fec0e.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Ionic Conductor",
+        description:
+          "Ionic traces you create move faster and grant you additional ability energy. Nearby allies also gain ability energy when you collect an ionic trace.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/29137a5b6622734760a1b14700424994.png",
+        hash: 1376049785,
+      },
     },
     [1906093346]: {
       name: "Contraverse Hold",
@@ -762,6 +1152,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/b667fa414b7d70ed4fe8b34296c76cbb.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Chaotic Exchanger",
+        description:
+          "Resist incoming damage while charging your Void grenade. Charged Void grenades return grenade energy on a hit.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/565c5f4a70339697ddd4d554f47ea101.png",
+        hash: 8507332,
+      },
       intrinsicFocus: EArmorStatId.Discipline,
       intrinsicStats: {
         Recovery: 2,
@@ -776,6 +1173,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/9b5e31b72b4c2b7061a7857eba7f8863.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Beyond The Veil",
+        description:
+          "You gain a second Smoke Bomb charge and have damage resistance while invisible. When you make an ally invisible, they gain damage resistance while invisible and you gain melee energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/ae998d23b15b04136f563bcf18990d5a.png",
+        hash: 553093017,
+      },
     },
     [1996008488]: {
       name: "Stormdancer's Brace",
@@ -786,6 +1190,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/859cc21b703ec447b19b3ebeb553e63f.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Ascending Amplitude",
+        description:
+          "Each target you defeat with Stormtrance increases the damage you deal with it and refunds Super energy when Stormtrance ends.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/37ed1658b106c79b87bdc7476c2b3666.png",
+        hash: 1211775759,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       expansionIdCampaignCompletionRequired: EExpansionId.Shadowkeep,
     },
@@ -798,6 +1209,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/e101d5271789720c8930459168603398.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Fusion Harness",
+        description:
+          "Fusion Grenades have an additional charge and recharge from empowered weapon damage, with empowered weapon final blows granting more energy. Fusion Grenade final blows grant Rift energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/18c3e0503b1c9cd823dde3ded3680f8d.png",
+        hash: 926349161,
+      },
       intrinsicFocus: EArmorStatId.Discipline,
       intrinsicStats: {
         Resilience: 1,
@@ -813,6 +1231,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/4943351eeea32eacd98c50e33c840416.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Depths of Duskfield",
+        description:
+          "Your Duskfield grenades have a much larger effect radius. Allies inside the Duskfield take reduced damage and targets inside the area deal reduced damage.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/47fd782cc9b993709e25ca66035d13b8.png",
+        hash: 1457189155,
+      },
       legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [2177524718]: {
@@ -824,6 +1249,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/0a1199008a6bf59ab699612b7035d79f.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Dearly Departed",
+        description:
+          "Your Rift provides damage reduction to allied Guardians standing in it. Grants Rift energy when you are critically wounded. On your death, creates a healing rift on your corpse.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c4f95301370c59ab4d7ce34825e83305.png",
+        hash: 722862450,
+      },
       intrinsicStats: {
         Recovery: 2,
       },
@@ -837,6 +1269,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/51cdf5976d29b61a6800ad5f4d8b10d8.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Vanishing Execution",
+        description:
+          "Powered melee final blows grant invisibility and restore a portion of health and shields. Finishers and final blows against more powerful targets increase the duration of the invisibility and the amount of health and shields restored.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/961559205e83e96cd590b34c28efadb7.png",
+        hash: 236605015,
+      },
       expansionIdCampaignCompletionRequired: EExpansionId.Shadowkeep,
     },
     [2240152949]: {
@@ -848,6 +1287,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/94ea4f627e75d7f1d71304057c569c4f.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Clenched Fist",
+        description:
+          "Maximizes guard stats on equipped Swords. You take reduced damage while blocking with a Sword. Rapidly damaging targets after blocking shots with a Sword grants restoration for a duration determined by the number of shots blocked.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c10f29eba7f5e4eda1be088c46a4dc14.png",
+        hash: 1731450287,
+      },
       intrinsicStats: {
         Resilience: 2,
       },
@@ -861,6 +1307,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/49750e0306908fb302124ba9cab65606.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Peregrine Strike",
+        description:
+          "All shoulder charge abilities (Seismic Strike, Hammer Strike, or Shield Bash) deal bonus damage when activated in the air. Provides a small benefit to the airborne effectiveness stat of all weapons.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/7713596356b90eec06db4b7c50523685.png",
+        hash: 235075862,
+      },
       intrinsicFocus: EArmorStatId.Strength,
       intrinsicStats: {
         Mobility: 1,
@@ -876,6 +1329,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/fdc99d915e90a5992549ebe33c85d2c9.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Mobius Conduit",
+        description:
+          "[Super]  : Deactivate Arc Staff early to create a blinding explosion and gain a temporary boost to Arc weapon damage. Arc Staff consumes energy more slowly when not attacking.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/6db788a7e92c10f7f7ee3daddce16cba.png",
+        hash: 4251375227,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
     },
     [2316914168]: {
@@ -887,6 +1347,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/a8f5dbd6ec9c4dc9ea73700525d558c7.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Rites of Ember",
+        description:
+          "Your Daybreak projectiles deal more damage and scorch targets on impact. Your scorch is improved and you gain a small amount of melee energy when your scorch damages a target.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/a45747238d01714bd3b9633b7f8e120f.png",
+        hash: 2799418574,
+      },
     },
     [2321120637]: {
       name: "Cuirass of the Falling Star",
@@ -897,6 +1364,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/23e3d07bead2936a80612419f3ee9f94.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Glorious Charge",
+        description:
+          "Greatly increases your Thundercrash impact damage. Gain an overshield that lasts longer the farther you travel before striking a target.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/bd423a4890e05228b89c0835f8b47633.png",
+        hash: 4235122381,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
     },
     [2326396534]: {
@@ -908,6 +1382,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/f2b177993acfba4c42ff771ad6801c90.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Spheromatik Trigger",
+        description:
+          "Powered melee final blows unleash a damaging explosion. Finishers and final blows against more powerful targets increase the radius and damage of the explosion.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/baed176aaf20399a3abb8b287790747a.png",
+        hash: 3449001998,
+      },
     },
     [2374129871]: {
       name: "Cenotaph Mask",
@@ -918,6 +1399,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/791e1f8a406356533b82a7adba087812.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: false,
+      exoticArmorPerk: {
+        name: "High Priority",
+        description:
+          "Steadily reloads a portion of your equipped Trace Rifle's magazine from reserves. Damaging a vehicle, boss, or Champion with a Trace Rifle marks them as the target. When an ally defeats the marked target, Special ammo is generated for you and Heavy ammo for your allies.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/25a8b65797c75c363e15f51ff138fd2f.png",
+        hash: 2316126473,
+      },
     },
     [2384488862]: {
       name: "Khepri's Horn",
@@ -928,6 +1416,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/c7da6c00a574bbadaec01099a3134626.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Solar Rampart",
+        description:
+          "Solar final blows recharge your Barricade, which unleashes a blast of Solar energy that scorches targets when summoned.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/784bd1d46cc9bd60e1d510e915aedb04.png",
+        hash: 2355041704,
+      },
       intrinsicStats: {
         Resilience: 1,
         Recovery: 1,
@@ -942,6 +1437,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/cb2d44c8d1459ea43b0ea82976cf66e0.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Tight Fit",
+        description:
+          "Dodging boosts reload speed, handling, and airborne effectiveness for you and nearby allies. While the buff is active, final blows and additional dodges increase the buff strength and refresh the timer. Maxes out at 5 stacks.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c1afa2683c4762598af01b9b21a9ff7a.png",
+        hash: 858592012,
+      },
       legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [2415768376]: {
@@ -953,6 +1455,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/ce855265f8180943a74fafa631bdf0cc.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Skittering Stinger",
+        description:
+          "Weighted Knife gains a second bounce. Rapid precision hits with your weapons grant Weighted Knife a significant damage bonus, bonus strength, and the ability to stun unshielded combatants for a short time.\n\nEmpowered Weighted Knife is strong against [Stagger] Unstoppable Champions.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2773ee80deb86b097323b0827b3db6e5.png",
+        hash: 3663096260,
+      },
       intrinsicFocus: EArmorStatId.Strength,
     },
     [2423243921]: {
@@ -964,6 +1473,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/82733ba5cc5dfdd0ef3ce1c7ba13e242.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Reflective Vents",
+        description:
+          "Improved slide. Sliding after sprinting for a short time reflects incoming projectiles.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/dfe3093d5854f9d2e956592604e8338b.png",
+        hash: 242794439,
+      },
       intrinsicStats: {
         Mobility: 1,
         Recovery: 1,
@@ -978,6 +1494,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/e3a0690cafbf8109a34231f70476c8a0.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "The Fourth Magic",
+        description:
+          "Weapon final blows with a damage type matching your subclass energy grant Death Throes, which provides a grenade damage bonus and grants you grenade energy. When you have Death Throes and throw a grenade, nearby allies gain greatly increased grenade regeneration for a short time.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/9732f284c71054229671287ab43444b7.png",
+        hash: 1971489086,
+      },
       intrinsicStats: {
         Recovery: 2,
       },
@@ -991,6 +1514,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/6913d8a2546e53f6bbcba482e487477b.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Swarmers",
+        description:
+          "Destroying a Tangle spawns a Threadling. Your Threadlings unravel targets that they damage.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2c51c7358ab1de58c11edc89b5573e84.png",
+        hash: 2800865663,
+      },
       legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [2563444729]: {
@@ -1002,6 +1532,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/d1bef80d66094bfc54384417aac74b04.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Fury Conductors",
+        description:
+          "Melee hits build energy. Being struck by a melee attack reduces incoming damage and unleashes the energy in a devastating explosion.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/e6d3adfc397494ea66a79df3f42547c8.png",
+        hash: 1155472386,
+      },
       intrinsicStats: {
         Resilience: 2,
       },
@@ -1015,6 +1552,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/dd639fc06ad17e69915bf47295426ac0.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Vengeance",
+        description:
+          "Highlights the target who dares to damage you. Track down and destroy them for an overshield.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c3c7f55e9cfc9f8fa19adc2096575665.png",
+        hash: 699693452,
+      },
       intrinsicStats: {
         Resilience: 1,
         Recovery: 1,
@@ -1029,6 +1573,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/93792e77d9b88ccf77788bdd9b25b16c.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Touch of Venom",
+        description:
+          "Punching someone with full melee energy will instantly cast Smoke Bomb. Your Smoke Bombs deal increased damage, regenerate more quickly when stuck to a surface, and grant you Truesight after damaging a target.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/896118bfa352e5f2d4990c1ea822140a.png",
+        hash: 4102900702,
+      },
       intrinsicFocus: EArmorStatId.Strength,
       intrinsicStats: {
         Mobility: 1,
@@ -1044,6 +1595,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/af16bd8628430cc43cfcb161074a1706.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Synapse Junctions",
+        description:
+          "Quick successive attacks with Arc Staff increase its damage output and duration.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/3a7f6104736bbfa9305e49063beb1ec2.png",
+        hash: 593361146,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Mobility: 2,
@@ -1059,6 +1617,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/560933bda212e02475df32cb7faefd5e.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Wraithmetal Mail",
+        description:
+          "Dodging reloads all weapons and increases both movement and weapon handling speeds for a brief time.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/100cd6b35af5fb3f979807d68ad57380.png",
+        hash: 593361144,
+      },
       intrinsicFocus: EArmorStatId.Mobility,
       intrinsicStats: {
         Mobility: 1,
@@ -1074,6 +1639,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/8571524c477cee2fc3e2dedbaf7aa8bb.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Vanishing Shadow",
+        description:
+          "Increases the duration of any invisibility effects. While you are invisible, your melee recharges faster, your weapons reload faster, and your Recovery is greatly increased.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d32d006e7f77b1e5bc4d192232b95d42.png",
+        hash: 2119325971,
+      },
       intrinsicStats: {
         Mobility: 1,
         Recovery: 1,
@@ -1088,6 +1660,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/0617e95b84c4c0b7ec6511abaf4214d6.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Grasp of the Devourer",
+        description:
+          "Damaging combatants poisons them, dealing increasing damage over time. Defeating a poisoned combatant spreads the condition.\n\nProvides a moderate benefit to the airborne effectiveness stat of all Weapons of Sorrow.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/4c1a349c2723d3aa84598da98c7a8805.png",
+        hash: 3824622015,
+      },
     },
     [2808156426]: {
       name: "Eternal Warrior",
@@ -1098,6 +1677,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/83255143cc395d2d15fef32bf435e229.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Resolute",
+        description:
+          "Arc final blows grant an escalating damage bonus with Arc weapons. Gain an overshield when activating Fists of Havoc, and gain the highest tier damage bonus to Arc weapons when your Fists of Havoc Super ends.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/abaff19620ec578f1f379a359de7134c.png",
+        hash: 926976844,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Resilience: 2,
@@ -1112,6 +1698,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/885fcf7b139b369cb47f4548f1fb658f.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Warlord's End",
+        description:
+          "Powered melee final blows create a burst of energy that weakens nearby targets. Finishers and final blows against more powerful targets increase the radius of the burst and the length of the weakening effect.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/97685a8e1ddb61ae32a82aef55b77e24.png",
+        hash: 622433369,
+      },
     },
     [2950045886]: {
       name: "Aeon Soul",
@@ -1122,6 +1715,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/3fffe9417297d68ad3384c0b601bda88.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: null,
       intrinsicStats: {
         Resilience: 2,
         Recovery: 1,
@@ -1136,6 +1730,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/4f54f0e8ad3cf58ff4525347c31c652b.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Blessing of Order",
+        description:
+          "Standing in a healing rift creates Noble Seekers that seek out allies that are not in a rift and heal them. Standing in an empowering rift creates Noble Seekers that grant both you and your ally a damage bonus. Each time a Noble Seeker finds one of your allies, the duration of your rift is briefly extended while you are standing in it. Provides a moderate benefit to the airborne effectiveness stat of the Hand Cannon Lumina.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/dcda11796b3ea21561068b723e5bbc93.png",
+        hash: 902934539,
+      },
     },
     [3070555693]: {
       name: "Sanguine Alchemy",
@@ -1146,6 +1747,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/e55c1cbf65fabab485bbc34272f59b11.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Blood Magic",
+        description:
+          "While standing in any rift, gain a bonus to weapons with a damage type matching your subclass damage type. Weapon final blows while standing in any rift pause the rift's countdown, extending its duration.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/ef3b48bcd760b23563516e9b667ace5a.png",
+        hash: 1420473289,
+      },
       intrinsicFocus: EArmorStatId.Recovery,
       intrinsicStats: {
         Resilience: 1,
@@ -1161,6 +1769,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/a2350076ae19cf474a88a0c2a440c93f.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Dynamic Duo",
+        description:
+          "[Grenade]  : Convert your Arc grenade into a Arc Soul and become amplified. The Arc Soul functions as an autonomous turret.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/21f908e327196879aaa3f22a42229dc2.png",
+        hash: 2818140350,
+      },
       intrinsicFocus: EArmorStatId.Discipline,
       intrinsicStats: {
         Resilience: 1,
@@ -1176,6 +1791,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/8f4613a7a4d1d0cac4cddb50f81d965b.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: false,
+      exoticArmorPerk: {
+        name: "Halberdier's Reach",
+        description:
+          "Increases Glaive reload speed and melee damage when surrounded. Glaive melee final blows overflow a round to the magazine. Glaive projectile final blows detonate if the Glaive deals damage matching your subclass type.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/4f6f7f7ed33e3c274165705bba5aebc5.png",
+        hash: 187957397,
+      },
     },
     [3216110440]: {
       name: "An Insurmountable Skullfort",
@@ -1186,6 +1808,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/182c1628fffa9de89fd27abcf04f2882.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Transfusion Matrix",
+        description:
+          "Kills with Arc melee abilities trigger health regeneration and restore melee energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/319afd66efbe058013f6cf040c183587.png",
+        hash: 3662465907,
+      },
       intrinsicFocus: EArmorStatId.Strength,
       intrinsicStats: {
         Resilience: 1,
@@ -1201,6 +1830,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/50c84155502586d5b852ce853131ee48.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Fervid Coldsnap",
+        description:
+          "Your Coldsnap grenades have an additional charge that recharges quicker on direct impact. The seeker spawned from Coldsnap grenades travels further.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/81b6412d2d6784891dd7ddad764891cc.png",
+        hash: 921817150,
+      },
       legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [3267996858]: {
@@ -1212,6 +1848,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/a5e7aadf7e00089690951e52c35afcbb.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Force Multiplier",
+        description:
+          "While using a Void subclass, rapid Shotgun final blows or defeating a powerful combatant with a Shotgun will grant a Void overshield and start health regeneration. While you have a Void overshield, Shotguns deal additional damage, and Shotgun final blows refresh the overshield. Provides a moderate benefit to Shotgun airborne effectiveness and reload speed.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/1008decd8282aaf6c9e20461722e4a92.png",
+        hash: 569260333,
+      },
     },
     [3288917178]: {
       name: "Claws of Ahamkara",
@@ -1222,6 +1865,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "The Whispers",
+        description:
+          "Gain an additional melee charge. Charged melee final blows spawn an Orb of Power.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/569a1a4cbdd7a014159ebdf304c8a9b5.png",
+        hash: 2637025676,
+      },
       intrinsicFocus: EArmorStatId.Strength,
       intrinsicStats: {
         Recovery: 2,
@@ -1236,6 +1886,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/b214efe3aed7f3dabf965b62b9dfaf7a.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Absorption Cells",
+        description:
+          "Takedowns with weapons that have a damage type matching your subclass element grant you Super energy. While your Super energy is full, you instead gain a temporary bonus to weapon damage of the type matching your subclass element.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/675540240cef9fc9e047d9f9d20a0722.png",
+        hash: 2618534366,
+      },
     },
     [3316517958]: {
       name: "Loreley Splendor Helm",
@@ -1246,6 +1903,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/aeda17ea7c8071b1156258b09f4219f3.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Cauterizing Flame",
+        description:
+          "When you are critically wounded with full class ability energy or when you cast a Barricade, create a Sunspot at your location that has improved restoration effects.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/112420b294bf86cb9911ed30c4d0669e.png",
+        hash: 1163213078,
+      },
       legendaryCampaignSource: EExpansionId.WitchQueen,
     },
     [3381022969]: {
@@ -1257,6 +1921,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/1e807547133b3d2e1ea680858cf09176.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Conduction Tines",
+        description:
+          "Arc ability or jolt final blows increase the recharge rate of your Arc abilities and extend the duration of Stormtrance.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/00d4bd4093297b236bcb4d3e866f15b0.png",
+        hash: 3927963103,
+      },
       intrinsicStats: {
         Mobility: 1,
         Recovery: 1,
@@ -1271,6 +1942,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/f2099f4fcd39c3ed4f87ec55e05a68ea.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Cerebral Uplink",
+        description:
+          "Highlights priority targets and improves the regeneration speed of your grenade, melee, and Rift abilities. Provides a small benefit to the airborne effectiveness stat of all weapons.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/3e642a717efb7bdb36f0f5dcb4cb9d71.png",
+        hash: 3927963100,
+      },
       intrinsicStats: {
         Recovery: 2,
       },
@@ -1284,6 +1962,12 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/5f4c4d8bdfc4099ce76f13998d977796.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Abyssal Extractors",
+        description: "Void-damage kills increase ability energy recharge rate.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/9bddb418ae0a1292b3766d3d6583d059.png",
+        hash: 3927963101,
+      },
       intrinsicStats: {
         Resilience: 1,
         Recovery: 1,
@@ -1298,6 +1982,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/b963098bb34446a4119fccf6e3cdbfe8.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Roast 'Em",
+        description:
+          "Your Proximity Knife scorches targets it damages with its explosions, or ignites targets on final blow.\n\nAfter throwing a Proximity Knife, you gain increased melee regeneration until the knife explodes.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/cd66bbfb633d559d5c42c6c85e1d6873.png",
+        hash: 2179827240,
+      },
     },
     [3539357318]: {
       name: "Lion Rampant",
@@ -1308,6 +1999,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/f649b50eed6a4e4c329ae1667ba6d32b.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Jump Jets",
+        description:
+          "Provides additional aerial maneuverability and enables accurate hipfire while you're in the air during Lift. Provides a large benefit to the airborne effectiveness stat of all weapons while hipfiring.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/7b334c8fca87e908ccea8fbe4c6af68f.png",
+        hash: 3241194940,
+      },
       intrinsicStats: {
         Resilience: 2,
       },
@@ -1321,6 +2019,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/98491ae0d08dc78211ff10f34e42c923.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Mecha Holster",
+        description:
+          "Reloads stowed Submachine Guns and allows you to ready them instantly. Improves your handling with Submachine Guns and your movement while wielding one. Provides a moderate benefit to the airborne effectiveness stat of Submachine Guns.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/fc5f93fd49cdea67bf72d139c5a2c227.png",
+        hash: 3241194941,
+      },
       intrinsicStats: {
         Mobility: 1,
         Resilience: 1,
@@ -1335,6 +2040,12 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/791e1be2a37d4deff98d660f2d90c158.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Burning Souls",
+        description: "Dodging gives a small health and shield bump.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/16f43c6fbb972bdc24764a59aacc8161.png",
+        hash: 3723531833,
+      },
       intrinsicFocus: EArmorStatId.Mobility,
       intrinsicStats: {
         Mobility: 1,
@@ -1350,6 +2061,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/ed6d637a92b13503599f791d2ecba14a.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Lancer's Vigil",
+        description:
+          "Diamond Lances create Stasis crystals on impact when thrown, with more crystals created by hitting bosses and vehicles. While using a Stasis subclass and behind your rally barricade, rapid precision hits and combatant final blows with a Stasis weapon creates a Diamond Lance near you.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c23300e63ac0eedfaba2fd398b0901dd.png",
+        hash: 1640501529,
+      },
       legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [3627185503]: {
@@ -1361,6 +2079,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/a3e9b60f50480547349cf245f30b28f5.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Cobra Totemic",
+        description:
+          "Weapons ready and reload very quickly. Provides a small benefit to the airborne effectiveness stat of all weapons.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/3945ff76d8e7ec70991cb0f6601c6797.png",
+        hash: 1147638875,
+      },
       intrinsicStats: {
         Mobility: 1,
         Recovery: 1,
@@ -1375,6 +2100,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/8ca0dc9ac4166580356aa2d1f243e009.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Puppeteer's Control",
+        description:
+          "Drengr's Lash spawns two additional projectiles, tracks targets more aggressively, and travels farther. Gain Woven Mail when suspending targets.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/245108de9d46cabc0ca3f16c665321dd.png",
+        hash: 916484570,
+      },
       legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [3787517196]: {
@@ -1386,6 +2118,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/220fda89a88058f84725ff1df39a9f5e.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Helium Spirals",
+        description:
+          "Increases the duration of Solar Grenades. Solar melee kills grant unlimited Solar Grenade energy for a brief time.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/ce7588c614700f1e6d204a52368d9bd9.png",
+        hash: 2731901711,
+      },
       intrinsicStats: {
         Mobility: 1,
         Recovery: 1,
@@ -1400,6 +2139,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/0b6052a09f8d04089eda67529392d770.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Hearts of Ice",
+        description:
+          "Your Winter's Wrath Shockwave deals increased shatter damage. Allies in range of your Shockwave gain an overshield and increased damage with Stasis weapons.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/8103cdb85a1fdca98d61a4d269cde387.png",
+        hash: 2894608781,
+      },
       legendaryCampaignSource: EExpansionId.Lightfall,
     },
     [3844826440]: {
@@ -1411,6 +2157,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/b2affa797cc34567cfe6bad463c2749c.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Vampire's Caress",
+        description:
+          "Melee kills instantly restore a large amount of health and continue to restore health afterwards for a short duration.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/26ae0fb1750196126118d19464c63bf0.png",
+        hash: 2731901710,
+      },
       intrinsicStats: {
         Resilience: 1,
         Recovery: 1,
@@ -1425,6 +2178,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/0c586f183b821e16dd9b696c8e871d2b.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Warlord's Sigil",
+        description:
+          "Eliminating enemies with melee attacks increases your melee damage.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/afb8bae64742a8633975b1bc85c98923.png",
+        hash: 2731901709,
+      },
       intrinsicStats: {
         Recovery: 2,
       },
@@ -1438,6 +2198,12 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/f1fd65d0fc4a21dcf29c4a18f347a62d.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "And Another Thing",
+        description: "Gain an additional grenade charge.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/87ed6eb97c923d6a8d0e14639f4b7791.png",
+        hash: 883550427,
+      },
       intrinsicFocus: EArmorStatId.Discipline,
       intrinsicStats: {
         Resilience: 2,
@@ -1453,6 +2219,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/7d8b21fd6a59e987a428548e66dca1b3.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Dreaded Visage",
+        description:
+          "Grants ability energy when you're damaged. When critically wounded, regain maximum health on kills.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/3b5d1aeb79dbe70f6e1896028d5399bc.png",
+        hash: 3662465906,
+      },
       intrinsicStats: {
         Resilience: 2,
       },
@@ -1466,6 +2239,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/693bbd8d8099d9284cf507c7a58d869b.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: null,
       intrinsicStats: {
         Mobility: 1,
         Resilience: 1,
@@ -1481,6 +2255,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/68752f9a7420c7ba14728d9ab2592163.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Move to Survive",
+        description:
+          "Blink further and more frequently. Weapon readies quickly out of Blink and radar remains up. Provides a moderate benefit to the airborne effectiveness stat of all weapons.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/3e0c0449da436384126e4cf4d3410086.png",
+        hash: 3295796664,
+      },
       intrinsicStats: {
         Mobility: 1,
         Recovery: 1,
@@ -1495,6 +2276,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/1a410b9325f5e155cd76286416c0269a.jpg",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Kintsugi",
+        description:
+          "Final blows from weapons with a damage type matching your subclass energy create a burst of healing around you. After reviving or being revived, you gain an aura that provides overshields to you and nearby allies.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/811e014f935edafdc52042602ca2429d.png",
+        hash: 2979726427,
+      },
     },
     [4057299718]: {
       name: "Chromatic Fire",
@@ -1505,6 +2293,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/68e87c34c22f4e7350a1750bf2d3bc68.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Crystalline Transistor",
+        description:
+          "Precision final blows from Kinetic weapons create an explosion that deals damage in the element of your subclass and applies elemental effects.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d9d5643bc00f65638387f71709534c2b.png",
+        hash: 2204713148,
+      },
       intrinsicStats: {
         Resilience: 2,
         Recovery: 1,
@@ -1519,6 +2314,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/5ab8760ee8ef440f317ae4a95d047d07.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Battle-Hearth",
+        description:
+          "Kills and assists you make while standing in your Well of Radiance return Super energy.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/6985c5f8dbe4d38b0702df7f55d50172.png",
+        hash: 2204713149,
+      },
       intrinsicFocus: EArmorStatId.Intellect,
       intrinsicStats: {
         Mobility: 2,
@@ -1534,6 +2336,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/9d1fc1679008fedbf57cb732aebe05bf.jpg",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Alchemical Etchings",
+        description:
+          "Your Rifts gain the additional ability to increase weapon reload speeds. Empowering Rift makes weapons effective over longer ranges.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c6e1c87f613c0eaabd4420dfc93de88a.png",
+        hash: 3347978672,
+      },
       intrinsicFocus: EArmorStatId.Recovery,
       intrinsicStats: {
         Resilience: 1,
@@ -1549,6 +2358,13 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       icon: "https://www.bungie.net/common/destiny2_content/icons/39a2f16e2f092e37f21eb5f61f107594.jpg",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
+      exoticArmorPerk: {
+        name: "Cross Counter",
+        description:
+          "Using your Arc melee ability or being hit by a melee attack will allow you to follow up with an extremely powerful melee counterpunch that will heal you.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/71a75146e38ba257b7379af0efacd61f.png",
+        hash: 595829387,
+      },
       intrinsicStats: {
         Mobility: 2,
       },

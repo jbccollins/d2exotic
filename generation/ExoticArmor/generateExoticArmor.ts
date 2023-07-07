@@ -31,6 +31,7 @@ import { getIntrinsicAttributes } from "./staticMetadata";
 const buildExoticArmorData = (
   item: DestinyInventoryItemDefinition,
   sandboxPerkDefinitions: Record<number, DestinySandboxPerkDefinition>,
+  inventoryItemDefinitions: Record<number, DestinyInventoryItemDefinition>,
   worldDropExoticHashes: number[],
   mostRecentSeasonHash: number
 ): ExoticArmor => {
@@ -60,6 +61,21 @@ const buildExoticArmorData = (
     );
   }
 
+  const exoticPerkSocket = item.sockets?.socketEntries.find(
+    (x) => x.socketTypeHash === 965959289
+  );
+  const exoticPerkHash = exoticPerkSocket
+    ? exoticPerkSocket.singleInitialItemHash
+    : null;
+
+  let exoticPerk = null;
+  if (exoticPerkHash !== null) {
+    exoticPerk = inventoryItemDefinitions[exoticPerkHash];
+  }
+  // const exoticPerkHash = item.sockets?.find((socket) => {
+  //   return socket.socketDefinition.socketTypeHash === 965959289;
+  // })?.socketDefinition?.singleInitialItemHash;
+
   const seasonHash = getSeasonHashFromIconWatermarkId(iconWatermarkId);
   const intrinsicAttributes = getIntrinsicAttributes(item.hash) ?? {};
   const res = {
@@ -75,6 +91,14 @@ const buildExoticArmorData = (
       destinyClassItemCategoryHash
     ).id,
     isFocusable: seasonHash !== mostRecentSeasonHash,
+    exoticArmorPerk: exoticPerk
+      ? {
+          name: exoticPerk.displayProperties.name,
+          description: exoticPerk.displayProperties.description,
+          icon: bungieNetPath(exoticPerk.displayProperties.icon),
+          hash: exoticPerkHash as number,
+        }
+      : null,
     ...intrinsicAttributes,
   };
   return res;
@@ -142,6 +166,7 @@ export async function run() {
       buildExoticArmorData(
         exoticArmorItem,
         sandboxPerkDefinitions,
+        inventoryItemDefinitions,
         worldDropExoticHashes,
         mostRecentSeasonHash
       )

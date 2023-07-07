@@ -1,5 +1,9 @@
 import { useAppDispatch, useAppSelector } from "@d2e/redux/hooks";
 import {
+  selectShowExoticArmorPerk,
+  setShowExoticArmorPerk,
+} from "@d2e/redux/slice/showExoticArmorPerk";
+import {
   selectShowIntrinsicFocus,
   setShowIntrinsicFocus,
 } from "@d2e/redux/slice/showIntrinsicFocus";
@@ -28,9 +32,15 @@ export default function BooleanSettings() {
   const showIntrinsicStats = useAppSelector(selectShowIntrinsicStats);
   const showRequiredDlc = useAppSelector(selectShowRequiredDlc);
   const showSources = useAppSelector(selectShowSources);
+  const showExoticArmorPerk = useAppSelector(selectShowExoticArmorPerk);
 
   const theme = useTheme();
   const booleanSettings: BooleanSetting[] = [
+    {
+      name: "Show Exotic Armor Perk",
+      value: showExoticArmorPerk,
+      handleChange: (value: boolean) => dispatch(setShowExoticArmorPerk(value)),
+    },
     {
       name: "Show Intrinsic Focus",
       value: showIntrinsicFocus,

@@ -2,6 +2,7 @@ import groupByIdReducer from "@d2e/redux/slice/groupById";
 import searchReducer from "@d2e/redux/slice/search";
 import showIntrinsicFocusReducer from "@d2e/redux/slice/showIntrinsicFocus";
 import { configureStore } from "@reduxjs/toolkit";
+import showExoticArmorPerkReducer from "./slice/showExoticArmorPerk";
 import showIntrinsicStatsReducer from "./slice/showIntrinsicStats";
 import showRequiredDlcReducer from "./slice/showRequiredDlc";
 import showSourcesReducer from "./slice/showSources";
@@ -14,6 +15,7 @@ export function makeStore() {
       showIntrinsicStats: showIntrinsicStatsReducer,
       showRequiredDlc: showRequiredDlcReducer,
       showSources: showSourcesReducer,
+      showExoticArmorPerk: showExoticArmorPerkReducer,
     },
   });
 }

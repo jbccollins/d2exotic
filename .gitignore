@@ -35,5 +35,5 @@ yarn-error.log*
 next-env.d.ts
 
 # manifest
-/cached-definitions/*
+generation/cached-definitions/*
 /manifest/*
