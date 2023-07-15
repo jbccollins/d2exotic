@@ -2,10 +2,15 @@ import groupByIdReducer from "@d2e/redux/slice/groupById";
 import searchReducer from "@d2e/redux/slice/search";
 import showIntrinsicFocusReducer from "@d2e/redux/slice/showIntrinsicFocus";
 import { configureStore } from "@reduxjs/toolkit";
+import {
+  syncQueryParamsToStore,
+  syncStoreToQueryParams,
+} from "./redux-url-params/reduxUrlParams";
 import showExoticArmorPerkReducer from "./slice/showExoticArmorPerk";
 import showIntrinsicStatsReducer from "./slice/showIntrinsicStats";
 import showRequiredDlcReducer from "./slice/showRequiredDlc";
 import showSourcesReducer from "./slice/showSources";
+
 export function makeStore() {
   return configureStore({
     reducer: {
@@ -21,11 +26,18 @@ export function makeStore() {
 }
 const store = makeStore();
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
-export type RootState = ReturnType<typeof store.getState>;
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
-export type AppDispatch = typeof store.dispatch;
+// TODO: Something about this sync stuff is breaking hot reloading
+function handleChange() {
+  // Lift the redux store up into the query params
+  syncStoreToQueryParams(store.getState());
+}
 
+store.subscribe(handleChange);
+
+// On initial load, pull the query params into the redux store
+syncQueryParamsToStore(store.dispatch);
+
+export type AppDispatch = typeof store.dispatch;
 export type AppState = ReturnType<typeof store.getState>;
 
 export default store;

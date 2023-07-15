@@ -16,7 +16,7 @@ import {
   getIconWatermarkUrlFromId,
   getSeason,
 } from "@d2e/types/Season";
-import { Box } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import BungieImage from "./BungieImage";
 import LayeredBungieImage from "./LayeredBungieImage";
 import { Pill } from "./Pill";
@@ -59,12 +59,17 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
 
   const expansion = getExpansionBySeasonHash(seasonHash);
   const season = getSeason(seasonHash);
+  const theme = useTheme();
 
   return (
     <Box
       key={hash}
-      sx={{ backgroundColor: "#121212" }}
-      className="exotic-item-wrapper flex flex-wrap items-center p-3"
+      sx={{
+        backgroundColor: "#121212",
+        height: "100%",
+        padding: theme.spacing(1),
+      }}
+      className="exotic-item-wrapper p-3"
     >
       <Box
         className="exotic-item flex items-center w-full"

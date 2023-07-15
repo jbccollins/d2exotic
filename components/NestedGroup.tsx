@@ -19,7 +19,7 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
   const margin = group.icon ? Math.max(0, 2 - _depth) : 0;
 
   const [open, setOpen] = useState(true);
-  const collapsible = _depth === 0;
+  // const [isHovered, setIsHovered] = useState(false);
   return (
     <Box
       className={`nested-group-${_depth}`}
@@ -35,7 +35,12 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
           display: "flex",
           alignItems: "center",
           marginBottom: margin,
+          cursor: "pointer",
+          // backgroundColor: isHovered ? "#121212" : "transparent",
         }}
+        // onMouseEnter={() => setIsHovered(true)}
+        // onMouseLeave={() => setIsHovered(false)}
+        onClick={() => setOpen(!open)}
       >
         {group.icon && (
           <Box>
@@ -46,48 +51,56 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
           sx={{
             marginLeft: margin,
             fontSize: fontSize,
-            cursor: collapsible ? "pointer" : "default",
           }}
-          onClick={() => collapsible && setOpen(!open)}
         >
           {group.name}
         </Box>
-        {collapsible && (
-          <IconButton
-            aria-label="expand"
-            size="small"
-            onClick={() => collapsible && setOpen(!open)}
-          >
-            {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-          </IconButton>
-        )}
+
+        <IconButton
+          aria-label="expand"
+          size="small"
+          // onClick={() => setOpen(!open)}
+        >
+          {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+        </IconButton>
       </Box>
-      {isLeaf && (
-        <Box>
-          {group.items?.map((item) => (
-            <Box
-              key={item.hash}
-              sx={{
-                marginTop: theme.spacing(1),
-              }}
-            >
-              <ExoticArmorItem item={item} />
-            </Box>
-          ))}
-        </Box>
-      )}
-      {!isLeaf && (
-        <Collapse in={open || !collapsible} timeout={0} unmountOnExit>
+      <Collapse in={open} timeout={0} unmountOnExit>
+        {isLeaf && (
+          <Box
+            sx={{
+              display: "grid",
+              overflow: "hidden",
+              gridTemplateColumns: "repeat(auto-fill, 400px)",
+              gridAutoRows: "1fr",
+              gridColumnGap: theme.spacing(1),
+              gridRowGap: theme.spacing(1),
+            }}
+            className="leaf"
+          >
+            {group.items?.map((item) => (
+              <Box
+                key={item.hash}
+                sx={{
+                  width: "100%",
+                  maxWidth: "400px",
+                }}
+              >
+                <ExoticArmorItem item={item} />
+              </Box>
+            ))}
+          </Box>
+        )}
+        {!isLeaf && (
           <Box
             className={`children`}
-            sx={{ display: "flex", flexWrap: "wrap" }}
+            sx={{ display: "flex", flexWrap: "wrap", flexDirection: "column" }}
           >
             {group.childGroups?.map((childGroup) => (
               <Box
                 key={childGroup.id}
                 sx={{
                   padding: theme.spacing(0.5),
-                  maxWidth: "420px",
+                  // maxWidth: "420px",
                   width: "100%",
                 }}
               >
@@ -95,8 +108,8 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
               </Box>
             ))}
           </Box>
-        </Collapse>
-      )}
+        )}
+      </Collapse>
     </Box>
   );
 };

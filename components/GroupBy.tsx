@@ -13,7 +13,6 @@ export default function GroupBy() {
   const dispatch = useAppDispatch();
   const value = useAppSelector(selectGroupById);
   const handleChange = (event: SelectChangeEvent<EGroupById>) => {
-    console.log("change", event);
     dispatch(setGroupById(event.target.value as EGroupById));
   };
   return (
