@@ -7,7 +7,7 @@ type ShowIntrinsicFocusState = {
 };
 
 const initialState: ShowIntrinsicFocusState = {
-  value: true,
+  value: false,
 };
 export const showIntrinsicFocusSlice = createSlice({
   name: "showIntrinsicFocus",

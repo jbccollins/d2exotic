@@ -68,7 +68,6 @@ const queryParamInterpreterMapping: QueryParamInterpreterMapping<AppStateQueryPa
       ...booleanQueryParamInterpreter,
       reduxSetterAction: ({ value }) => setShowIntrinsicFocus(value),
       queryParamKey: "focus",
-      defaultValue: asValue(true),
     },
     showIntrinsicStats: {
       ...booleanQueryParamInterpreter,

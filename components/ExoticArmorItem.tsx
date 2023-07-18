@@ -16,11 +16,11 @@ import {
   getIconWatermarkUrlFromId,
   getSeason,
 } from "@d2e/types/Season";
+import WarningIcon from "@mui/icons-material/Warning";
 import { Box, useTheme } from "@mui/material";
 import BungieImage from "./BungieImage";
 import LayeredBungieImage from "./LayeredBungieImage";
 import { Pill } from "./Pill";
-
 export type ExoticArmorItemProps = {
   item: ExoticArmor;
 };
@@ -106,14 +106,17 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
       {isUnfocusableAdvancedDecryption && (
         <Box
           sx={{ marginBottom: 0, marginTop: 2 }}
-          className="text-sm text-red-500"
-        >{`* As of ${season.name} (S${
-          season.number
-        }) this item is not obtainable via ${
-          advancedDecryptionEngram?.name
-        }. It will become obtainable via ${
-          advancedDecryptionEngram?.name
-        } next season (S${season.number + 1}).`}</Box>
+          className="text-sm text-orange-500"
+        >
+          <WarningIcon sx={{ fontSize: "20px", marginTop: "-3px" }} />
+          {` As of ${season.name} (S${
+            season.number
+          }) this item is not obtainable via ${
+            advancedDecryptionEngram?.name
+          }. It will become obtainable via ${
+            advancedDecryptionEngram?.name
+          } next season (S${season.number + 1}).`}
+        </Box>
       )}
 
       {showRequiredDlc && expansion?.id !== EExpansionId.RedWar && (
@@ -161,8 +164,11 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
             <>
               <Box
                 sx={{ marginBottom: 2, marginTop: 1 }}
-                className="text-sm text-red-500"
-              >{`* Requires ${expansion?.name} campaign completion before this item will drop from any other source`}</Box>
+                className="text-sm text-orange-500"
+              >
+                <WarningIcon sx={{ fontSize: "20px", marginTop: "-3px" }} />
+                {` Requires ${expansion?.name} campaign completion before this item will drop from any other source`}
+              </Box>
               <Pill text={`${expansion?.name} campaign`} color="#AA6C39" />
             </>
           )}
