@@ -82,7 +82,7 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
                 key={item.hash}
                 sx={{
                   width: "100%",
-                  maxWidth: "400px",
+                  maxWidth: "calc(100vw - 32px)",
                 }}
               >
                 <ExoticArmorItem item={item} />

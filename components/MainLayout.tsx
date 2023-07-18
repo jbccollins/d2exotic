@@ -59,13 +59,21 @@ function MainLayout() {
   );
 
   return (
-    <Box sx={{ display: "flex", background: "black" }}>
+    <Box
+      sx={{
+        display: "flex",
+        background: "black",
+      }}
+    >
       <CssBaseline />
       <AppBar
         position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
+          maxWidth: "100vw", // "calc(100vw - 16px)",
+          top: 0,
+          left: 0,
         }}
       >
         <Toolbar
@@ -135,6 +143,7 @@ function MainLayout() {
           flexGrow: 1,
           p: 2,
           width: { sm: `calc(100% - ${drawerWidth}px)` },
+          maxWidth: "100vw", //"calc(100vw - 16px)",
         }}
       >
         <Toolbar />

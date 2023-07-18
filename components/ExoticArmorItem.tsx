@@ -163,16 +163,13 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
                 sx={{ marginBottom: 2, marginTop: 1 }}
                 className="text-sm text-red-500"
               >{`* Requires ${expansion?.name} campaign completion before this item will drop from any other source`}</Box>
-              <Pill
-                text={`${expansion?.name} campaign completion`}
-                color="#AA6C39"
-              />
+              <Pill text={`${expansion?.name} campaign`} color="#AA6C39" />
             </>
           )}
           {legendaryCampaignSource && (
             <Box className="mt-2">
               <Pill
-                text={`Legendary ${expansion?.name} campaign completion`}
+                text={`Legendary ${expansion?.name} campaign`}
                 color="#AA6C39"
               />
             </Box>
