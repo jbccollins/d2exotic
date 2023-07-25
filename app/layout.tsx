@@ -1,4 +1,5 @@
 import { Providers } from "@d2e/redux/provider";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({
           {/* <SyncQueryParams /> */}
           {children}
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
