@@ -383,7 +383,12 @@ export default function Help() {
                 decrypting the engram the same way you would decrypt a prime
                 engram". I have not yet recieved a "Contraband Exotic" from a
                 "raw" decryption, but I have not done enough "raw" decryptions
-                to be confident that it is impossible.
+                to be confident that it is impossible. Please{" "}
+                <CustomLink href={contactDiscordUrl} target="_blank">
+                  contact me
+                </CustomLink>{" "}
+                with video proof of this happening and I will update this
+                document.
               </Box>
             </ListItem>
           </List>
