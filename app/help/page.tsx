@@ -146,11 +146,11 @@ export default function Help() {
             <ListItem>1. Mobility, Resilience and Recovery</ListItem>
             <ListItem>2. Discipline, Intellect and Strength</ListItem>
           </List>
-          We will refer to these "stat groups" as "Stat Group 1" and "Stat Group
+          We will refer to these stat groups as "Stat Group 1" and "Stat Group
           2" moving forward.
           <Box>
-            Given these "stat groups", the rules that govern legendary armor
-            stat rolls are as follows:
+            Given these stat groups, the rules that govern legendary armor stat
+            rolls are as follows:
           </Box>
           <List dense>
             <ListItem>1. No single base stat value may be less than 2</ListItem>
@@ -165,22 +165,22 @@ export default function Help() {
               less than 22 and no greater than 34
             </ListItem>
             <ListItem>
-              5. While wearing an "Armorer" ghost mod, armor pieces with random
+              5. While wearing an "armorer" ghost mod, armor pieces with random
               stats you acquire will have a guaranteed minimum of 10 in the stat
-              that corresponds to the equpped "Armorer" ghost mod
+              that corresponds to the equpped armorer ghost mod
             </ListItem>
           </List>
           <Box>
             To put that in plain english: any single stat can roll with any
             value between 2 and 30 except for 3, 4 or 5. The maximum total base
             stat value for any legendary armor piece is 68, where 34 stat points
-            come from "Stat Group 1" and 34 stat points come from "Stat Group
-            2". The minimum total base stat value for any legendary armor piece
-            is 44, where 22 stat points come from "Stat Group 1" and 22 stat
-            points come from "Stat Group 2".
+            come from Stat Group 1 and 34 stat points come from Stat Group 2.
+            The minimum total base stat value for any legendary armor piece is
+            44, where 22 stat points come from Stat Group 1 and 22 stat points
+            come from Stat Group 2.
           </Box>
           <Box sx={{ marginTop: theme.spacing(1) }}>
-            Additionally, "Armorer" ghost mods (e.g.{" "}
+            Additionally, armorer ghost mods (e.g.{" "}
             <CustomLink
               href="https://d2.destinygamewiki.com/wiki/Discipline_Armorer"
               target="_blank"
@@ -193,15 +193,15 @@ export default function Help() {
           <Box sx={{ marginTop: theme.spacing(1) }}>
             There are a few more rules that govern exactly how stat values are
             distributed. These rules involve triplets of numbers called "Stat
-            Plugs". This document will not go into detail about "Stat Plug"
-            rules, but you can read more about such rules in{" "}
+            Plugs". This document will not go into detail about Stat Plug rules,
+            but you can read more about such rules in{" "}
             <CustomLink
               target="_blank"
               href="https://www.reddit.com/r/DestinyTheGame/comments/mpaopq/how_armor_stats_roll_an_advanced_insight_into/"
             >
               this reddit post
             </CustomLink>{" "}
-            and explore "Stat Plug" values on{" "}
+            and explore Stat Plug values on{" "}
             <CustomLink target="_blank" href="https://plugs.mijago.net/">
               this website
             </CustomLink>{" "}
@@ -213,7 +213,7 @@ export default function Help() {
 
       <SectionHeader
         href="exceptions"
-        title="Exotic Armor Roll Exceptions"
+        title="Exotic Exceptions"
         onCopy={handleOpen}
       />
       <SectionBody>
@@ -236,7 +236,7 @@ export default function Help() {
                 >
                   Gwisin Vest
                 </CustomLink>{" "}
-                always rolls with "intrinsic stat points" of +2 Mobility and +1
+                always rolls with intrinsic stat points of +2 Mobility and +1
                 Resilience. A full list of exotic armor pieces with intrinsic
                 stat points can be found{" "}
                 <CustomLink
@@ -251,14 +251,14 @@ export default function Help() {
             <ListItem>
               <Box>
                 2. Some exotic armor pieces have an "intrinsic stat focus" that
-                can override a user's equipped "Armorer" ghost mod. An exotic
-                armor piece with an "intrinsic stat focus" is (almost always)
+                can override a user's equipped armorer ghost mod. An exotic
+                armor piece with an intrinsic stat focus is (almost always)
                 guaranteed to roll with a minimum of 10 in the stat that
-                corresponds to the "intrinsic stat focus". More on that "almost
-                always" clarification can be found in the{" "}
+                corresponds to the intrinsic stat focus. More on that almost
+                always clarification can be found in the{" "}
                 <CustomLink href="#contraband">Contraband Exotics</CustomLink>{" "}
                 section of this document. A full list of exotic armor pieces
-                with an "intrinsic stat focus" can be found{" "}
+                with an intrinsic stat focus can be found{" "}
                 <CustomLink
                   target="_blank"
                   href="/?group=DestinyClass&focus=true&filterFocus=true"
@@ -270,38 +270,36 @@ export default function Help() {
             </ListItem>
           </List>
           <Box sx={{ marginTop: theme.spacing(1) }}>
-            While "intrinsic stat points" are quite straightforward, there are a
-            few additional things to note about how "intrinsic stat focuses"
-            work:
+            While intrinsic stat points are quite straightforward, there are a
+            few additional things to note about how intrinsic stat focuses work:
             <List dense>
               <ListItem>
                 <Box>
-                  1. If an exotic armor piece has an "intrinsic stat focus" and
-                  you have an "Armorer" ghost mod equipped, the "intrinsic stat
-                  focus" can override the "Armorer" ghost mod if, and only if,
-                  the stats associated with the exotic armor piece's "intrinsic
-                  stat focus" and the "Armorer" ghost mod are both in the same
-                  "stat group". For example:{" "}
+                  1. If an exotic armor piece has an intrinsic stat focus and
+                  you have an armorer ghost mod equipped, the intrinsic stat
+                  focus can override the armorer ghost mod if, and only if, the
+                  stats associated with the exotic armor piece's intrinsic stat
+                  focus and the armorer ghost mod are both in the same stat
+                  group. For example:{" "}
                   <CustomLink
                     target="_blank"
                     href="/?s=Mask+of+Bakris&group=DestinyClass&focus=true&filterFocus=true"
                   >
                     Mask of Bakris
                   </CustomLink>{" "}
-                  has an "intrinsic stat focus" of Mobility. If a Mask of Bakris
-                  drops while you have an "Resilience Armorer" ghost mod
-                  equipped, the Resilience stat on the Mask of Bakris may roll
-                  with less than 10 points since Mobility and Resilience are
-                  both in "Stat Group 1". It is possible for both Mobility and
-                  Resilience to both roll with 10 or more points, but only
-                  Mobility is guaranteed to roll with 10 or more points as the
-                  "intrinsic stat focus" takes precedence over the "Armorer"
-                  ghost mod.
+                  has an intrinsic stat focus of Mobility. If a Mask of Bakris
+                  drops while you have a Resilience armorer ghost mod equipped,
+                  the Resilience stat on the Mask of Bakris may roll with less
+                  than 10 points since Mobility and Resilience are both in Stat
+                  Group 1. It is possible for both Mobility and Resilience to
+                  both roll with 10 or more points, but only Mobility is
+                  guaranteed to roll with 10 or more points as the intrinsic
+                  stat focus takes precedence over the armorer ghost mod.
                 </Box>
               </ListItem>
               <ListItem>
                 <Box>
-                  2. There is one outlier "intrinsic stat focus" found only on{" "}
+                  2. There is one outlier intrinsic stat focus found only on{" "}
                   <CustomLink
                     target="_blank"
                     href="/?s=Ursa+Furiosa&group=DestinyClass&focus=true&filterFocus=true"
@@ -310,14 +308,14 @@ export default function Help() {
                   </CustomLink>
                   .
                   <Box>
-                    Ursa Furiosa has an "intrinsic stat focus" of Intellect, but
+                    Ursa Furiosa has an intrinsic stat focus of Intellect, but
                     it is only a "partial intrinsic stat focus". The minumum
                     guaranteed Intellect stat value on Ursa Furiosa is 6 instead
-                    of the usual 10. I am unsure if this "partial intrinsic
-                    focus" can override "Armorer" ghost mods. If you have video
-                    proof of recieving an Ursa Furiosa while having a Discipline
-                    or Strength "Armorer" ghost mod equipped and not rolling
-                    with at least 10 in the "Armorer" ghost mod's stat please{" "}
+                    of the usual 10. I am unsure if this partial intrinsic focus
+                    can override armorer ghost mods. If you have video proof of
+                    recieving an Ursa Furiosa while having a Discipline or
+                    Strength armorer ghost mod equipped and not rolling with at
+                    least 10 in the armorer ghost mod's stat please{" "}
                     <CustomLink href={contactDiscordUrl} target="_blank">
                       contact me
                     </CustomLink>{" "}
@@ -337,40 +335,44 @@ export default function Help() {
       <SectionBody>
         <Box>
           "Contraband Exotics" are exotic armor pieces that do not abide by
-          their "intrinsic stat focus"; i.e. an exotic with less than 10 in the
-          stat that corresponds to its "intrinsic stat focus". There are a few
-          ways to acquire a "Contraband Exotic":
+          their intrinsic stat focus; i.e. an exotic with less than 10 in the
+          stat that corresponds to its intrinsic stat focus. There are a few
+          ways to acquire a Contraband Exotic:
           <List dense>
             <ListItem>
               <Box>
-                1. Before the Beyond Light expansion released "intrinsic stat
-                focuses" did not exist. If you acquired an exotic armor piece
+                1. Before the Beyond Light expansion released intrinsic stat
+                focuses did not exist. If you acquired an exotic armor piece
                 before the Beyond Light expansion released it may have less than
-                10 in the stat that would normally be governed by an "intrinsic
-                stat focus".
+                10 in the stat that would normally be governed by an intrinsic
+                stat focus.
               </Box>
             </ListItem>
             <ListItem>
               <Box>
                 2. Both "Advanced Decryption" and "Precision Decryption" at
-                Rahool can result in a "Contraband Exotic". At this time I am
-                unsure if receiving a "Contraband Exotic" from "Advanced
-                Decryption" requires the usage of an "Armorer" ghost mod, but
-                all of my "Contraband Exotic" decryptions were done with an
-                "Armorer" ghost mod equipped. And I can't think of a reason why
-                you would't want to use an "Armorer" ghost mod when decrypting
-                exotics.
+                Rahool can result in a Contraband Exotic. At this time I am
+                unsure if receiving a Contraband Exotic from Advanced Decryption
+                requires the usage of an armorer ghost mod, but all of my
+                Contraband Exotic decryptions were done with an armorer ghost
+                mod equipped. And I can't think of a reason why you would't want
+                to use an armorer ghost mod when decrypting exotics. Please{" "}
+                <CustomLink href={contactDiscordUrl} target="_blank">
+                  contact me
+                </CustomLink>{" "}
+                with video proof of this happening and I will update this
+                document.
                 <List>
                   <ListItem>
                     <Box>
-                      <CustomLink>Here</CustomLink> is video proof of "Precision
-                      Decryption" resulting in a "Contraband Exotic".
+                      <CustomLink>Here</CustomLink> is video proof of Precision
+                      Decryption resulting in a Contraband Exotic.
                     </Box>
                   </ListItem>
                   <ListItem>
                     <Box>
-                      <CustomLink>Here</CustomLink> is video proof of "Advanced
-                      Decryption" resulting in a "Contraband Exotic".
+                      <CustomLink>Here</CustomLink> is video proof of Advanced
+                      Decryption resulting in a Contraband Exotic.
                     </Box>
                   </ListItem>
                 </List>
@@ -379,11 +381,11 @@ export default function Help() {
             <ListItem>
               <Box>
                 3. I am not sure if the "raw" decryption at Rahool can result in
-                a "Contraband Exotic". By "raw" decryption I mean "just
-                decrypting the engram the same way you would decrypt a prime
-                engram". I have not yet recieved a "Contraband Exotic" from a
-                "raw" decryption, but I have not done enough "raw" decryptions
-                to be confident that it is impossible. Please{" "}
+                a Contraband Exotic. By "raw" decryption I mean: just decrypting
+                the engram the same way you would decrypt a prime engram. I have
+                not yet recieved a Contraband Exotic from a raw decryption, but
+                I have not done enough raw decryptions to be confident that it
+                is impossible. Please{" "}
                 <CustomLink href={contactDiscordUrl} target="_blank">
                   contact me
                 </CustomLink>{" "}
@@ -448,7 +450,8 @@ export default function Help() {
             <ListItem>1. Mijago</ListItem>
             <ListItem>2. nznazarec</ListItem>
             <ListItem>3. cbro</ListItem>
-            <ListItem>4. My Derpy Turtle (me)</ListItem>
+            <ListItem>4. Apprentice Salesman</ListItem>
+            <ListItem>5. My Derpy Turtle (me)</ListItem>
           </List>
         </Box>
       </SectionBody>
