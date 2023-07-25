@@ -352,27 +352,40 @@ export default function Help() {
               <Box>
                 2. Both "Advanced Decryption" and "Precision Decryption" at
                 Rahool can result in a Contraband Exotic. At this time I am
-                unsure if receiving a Contraband Exotic from Advanced Decryption
-                requires the usage of an armorer ghost mod, but all of my
-                Contraband Exotic decryptions were done with an armorer ghost
-                mod equipped. And I can't think of a reason why you would't want
-                to use an armorer ghost mod when decrypting exotics. Please{" "}
+                unsure if receiving a Contraband Exotic from Advanced/Precision
+                Decryption requires the usage of an armorer ghost mod, but all
+                of my Contraband Exotic decryptions were done with an armorer
+                ghost mod equipped. I can't think of a reason why you wouldn't
+                want to use an armorer ghost mod when decrypting exotics. Please{" "}
                 <CustomLink href={contactDiscordUrl} target="_blank">
                   contact me
                 </CustomLink>{" "}
-                with video proof of this happening and I will update this
-                document.
+                with video proof of Advanced/Precision decryption resulting in a
+                Contraband Exotic without a ghost mod equipped and I will update
+                this document.
                 <List>
                   <ListItem>
                     <Box>
-                      <CustomLink>Here</CustomLink> is video proof of Precision
-                      Decryption resulting in a Contraband Exotic.
+                      <CustomLink
+                        target="_blank"
+                        href="https://www.youtube.com/watch?v=RnjHmjLaB7Y"
+                      >
+                        Here
+                      </CustomLink>{" "}
+                      is video proof of Precision Decryption resulting in a
+                      Contraband Exotic.
                     </Box>
                   </ListItem>
                   <ListItem>
                     <Box>
-                      <CustomLink>Here</CustomLink> is video proof of Advanced
-                      Decryption resulting in a Contraband Exotic.
+                      <CustomLink
+                        target="_blank"
+                        href="https://www.youtube.com/watch?v=J2Ahhz8UJaE"
+                      >
+                        Here
+                      </CustomLink>{" "}
+                      is video proof of Advanced Decryption resulting in a
+                      Contraband Exotic.
                     </Box>
                   </ListItem>
                 </List>
