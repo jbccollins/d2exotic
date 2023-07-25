@@ -27,7 +27,7 @@ const darkTheme = createTheme({
   },
 });
 
-const largeScreenDrawerWidth = 300;
+const largeScreenDrawerWidth = 375;
 function MainLayout() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));

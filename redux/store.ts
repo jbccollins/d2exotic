@@ -6,6 +6,8 @@ import {
   syncQueryParamsToStore,
   syncStoreToQueryParams,
 } from "./redux-url-params/reduxUrlParams";
+import filterByHasIntrinsicFocus from "./slice/filterByHasIntrinsicFocus";
+import filterByHasIntrinsicStats from "./slice/filterByHasIntrinsicStats";
 import showExoticArmorPerkReducer from "./slice/showExoticArmorPerk";
 import showIntrinsicStatsReducer from "./slice/showIntrinsicStats";
 import showRequiredDlcReducer from "./slice/showRequiredDlc";
@@ -21,6 +23,8 @@ export function makeStore() {
       showRequiredDlc: showRequiredDlcReducer,
       showSources: showSourcesReducer,
       showExoticArmorPerk: showExoticArmorPerkReducer,
+      filterByHasIntrinsicFocus: filterByHasIntrinsicFocus,
+      filterByHasIntrinsicStats: filterByHasIntrinsicStats,
     },
   });
 }

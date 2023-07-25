@@ -142,9 +142,29 @@ const groupExoticsByDestinyClassId = (
 
 export const getExoticArmorNestedGroupList = (
   groupById: EGroupById,
-  searchTerm: string
+  searchTerm: string,
+  filterByHasIntrinsicFocus: boolean,
+  filterByHasIntrinsicStats: boolean
 ): NestedGroup[] => {
-  const exoticArmorItems = getExoticArmorItemsFilteredBySearchTerm(searchTerm);
+  const exoticArmorItems = getExoticArmorItemsFilteredBySearchTerm(
+    searchTerm
+  ).filter((x) => {
+    if (
+      filterByHasIntrinsicFocus &&
+      filterByHasIntrinsicStats &&
+      x.intrinsicFocus &&
+      x.intrinsicStats
+    ) {
+      return true;
+    }
+    if (filterByHasIntrinsicFocus && x.intrinsicFocus) {
+      return true;
+    }
+    if (filterByHasIntrinsicStats && x.intrinsicStats) {
+      return true;
+    }
+    return !(filterByHasIntrinsicFocus || filterByHasIntrinsicStats);
+  });
   switch (groupById) {
     case EGroupById.AdvancedDecryptionEngram:
       return groupExoticsByAdvancedDecryptionId(exoticArmorItems);

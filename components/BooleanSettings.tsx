@@ -1,5 +1,13 @@
 import { useAppDispatch, useAppSelector } from "@d2e/redux/hooks";
 import {
+  selectFilterByHasIntrinsicFocus,
+  setFilterByHasIntrinsicFocus,
+} from "@d2e/redux/slice/filterByHasIntrinsicFocus";
+import {
+  selectFilterByHasIntrinsicStats,
+  setFilterByHasIntrinsicStats,
+} from "@d2e/redux/slice/filterByHasIntrinsicStats";
+import {
   selectShowExoticArmorPerk,
   setShowExoticArmorPerk,
 } from "@d2e/redux/slice/showExoticArmorPerk";
@@ -19,7 +27,13 @@ import {
   selectShowSources,
   setShowSources,
 } from "@d2e/redux/slice/showSources";
-import { Checkbox, FormControlLabel, FormGroup, useTheme } from "@mui/material";
+import {
+  Box,
+  Checkbox,
+  FormControlLabel,
+  FormGroup,
+  useTheme,
+} from "@mui/material";
 
 type BooleanSetting = {
   name: string;
@@ -33,6 +47,12 @@ export default function BooleanSettings() {
   const showRequiredDlc = useAppSelector(selectShowRequiredDlc);
   const showSources = useAppSelector(selectShowSources);
   const showExoticArmorPerk = useAppSelector(selectShowExoticArmorPerk);
+  const filterByHasIntrinsicFocus = useAppSelector(
+    selectFilterByHasIntrinsicFocus
+  );
+  const filterByHasIntrinsicStats = useAppSelector(
+    selectFilterByHasIntrinsicStats
+  );
 
   const theme = useTheme();
   const booleanSettings: BooleanSetting[] = [
@@ -62,6 +82,29 @@ export default function BooleanSettings() {
       handleChange: (value: boolean) => dispatch(setShowSources(value)),
     },
   ];
+
+  const booleanFilters: BooleanSetting[] = [
+    {
+      name: "Filter By Items With Intrinsic Focus",
+      value: filterByHasIntrinsicFocus,
+      handleChange: (value: boolean) => {
+        if (value) {
+          dispatch(setShowIntrinsicFocus(value));
+        }
+        return dispatch(setFilterByHasIntrinsicFocus(value));
+      },
+    },
+    {
+      name: "Filter By Items With Intrinsic Stats",
+      value: filterByHasIntrinsicStats,
+      handleChange: (value: boolean) => {
+        if (value) {
+          dispatch(setShowIntrinsicStats(value));
+        }
+        return dispatch(setFilterByHasIntrinsicStats(value));
+      },
+    },
+  ];
   return (
     <FormGroup
       sx={{
@@ -70,6 +113,26 @@ export default function BooleanSettings() {
       }}
     >
       {booleanSettings.map((setting: BooleanSetting) => {
+        return (
+          <FormControlLabel
+            key={setting.name}
+            label={setting.name}
+            // sx={{
+            //   marginTop: theme.spacing(1),
+            // }}
+            control={
+              <Checkbox
+                checked={setting.value}
+                onChange={(e) => setting.handleChange(e.target.checked)}
+              />
+            }
+          />
+        );
+      })}
+      <Box sx={{ marginTop: "16px", fontSize: "18px", fontWeight: "bold" }}>
+        Filters
+      </Box>
+      {booleanFilters.map((setting: BooleanSetting) => {
         return (
           <FormControlLabel
             key={setting.name}

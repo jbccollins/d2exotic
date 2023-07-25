@@ -8,6 +8,8 @@ import { setShowSources } from "@d2e/redux/slice/showSources";
 import { AppDispatch, AppState } from "@d2e/redux/store";
 import { EGroupById } from "@d2e/types/GroupBy";
 import { AnyAction } from "@reduxjs/toolkit";
+import { setFilterByHasIntrinsicFocus } from "../slice/filterByHasIntrinsicFocus";
+import { setFilterByHasIntrinsicStats } from "../slice/filterByHasIntrinsicStats";
 
 // Exclude any properties that are not query params
 // from this Pick type
@@ -20,6 +22,8 @@ type AppStateQueryParams = Pick<
   | "showRequiredDlc"
   | "showSources"
   | "showExoticArmorPerk"
+  | "filterByHasIntrinsicFocus"
+  | "filterByHasIntrinsicStats"
 >;
 
 type QueryParamInterpreter<T> = {
@@ -88,6 +92,16 @@ const queryParamInterpreterMapping: QueryParamInterpreterMapping<AppStateQueryPa
       ...booleanQueryParamInterpreter,
       reduxSetterAction: ({ value }) => setShowExoticArmorPerk(value),
       queryParamKey: "perk",
+    },
+    filterByHasIntrinsicFocus: {
+      ...booleanQueryParamInterpreter,
+      reduxSetterAction: ({ value }) => setFilterByHasIntrinsicFocus(value),
+      queryParamKey: "filterFocus",
+    },
+    filterByHasIntrinsicStats: {
+      ...booleanQueryParamInterpreter,
+      reduxSetterAction: ({ value }) => setFilterByHasIntrinsicStats(value),
+      queryParamKey: "filterStats",
     },
   };
 
