@@ -1,3 +1,4 @@
+import { setFilterByHasIntrinsicFocus } from "@d2e/redux/slice/filterByHasIntrinsicFocus";
 import { setGroupById } from "@d2e/redux/slice/groupById";
 import { setSearch } from "@d2e/redux/slice/search";
 import { setShowExoticArmorPerk } from "@d2e/redux/slice/showExoticArmorPerk";
@@ -53,5 +54,13 @@ export const queryParamInterpreterMapping: Record<
   showExoticArmorPerk: {
     ...booleanQueryParamInterpreter,
     setter: setShowExoticArmorPerk,
+  },
+  filterByHasIntrinsicFocus: {
+    ...booleanQueryParamInterpreter,
+    setter: setFilterByHasIntrinsicFocus,
+  },
+  filterByHasIntrinsicStats: {
+    ...booleanQueryParamInterpreter,
+    setter: setFilterByHasIntrinsicFocus,
   },
 };
