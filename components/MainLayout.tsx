@@ -14,6 +14,7 @@ import Typography from "@mui/material/Typography";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import * as React from "react";
 import ExoticList from "./ExoticList";
+import { HelpIcon } from "./HelpIcon";
 import Settings from "./Settings";
 const darkTheme = createTheme({
   palette: {
@@ -96,6 +97,9 @@ function MainLayout() {
             <Typography variant="h6" noWrap component="div">
               D2 Exotic
             </Typography>
+            <Box>
+              <HelpIcon link="/help" />
+            </Box>
           </Box>
           <Search />
         </Toolbar>

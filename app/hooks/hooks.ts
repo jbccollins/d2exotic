@@ -20,7 +20,6 @@ export const useScrollToById = (offset: number = 70) => {
       const targetElement = document?.getElementById(`${id}`);
 
       if (!targetElement) {
-        console.log("short circuiting", id);
         return;
       }
 
@@ -42,10 +41,9 @@ export const useScrollToById = (offset: number = 70) => {
         //   container.scrollTop = targetPosition;
         // }
 
-        console.log("scrolling", targetPosition);
         container?.scrollTo({
           top: targetPosition,
-          behavior: "smooth",
+          // behavior: "smooth",
         });
       };
 

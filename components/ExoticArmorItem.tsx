@@ -19,6 +19,7 @@ import {
 import WarningIcon from "@mui/icons-material/Warning";
 import { Box, useTheme } from "@mui/material";
 import BungieImage from "./BungieImage";
+import { HelpIcon } from "./HelpIcon";
 import LayeredBungieImage from "./LayeredBungieImage";
 import { Pill } from "./Pill";
 export type ExoticArmorItemProps = {
@@ -143,6 +144,9 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
               />
             );
           })}
+          <Box>
+            <HelpIcon link="/help#intrinsic-points-exception" />
+          </Box>
         </Box>
       )}
 
@@ -153,6 +157,9 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
             {isPartialIntrinsicFocus ? " (Partial)" : ""}:
           </Box>
           <Pill color={"#13274F"} icon={intrinsicFocusStat.icon} text={``} />
+          <Box>
+            <HelpIcon link="/help#intrinsic-focus-exception" />
+          </Box>
         </Box>
       )}
 
