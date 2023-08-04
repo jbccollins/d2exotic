@@ -34,10 +34,10 @@ const SectionBody = styled(Box)(({ theme }) => ({
 }));
 
 const CustomLink = styled(Link, {
-  shouldForwardProp: (prop) => !["large"].includes(prop as string),
-})<{ large?: boolean }>(({ large }) => ({
-  color: "white",
-  textDecorationColor: "white",
+  shouldForwardProp: (prop) => !["large", "internal"].includes(prop as string),
+})<{ large?: boolean; internal?: boolean }>(({ large, internal }) => ({
+  color: internal ? "#52bae3" : "white",
+  textDecorationColor: internal ? "#52bae3" : "white",
   textUnderlineOffset: "4px",
   // textDecoration: "none",
   // borderBottom: large ? "3px solid white" : "1px solid white",
@@ -357,6 +357,7 @@ export default function Help() {
               totals as a result, up to a maximum base stat total of 71. For
               example,{" "}
               <CustomLink
+                internal
                 target="_blank"
                 href="/?s=Gwisin+Vest&group=DestinyClass&stats=true&filterStats=true"
               >
@@ -366,6 +367,7 @@ export default function Help() {
               Mobility and +1 Resilience. A full list of exotic armor pieces
               with <Emphasis>intrinsic stat points</Emphasis> can be found{" "}
               <CustomLink
+                internal
                 target="_blank"
                 href="/?group=DestinyClass&stats=true&filterStats=true"
               >
@@ -388,10 +390,13 @@ export default function Help() {
               stat that corresponds to the{" "}
               <Emphasis>intrinsic stat focus</Emphasis>. More on that "almost
               always" clarification can be found in the{" "}
-              <CustomLink href="#contraband">Contraband Exotics</CustomLink>{" "}
+              <CustomLink internal href="#contraband">
+                Contraband Exotics
+              </CustomLink>{" "}
               section of this document. A full list of exotic armor pieces with
               an <Emphasis>intrinsic stat focus</Emphasis> can be found{" "}
               <CustomLink
+                internal
                 target="_blank"
                 href="/?group=DestinyClass&focus=true&filterFocus=true"
               >
@@ -400,9 +405,8 @@ export default function Help() {
               .
             </Box>
             <Box sx={{ marginTop: theme.spacing(1) }}>
-              While <Emphasis>intrinsic stat points</Emphasis> are quite
-              straightforward, there are a few additional things to note about
-              how <Emphasis>intrinsic stat focuses</Emphasis> work:
+              There are a few additional things to note about how{" "}
+              <Emphasis>intrinsic stat focuses</Emphasis> work:
               <CustomList dense>
                 <CustomListItem>
                   <Box>
@@ -416,6 +420,7 @@ export default function Help() {
                     <Emphasis>armorer ghost mod</Emphasis> are both in the same{" "}
                     <Emphasis>stat group</Emphasis>. For example,{" "}
                     <CustomLink
+                      internal
                       target="_blank"
                       href="/?s=Mask+of+Bakris&group=DestinyClass&focus=true&filterFocus=true"
                     >
@@ -437,6 +442,7 @@ export default function Help() {
                     There is one outlier{" "}
                     <Emphasis>intrinsic stat focus</Emphasis> found only on{" "}
                     <CustomLink
+                      internal
                       target="_blank"
                       href="/?s=Ursa+Furiosa&group=DestinyClass&focus=true&filterFocus=true"
                     >
@@ -486,6 +492,7 @@ export default function Help() {
             most PvE builds. Exotics with an{" "}
             <Emphasis>intrinsic stat focus</Emphasis> of Intellect (e.g.{" "}
             <CustomLink
+              internal
               target="_blank"
               href="/?s=Star-Eater+Scales&group=DestinyClass&focus=true"
             >
@@ -512,23 +519,12 @@ export default function Help() {
                 <Box>
                   Both <Emphasis>Advanced Decryption</Emphasis> and{" "}
                   <Emphasis>Precision Decryption</Emphasis> at Rahool can result
-                  in a <Emphasis>Contraband Exotic</Emphasis>. At this time I am
-                  unsure if receiving a <Emphasis>Contraband Exotic</Emphasis>{" "}
-                  from <Emphasis>Advanced/Precision Decryption</Emphasis>{" "}
-                  requires the usage of an armorer ghost mod, but all of my{" "}
-                  <Emphasis>Contraband Exotic</Emphasis> decryptions were done
-                  with an <Emphasis>armorer ghost mod</Emphasis> equipped. I
-                  can't think of a reason why you wouldn't want to use an{" "}
-                  <Emphasis>armorer ghost mod</Emphasis> when decrypting
-                  exotics. Please{" "}
-                  <CustomLink href={contactDiscordUrl} target="_blank">
-                    contact me
-                  </CustomLink>{" "}
-                  with video proof of{" "}
-                  <Emphasis>Advanced/Precision Decryption</Emphasis> resulting
-                  in a <Emphasis>Contraband Exotic</Emphasis> without an{" "}
-                  <Emphasis>armorer ghost mod</Emphasis> equipped and I will
-                  update this document.
+                  in a <Emphasis>Contraband Exotic</Emphasis>. Receiving a{" "}
+                  <Emphasis>Contraband Exotic</Emphasis> from{" "}
+                  <Emphasis>Advanced/Precision Decryption</Emphasis> does not
+                  require the usage of an <Emphasis>armorer ghost mod</Emphasis>
+                  , but if you do use an <Emphasis>armorer ghost mod</Emphasis>{" "}
+                  it will be respected.
                   <CustomList>
                     <CustomListItem>
                       <Box>
@@ -556,25 +552,52 @@ export default function Help() {
                         <Emphasis>Contraband Exotic</Emphasis>.
                       </Box>
                     </CustomListItem>
+                    <CustomListItem>
+                      <Box>
+                        <CustomLink
+                          target="_blank"
+                          href="https://www.youtube.com/watch?v=xm8obviVMbI"
+                        >
+                          Here
+                        </CustomLink>{" "}
+                        is video proof of{" "}
+                        <Emphasis>Advanced Decryption</Emphasis> resulting in a{" "}
+                        <Emphasis>Contraband Exotic</Emphasis>, without using an{" "}
+                        <Emphasis>armorer ghost mod</Emphasis>.
+                      </Box>
+                    </CustomListItem>
                   </CustomList>
                 </Box>
               </CustomListItem>
               <CustomListItem>
                 <Box>
-                  I am not sure if the <Emphasis>Raw Decryption</Emphasis> at
-                  Rahool can result in a <Emphasis>Contraband Exotic</Emphasis>.
-                  By <Emphasis>Raw Decryption</Emphasis> I mean: just decrypting
-                  the engram the same way you would decrypt a prime engram. I
-                  have not yet recieved a <Emphasis>Contraband Exotic</Emphasis>{" "}
-                  from a <Emphasis>Raw Decryption</Emphasis>, but I have not
-                  done enough <Emphasis>Raw Decryption</Emphasis> to be
-                  confident that it is impossible. Please{" "}
+                  At this time I do not believe that{" "}
+                  <Emphasis>Raw Decryption</Emphasis> at Rahool can result in a{" "}
+                  <Emphasis>Contraband Exotic</Emphasis>. By{" "}
+                  <Emphasis>Raw Decryption</Emphasis> I mean: just decrypting
+                  the engram the same way you would decrypt a prime engram.
+                  Please{" "}
                   <CustomLink href={contactDiscordUrl} target="_blank">
                     contact me
                   </CustomLink>{" "}
-                  with video proof of a <Emphasis>Raw Decryption</Emphasis>{" "}
+                  with video proof of <Emphasis>Raw Decryption</Emphasis>{" "}
                   resulting in a <Emphasis>Contraband Exotic</Emphasis> and I
                   will update this document.
+                  <CustomList>
+                    <CustomListItem>
+                      <Box>
+                        <CustomLink
+                          target="_blank"
+                          href="https://youtu.be/watch?v=veEQsWXSraA"
+                        >
+                          Here
+                        </CustomLink>{" "}
+                        is video proof of <Emphasis>Raw Decryption</Emphasis>{" "}
+                        respecting world drop rules when using an{" "}
+                        <Emphasis>armorer ghost mod</Emphasis>.
+                      </Box>
+                    </CustomListItem>
+                  </CustomList>
                 </Box>
               </CustomListItem>
             </CustomList>
