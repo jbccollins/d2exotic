@@ -19,6 +19,7 @@ Athrys's Embrace               Strength
 Ballidorse Wrathweavers        -
 Blight Ranger                  -
 Boots of the Assembler         -
+Briarbinds                     -
 Cadmus Ridge Lancecap          -
 Caliban's Hand                 -
 Celestial Nighthawk            Intellect
@@ -66,6 +67,7 @@ Mask of Bakris                 Mobility
 Mask of the Quiet One          -
 Mechaneer's Tricksleeves       -
 Mk. 44 Stand Asides            -
+Mothkeeper's Wraps             -
 Necrotic Grip                  -
 Nezarec's Sin                  -
 No Backup Plans                -
@@ -84,6 +86,7 @@ Phoenix Protocol               Intellect
 Point-Contact Cannon Brace     -
 Precious Scars                 -
 Promethium Spur                Intellect
+Pyrogale Gauntlets             -
 Radiant Dance Machines         -
 Raiden Flux                    Intellect
 Raiju's Harness                Intellect

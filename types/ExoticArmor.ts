@@ -14,6 +14,7 @@ import {
   EDestinyClassId,
   EExpansionId,
 } from "./IdEnums";
+import { NestedGroup } from "./NestedGroup";
 
 export type ExoticArmorPerk = {
   name: string;
@@ -29,6 +30,7 @@ export type ExoticArmor = {
   isWorldDrop: boolean;
   seasonHash: number;
   icon: string;
+  iconWatermark: string;
   destinyClassId: EDestinyClassId;
   isFocusable: boolean;
   expansionIdCampaignCompletionRequired?: EExpansionId;
@@ -46,14 +48,6 @@ const getDefaultDestinyClassValue = (): Record<
   [EArmorSlotId.Leg]: [],
   [EArmorSlotId.ClassItem]: [],
 });
-
-export type NestedGroup = {
-  name: string;
-  id: string;
-  icon?: string;
-  childGroups?: NestedGroup[];
-  items?: ExoticArmor[];
-};
 
 const groupExoticsByAdvancedDecryptionId = (
   exoticArmorItems: ExoticArmor[]

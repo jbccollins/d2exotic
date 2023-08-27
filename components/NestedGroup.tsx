@@ -1,16 +1,24 @@
-import { NestedGroup } from "@d2e/types/ExoticArmor";
+import { ExoticArmor } from "@d2e/types/ExoticArmor";
+import { ExoticWeapon } from "@d2e/types/ExoticWeapon";
+import {
+  ENestedGroupItemType,
+  NestedGroup as NestedGroupType,
+} from "@d2e/types/NestedGroup";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { Box, Collapse, IconButton, useTheme } from "@mui/material";
 import { useState } from "react";
 import BungieImage from "./BungieImage";
 import ExoticArmorItem from "./ExoticArmorItem";
+import ExoticWeaponItem from "./ExoticWeaponItem";
 
 type NestedGroupProps = {
-  group: NestedGroup;
+  group: NestedGroupType;
   depth?: number;
+  itemType: ENestedGroupItemType;
 };
-const NestedGroup = ({ group, depth }: NestedGroupProps) => {
+
+const NestedGroup = ({ group, depth, itemType }: NestedGroupProps) => {
   const theme = useTheme();
   const isLeaf = group.items?.length ?? 0 > 0;
   const _depth = depth ?? 0;
@@ -85,7 +93,12 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
                   maxWidth: "calc(100vw - 32px)",
                 }}
               >
-                <ExoticArmorItem item={item} />
+                {itemType === ENestedGroupItemType.WEAPON && (
+                  <ExoticWeaponItem item={item as ExoticWeapon} />
+                )}
+                {itemType === ENestedGroupItemType.ARMOR && (
+                  <ExoticArmorItem item={item as ExoticArmor} />
+                )}
               </Box>
             ))}
           </Box>
@@ -104,7 +117,11 @@ const NestedGroup = ({ group, depth }: NestedGroupProps) => {
                   width: "100%",
                 }}
               >
-                <NestedGroup group={childGroup} depth={_depth + 1} />
+                <NestedGroup
+                  itemType={itemType}
+                  group={childGroup}
+                  depth={_depth + 1}
+                />
               </Box>
             ))}
           </Box>

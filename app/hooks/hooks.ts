@@ -14,6 +14,16 @@ export const useIsSsr = () => {
   return isSsr;
 };
 
+export const useQueryParams = () => {
+  if (typeof window === "undefined") {
+    return {};
+  }
+
+  const searchParams = new URLSearchParams(window.location.search);
+
+  return Object.fromEntries(searchParams.entries());
+};
+
 export const useScrollToById = (offset: number = 70) => {
   return (id: string) => {
     if (!(typeof window === "undefined")) {

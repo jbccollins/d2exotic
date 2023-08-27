@@ -18,8 +18,10 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2758726569,
       icon: "https://www.bungie.net/common/destiny2_content/icons/387f53c382d5e3ef7156e2149f79a57b.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/6026e9d64e8c2b19f302dafb0286897b.png",
       destinyClassId: EDestinyClassId.Titan,
-      isFocusable: false,
+      isFocusable: true,
       exoticArmorPerk: {
         name: "Barri-nade",
         description:
@@ -35,6 +37,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/00da519dfd936447edd44bd0e472d229.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -57,11 +61,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/395d6f306e29ddf0afdd5b1ffaaf1e5f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Close Enough",
-        description: "Damaging targets with Chaos Reach extends its duration.",
+        description:
+          "Damaging targets with Chaos Reach extends its duration. Collecting Ionic Traces grants you energy for Chaos Reach.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/66fcc068afb7cda7082e338debf3c454.png",
         hash: 1939153390,
       },
@@ -77,6 +84,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/0cc53513e37b4f0b5442dff88c3d9a45.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -98,6 +107,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/5c188812dc0dca96e015d2876e900637.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -119,6 +130,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2758726568,
       icon: "https://www.bungie.net/common/destiny2_content/icons/cc4f9b05185e4430b6c0ca42cc7a5c1d.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/af00bdcd3e3b89e6e85c1f63ebc0b4e4.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -137,12 +150,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/24e61da37158d8c105650edb74ae2bac.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Hydraulic Boosters",
         description:
-          "While your Dodge energy is full, increases sprint speed and slide distance and improves High Jump, Strafe Jump, and Triple Jump.",
+          "Increases sprint speed and slide distance while your dodge energy is full and improves High Jump, Strafe Jump, and Triple Jump.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/1f2c8873254a4d9f6e09f243123168ac.png",
         hash: 1694242450,
       },
@@ -157,6 +172,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/fa501bf3740c6b0cdc91f2cafd0547a3.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -178,6 +195,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/4abdc33a8ff869fc7bdcbdc83fbaba01.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -199,6 +218,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 1743682819,
       icon: "https://www.bungie.net/common/destiny2_content/icons/1a1beec59bf0bfb0475956d19adbb9da.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/3ba38a2b9538bde2b45ec9313681d617.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -217,12 +238,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/5978e308b12744fbe33c11d3296f51e9.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Horns of Doom",
         description:
-          "Void melee kills give Super energy.\nWhile Sentinel Shield is active, melee kills recharge Shield Throw, which extends your Super on hits.",
+          "Defeating targets with Void damage has a chance to grant an escalating bonus to damage with Void weapons. Defeating targets with Void melee grants Super energy.\n\nWhile Sentinel Shield is active, defeating targets with melee attacks recharges Shield Throw, which extends your Super on hitting a target.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/2711427d59a7abae9059a7b80ff27562.png",
         hash: 1155472387,
       },
@@ -238,6 +261,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/9f51bbad83aeb142eb56d9faf7440662.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -259,6 +284,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059428,
       icon: "https://www.bungie.net/common/destiny2_content/icons/8c81d44ddde6e10ea83f65929c482dcb.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/d92e077d544925c4f37e564158f8f76a.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -277,12 +304,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/97eadd6736bd5146bc28ff6d14bb2d8e.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Tome of Dawn",
         description:
-          "When Dawnblade is equipped, aiming weapons while you're midair suspends you there for a short time, improving airborne accuracy, reducing incoming flinch, and granting damage resistance. Weapon hits extend this effect's duration. Provides a large benefit to the airborne effectiveness stat of all weapons.",
+          "When Dawnblade is equipped, aiming weapons while you're midair suspends you there for a short time, reducing incoming flinch and granting damage resistance. Weapon hits extend this effect's duration, and weapon final blows reload your Solar weapons from reserves. Provides a large benefit to the airborne effectiveness stat of all weapons.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/bca803e50002410309460be0966fabe9.png",
         hash: 926349160,
       },
@@ -298,6 +327,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059433,
       icon: "https://www.bungie.net/common/destiny2_content/icons/e6e10342a97eb3f6b974399ef7214e75.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/a3923ae7d2376a1c4eb0f1f154da7565.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -315,6 +346,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -337,6 +370,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059431,
       icon: "https://www.bungie.net/common/destiny2_content/icons/bc6ee62eb2ace0a0a44347a3824e95dd.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/b973f89ecd631a3e3d294e98268f7134.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -355,6 +390,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/c71407afa4e5c092494589f82149c693.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -375,6 +412,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -396,6 +435,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/e266ef647863fafb1541890bcfa4a6c7.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -418,12 +459,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/5f9662bd35f3a32bedde179474ee8d07.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Relentless Tracker",
         description:
-          "Visually marks targets. Deals more damage to low-health marked targets. Provides a small benefit to the airborne effectiveness stat of all weapons.",
+          "Damaging a powerful combatant or Guardian with an ability grants you a temporary bonus to weapon damage matching your subclass type. Defeating that target with a weapon matching the damage type of your subclass creates an elemental pickup.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/c156b7906217d8b61e7573f9c9cc2dc7.png",
         hash: 2663272109,
       },
@@ -438,12 +481,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/8ccf49029d3c36bbdf3fb697163dcc53.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Probability Matrix",
         description:
-          "Increases the chaining capabilities of Arc Bolt Grenade and has a chance to recharge it each time it deals damage. A full chain always recharges.",
+          "Increases the chaining capabilities of Arcbolt Grenades. Damaging enemies with Jolt lightning strikes and collecting Ionic Traces both grant additional Arcbolt Grenade energy. Arcbolt Grenades stun  [Disruption] Overload Champions and delay their health regeneration.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/4bedcf0eb0d6fd52d82d3e5f9ff11e4b.png",
         hash: 593361147,
       },
@@ -460,6 +505,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/dac0f107efc0dc9c887ffef83fc1bf62.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -481,6 +528,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059429,
       icon: "https://www.bungie.net/common/destiny2_content/icons/5b7f647435bbe18d2c83d3691758184c.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/23968435c2095c0f8119d82ee222c672.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -499,6 +548,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -521,6 +572,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/8ea4e6ce75fcf446b699029aab9d6060.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -543,6 +596,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/dab1f11f9397222c9cd83925f744bf86.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -565,6 +620,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/926af59fac979ff38b102813ed1e661f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -586,6 +643,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/9b9cf3c53c26c364532bfda3dd372827.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -607,6 +666,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2809059425,
       icon: "https://www.bungie.net/common/destiny2_content/icons/2e01a8839e2cb3f8c9f53bd01001d838.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/b12630659223b53634e9f97c0a0a8305.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -625,12 +686,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/8aacd27b76e68afe6287a3984adeb601.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Sunfire Furnace",
         description:
-          "Improves the recharge rate of your Solar abilities. Greatly improves recharge rate while your Super is charged. Provides a small benefit to the airborne effectiveness stat of all weapons.",
+          "Solar takedowns while standing in a Sunspot create a Sunspot. Greatly improves recharge rate of your Solar abilities while your Super is charged. Provides a small benefit to the airborne effectiveness stat of all weapons.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/7066c741806a4c30d4987a63f5b3b2d9.png",
         hash: 1667892708,
       },
@@ -646,6 +709,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 1743682819,
       icon: "https://www.bungie.net/common/destiny2_content/icons/be46f8bd0b86a84be7f77941a3e055fb.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/3ba38a2b9538bde2b45ec9313681d617.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -664,12 +729,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/a62c52b937c81cea80d6e67689748606.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Upgraded Sensor Pack",
         description:
-          "Provides radar while you're aiming. Enhances your radar resolution while crouched.",
+          "Provides radar while you're aiming. Enhances your radar resolution while crouched. Visually marks targets. Deals more damage to low-health marked targets. Provides a small benefit to the airborne effectiveness stat of all weapons.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/6fd9aecd4c810d6dafd2517ebd50cbe0.png",
         hash: 2663272111,
       },
@@ -685,6 +752,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/a7c3ee955c5e8b1c20122206d1bf60ff.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -707,6 +776,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059431,
       icon: "https://www.bungie.net/common/destiny2_content/icons/e1c35c4941cc7848e2b5de7bacd17232.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/b973f89ecd631a3e3d294e98268f7134.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -725,6 +796,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/34f23604746fc260a2153e93ccfaec7f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -746,6 +819,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059430,
       icon: "https://www.bungie.net/common/destiny2_content/icons/5c2dbf43518ab15f556b39bbaac0122b.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ab075a3679d69f40b8c2a319635d60a9.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -763,12 +838,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059429,
       icon: "https://www.bungie.net/common/destiny2_content/icons/7864518a9a8ab7c352d7a7e4c81e2e52.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/23968435c2095c0f8119d82ee222c672.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Firewalker",
         description:
-          "Solar final blows periodically grant you an escalating bonus to weapon damage. You are harder to slow or freeze with Stasis, and when you break out, you take no damage from doing so, creating a burst of Solar energy around yourself.",
+          "Solar final blows periodically grant you an escalating bonus to weapon damage, and Solar grenade final blows grant you the highest bonus. You are harder to slow or freeze with Stasis, and when you break out, you take no damage from doing so, creating a burst of Solar energy around yourself.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/85c73f064a7e60038b25eecacd71a147.png",
         hash: 2500502982,
       },
@@ -780,12 +857,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059427,
       icon: "https://www.bungie.net/common/destiny2_content/icons/8c6e9159014b670c7e316aee4b1df3a8.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/9e0f43538efe9f8d04546b4b0af6cc43.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Glacial Guard",
         description:
-          "Replaces your Barricade ability with a personal overshield. When you activate your Barricade, you create a burst around yourself that slows combatants. While you have the overshield, you are slowed and Barricade does not recharge.",
+          "Stasis final blows have a chance to grant an escalating bonus to Stasis weapon damage. Replaces your Barricade ability with a personal overshield. When you activate your Barricade, you gain the highest-tier Stasis weapon damage bonus and create a burst around yourself that slows combatants. While you have this overshield, you are slowed and Barricade does not recharge.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/29603482ccb0d4d2be723213df4054a9.png",
         hash: 185514250,
       },
@@ -798,6 +877,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/ae4ee7545ea763ea935f6386d8743361.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -820,6 +901,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/fe62cafbd9124a2ee12d35dbe6fdde3a.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -842,6 +925,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 1743682818,
       icon: "https://www.bungie.net/common/destiny2_content/icons/b0a005478e56ca375d005c7fdac75384.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2352f9d04dc842cfcdda77636335ded9.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -860,6 +945,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/1c53f341a42cddc22f06ae5948a8b39a.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -882,6 +969,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/9ddd5eb2eee64925a01abdc4cd9830ad.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -904,6 +993,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059427,
       icon: "https://www.bungie.net/common/destiny2_content/icons/d2fdd193c4536cbc9cdaa82e24b7125a.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/9e0f43538efe9f8d04546b4b0af6cc43.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -922,6 +1013,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059430,
       icon: "https://www.bungie.net/common/destiny2_content/icons/716fa9d4ffc8190e1553e9afa5ff808d.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ab075a3679d69f40b8c2a319635d60a9.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -939,6 +1032,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/7963b44801745431cdd7638c5445fe49.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: null,
@@ -954,6 +1049,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -975,6 +1072,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059428,
       icon: "https://www.bungie.net/common/destiny2_content/icons/2fedf8f208ae4c7f41ef37597d4a671b.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/d92e077d544925c4f37e564158f8f76a.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -992,6 +1091,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059431,
       icon: "https://www.bungie.net/common/destiny2_content/icons/209d99f147c6d1a88812cebc4c0f2f92.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/b973f89ecd631a3e3d294e98268f7134.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1010,6 +1111,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059433,
       icon: "https://www.bungie.net/common/destiny2_content/icons/1a871899e9657793c57c3916ee69d19f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/a3923ae7d2376a1c4eb0f1f154da7565.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1027,6 +1130,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/f8e0d42b08a0a02f172f76d331326a8f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1049,6 +1154,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/cec0919e3c95d134d82f701f2f6b87dd.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1069,6 +1176,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/9d29d23f2920b16378127d9603370722.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1090,6 +1199,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/3baea5888219c87acd58d177ae70f2c2.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1111,6 +1222,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/a68810bdea4b8c45696315b1e07a9e7e.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1133,6 +1246,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059433,
       icon: "https://www.bungie.net/common/destiny2_content/icons/54d230429642573df3c8030ba90fec0e.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/a3923ae7d2376a1c4eb0f1f154da7565.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1150,6 +1265,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/b667fa414b7d70ed4fe8b34296c76cbb.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1171,6 +1288,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059426,
       icon: "https://www.bungie.net/common/destiny2_content/icons/9b5e31b72b4c2b7061a7857eba7f8863.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/5ac4a1d48a5221993a41a5bb524eda1b.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1188,6 +1307,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 1743682818,
       icon: "https://www.bungie.net/common/destiny2_content/icons/859cc21b703ec447b19b3ebeb553e63f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2352f9d04dc842cfcdda77636335ded9.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1200,6 +1321,25 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       intrinsicFocus: EArmorStatId.Intellect,
       expansionIdCampaignCompletionRequired: EExpansionId.Shadowkeep,
     },
+    [2066430310]: {
+      name: "Pyrogale Gauntlets",
+      hash: 2066430310,
+      armorSlotId: EArmorSlotId.Arms,
+      isWorldDrop: false,
+      seasonHash: 2758726570,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/aed35bae5c7983884ca5a4809e78def2.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/3de52d90db7ee2feb086ef6665b736b6.png",
+      destinyClassId: EDestinyClassId.Titan,
+      isFocusable: false,
+      exoticArmorPerk: {
+        name: "Percussive Flames",
+        description:
+          "Modifies Burning Maul into a single high-damage slam of your hammer that creates five cyclones of flame. Consecration's second slam creates a cyclone of flame.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/fee237f7f5a0d5aaa5a8442a73ae6cbe.png",
+        hash: 1630940558,
+      },
+    },
     [2082483156]: {
       name: "Starfire Protocol",
       hash: 2082483156,
@@ -1207,12 +1347,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/e101d5271789720c8930459168603398.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Fusion Harness",
         description:
-          "Fusion Grenades have an additional charge and recharge from empowered weapon damage, with empowered weapon final blows granting more energy. Fusion Grenade final blows grant Rift energy.",
+          "Fusion Grenades have an additional charge and recharge from empowered weapon damage, with empowered weapon final blows granting more energy. Defeating targets with Fusion Grenades grant Rift energy.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/18c3e0503b1c9cd823dde3ded3680f8d.png",
         hash: 926349161,
       },
@@ -1229,6 +1371,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059431,
       icon: "https://www.bungie.net/common/destiny2_content/icons/4943351eeea32eacd98c50e33c840416.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/b973f89ecd631a3e3d294e98268f7134.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1247,6 +1391,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/0a1199008a6bf59ab699612b7035d79f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1267,6 +1413,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 1743682818,
       icon: "https://www.bungie.net/common/destiny2_content/icons/51cdf5976d29b61a6800ad5f4d8b10d8.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2352f9d04dc842cfcdda77636335ded9.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1285,6 +1433,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2891088360,
       icon: "https://www.bungie.net/common/destiny2_content/icons/94ea4f627e75d7f1d71304057c569c4f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1448dde4efdb57b07f5473f87c4fccd7.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1305,6 +1455,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4275747712,
       icon: "https://www.bungie.net/common/destiny2_content/icons/49750e0306908fb302124ba9cab65606.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/5364cc3900dc3615cb0c4b03c6221942.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1327,6 +1479,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2809059425,
       icon: "https://www.bungie.net/common/destiny2_content/icons/fdc99d915e90a5992549ebe33c85d2c9.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/b12630659223b53634e9f97c0a0a8305.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1345,6 +1499,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059427,
       icon: "https://www.bungie.net/common/destiny2_content/icons/a8f5dbd6ec9c4dc9ea73700525d558c7.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/9e0f43538efe9f8d04546b4b0af6cc43.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1362,6 +1518,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059426,
       icon: "https://www.bungie.net/common/destiny2_content/icons/23e3d07bead2936a80612419f3ee9f94.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/5ac4a1d48a5221993a41a5bb524eda1b.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1380,6 +1538,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 1743682819,
       icon: "https://www.bungie.net/common/destiny2_content/icons/f2b177993acfba4c42ff771ad6801c90.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/3ba38a2b9538bde2b45ec9313681d617.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1397,8 +1557,10 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2758726569,
       icon: "https://www.bungie.net/common/destiny2_content/icons/791e1f8a406356533b82a7adba087812.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/6026e9d64e8c2b19f302dafb0286897b.png",
       destinyClassId: EDestinyClassId.Warlock,
-      isFocusable: false,
+      isFocusable: true,
       exoticArmorPerk: {
         name: "High Priority",
         description:
@@ -1414,6 +1576,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/c7da6c00a574bbadaec01099a3134626.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1435,6 +1599,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2758726568,
       icon: "https://www.bungie.net/common/destiny2_content/icons/cb2d44c8d1459ea43b0ea82976cf66e0.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/af00bdcd3e3b89e6e85c1f63ebc0b4e4.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1453,6 +1619,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059427,
       icon: "https://www.bungie.net/common/destiny2_content/icons/ce855265f8180943a74fafa631bdf0cc.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/9e0f43538efe9f8d04546b4b0af6cc43.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1471,6 +1639,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/82733ba5cc5dfdd0ef3ce1c7ba13e242.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1492,6 +1662,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/e3a0690cafbf8109a34231f70476c8a0.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1512,6 +1684,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2758726568,
       icon: "https://www.bungie.net/common/destiny2_content/icons/6913d8a2546e53f6bbcba482e487477b.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/af00bdcd3e3b89e6e85c1f63ebc0b4e4.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1530,12 +1704,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/d1bef80d66094bfc54384417aac74b04.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Fury Conductors",
         description:
-          "Melee hits build energy. Being struck by a melee attack reduces incoming damage and unleashes the energy in a devastating explosion.",
+          "Melee hits grant Armor Charge, and you take less melee damage while you have Armor Charge. Taking melee damage causes you to emit a burst of damaging Arc energy that Jolts targets, consuming your Armor Charge and dealing more damage based on the number of stacks consumed.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/e6d3adfc397494ea66a79df3f42547c8.png",
         hash: 1155472386,
       },
@@ -1550,6 +1726,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/dd639fc06ad17e69915bf47295426ac0.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1571,6 +1749,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4275747712,
       icon: "https://www.bungie.net/common/destiny2_content/icons/93792e77d9b88ccf77788bdd9b25b16c.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/5364cc3900dc3615cb0c4b03c6221942.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1593,6 +1773,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/af16bd8628430cc43cfcb161074a1706.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1615,6 +1797,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/560933bda212e02475df32cb7faefd5e.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1637,6 +1821,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/8571524c477cee2fc3e2dedbaf7aa8bb.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1658,6 +1844,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059427,
       icon: "https://www.bungie.net/common/destiny2_content/icons/0617e95b84c4c0b7ec6511abaf4214d6.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/9e0f43538efe9f8d04546b4b0af6cc43.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1675,6 +1863,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/83255143cc395d2d15fef32bf435e229.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1696,6 +1886,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2809059425,
       icon: "https://www.bungie.net/common/destiny2_content/icons/885fcf7b139b369cb47f4548f1fb658f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/b12630659223b53634e9f97c0a0a8305.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1713,6 +1905,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/3fffe9417297d68ad3384c0b601bda88.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: null,
@@ -1728,6 +1922,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059429,
       icon: "https://www.bungie.net/common/destiny2_content/icons/4f54f0e8ad3cf58ff4525347c31c652b.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/23968435c2095c0f8119d82ee222c672.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1745,6 +1941,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/e55c1cbf65fabab485bbc34272f59b11.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1767,6 +1965,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2891088360,
       icon: "https://www.bungie.net/common/destiny2_content/icons/a2350076ae19cf474a88a0c2a440c93f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1448dde4efdb57b07f5473f87c4fccd7.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1789,8 +1989,10 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2758726569,
       icon: "https://www.bungie.net/common/destiny2_content/icons/8f4613a7a4d1d0cac4cddb50f81d965b.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/6026e9d64e8c2b19f302dafb0286897b.png",
       destinyClassId: EDestinyClassId.Hunter,
-      isFocusable: false,
+      isFocusable: true,
       exoticArmorPerk: {
         name: "Halberdier's Reach",
         description:
@@ -1806,6 +2008,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/182c1628fffa9de89fd27abcf04f2882.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1821,6 +2025,25 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
         Recovery: 1,
       },
     },
+    [3234692237]: {
+      name: "Briarbinds",
+      hash: 3234692237,
+      armorSlotId: EArmorSlotId.Arms,
+      isWorldDrop: false,
+      seasonHash: 2758726570,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/40c71ab1a41498619b8e76def4be6dc3.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/3de52d90db7ee2feb086ef6665b736b6.png",
+      destinyClassId: EDestinyClassId.Warlock,
+      isFocusable: false,
+      exoticArmorPerk: {
+        name: "One with the Void",
+        description:
+          "Your Void Souls have a longer duration. They also gain escalating damage and durability as they defeat targets. You can retrieve your Void Souls by interacting with them, allowing them to be redeployed.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/b9e7de604ce74e4dc26e1af3ed8f0549.png",
+        hash: 1513013523,
+      },
+    },
     [3259193988]: {
       name: "Osmiomancy Gloves",
       hash: 3259193988,
@@ -1828,6 +2051,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059431,
       icon: "https://www.bungie.net/common/destiny2_content/icons/50c84155502586d5b852ce853131ee48.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/b973f89ecd631a3e3d294e98268f7134.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1846,6 +2071,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059428,
       icon: "https://www.bungie.net/common/destiny2_content/icons/a5e7aadf7e00089690951e52c35afcbb.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/d92e077d544925c4f37e564158f8f76a.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1863,6 +2090,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1884,6 +2113,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059426,
       icon: "https://www.bungie.net/common/destiny2_content/icons/b214efe3aed7f3dabf965b62b9dfaf7a.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/5ac4a1d48a5221993a41a5bb524eda1b.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1901,6 +2132,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059431,
       icon: "https://www.bungie.net/common/destiny2_content/icons/aeda17ea7c8071b1156258b09f4219f3.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/b973f89ecd631a3e3d294e98268f7134.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1919,6 +2152,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/1e807547133b3d2e1ea680858cf09176.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1940,6 +2175,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/f2099f4fcd39c3ed4f87ec55e05a68ea.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1960,6 +2197,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/5f4c4d8bdfc4099ce76f13998d977796.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1980,6 +2219,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059430,
       icon: "https://www.bungie.net/common/destiny2_content/icons/b963098bb34446a4119fccf6e3cdbfe8.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ab075a3679d69f40b8c2a319635d60a9.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -1990,6 +2231,25 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
         hash: 2179827240,
       },
     },
+    [3534173884]: {
+      name: "Mothkeeper's Wraps",
+      hash: 3534173884,
+      armorSlotId: EArmorSlotId.Arms,
+      isWorldDrop: false,
+      seasonHash: 2758726570,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/e53f09086747c03e79325763327af977.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/3de52d90db7ee2feb086ef6665b736b6.png",
+      destinyClassId: EDestinyClassId.Hunter,
+      isFocusable: false,
+      exoticArmorPerk: {
+        name: "Winged Eclipse",
+        description:
+          "Your grenade becomes a cage of loyal moths that release on impact and fly toward the nearest target or ally. If they reach a target, they detonate in a blinding explosion; if they reach an ally, the moths grant your ally a Void overshield.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/5c414274c55de2e49517bd6203912aba.png",
+        hash: 4094452600,
+      },
+    },
     [3539357318]: {
       name: "Lion Rampant",
       hash: 3539357318,
@@ -1997,6 +2257,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/f649b50eed6a4e4c329ae1667ba6d32b.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2017,6 +2279,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/98491ae0d08dc78211ff10f34e42c923.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2038,6 +2302,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/791e1be2a37d4deff98d660f2d90c158.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2059,6 +2325,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2758726568,
       icon: "https://www.bungie.net/common/destiny2_content/icons/ed6d637a92b13503599f791d2ecba14a.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/af00bdcd3e3b89e6e85c1f63ebc0b4e4.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2077,6 +2345,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/a3e9b60f50480547349cf245f30b28f5.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2098,6 +2368,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2758726568,
       icon: "https://www.bungie.net/common/destiny2_content/icons/8ca0dc9ac4166580356aa2d1f243e009.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/af00bdcd3e3b89e6e85c1f63ebc0b4e4.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2116,6 +2388,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/220fda89a88058f84725ff1df39a9f5e.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2137,6 +2411,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2758726568,
       icon: "https://www.bungie.net/common/destiny2_content/icons/0b6052a09f8d04089eda67529392d770.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/af00bdcd3e3b89e6e85c1f63ebc0b4e4.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2155,6 +2431,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/b2affa797cc34567cfe6bad463c2749c.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2176,12 +2454,14 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/0c586f183b821e16dd9b696c8e871d2b.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
         name: "Warlord's Sigil",
         description:
-          "Eliminating enemies with melee attacks increases your melee damage.",
+          "Defeating targets with melee attacks increases your melee damage. Targets encased by Penumbral Blast automatically shatter.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/afb8bae64742a8633975b1bc85c98923.png",
         hash: 2731901709,
       },
@@ -2196,6 +2476,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4033618594,
       icon: "https://www.bungie.net/common/destiny2_content/icons/f1fd65d0fc4a21dcf29c4a18f347a62d.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2217,6 +2499,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/7d8b21fd6a59e987a428548e66dca1b3.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2237,6 +2521,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2973407602,
       icon: "https://www.bungie.net/common/destiny2_content/icons/693bbd8d8099d9284cf507c7a58d869b.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/2c024f088557ca6cceae1e8030c67169.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: null,
@@ -2253,6 +2539,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 4275747712,
       icon: "https://www.bungie.net/common/destiny2_content/icons/68752f9a7420c7ba14728d9ab2592163.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/5364cc3900dc3615cb0c4b03c6221942.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2274,6 +2562,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: false,
       seasonHash: 2809059427,
       icon: "https://www.bungie.net/common/destiny2_content/icons/1a410b9325f5e155cd76286416c0269a.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/9e0f43538efe9f8d04546b4b0af6cc43.png",
       destinyClassId: EDestinyClassId.Titan,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2291,6 +2581,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/68e87c34c22f4e7350a1750bf2d3bc68.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2312,6 +2604,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2026773320,
       icon: "https://www.bungie.net/common/destiny2_content/icons/5ab8760ee8ef440f317ae4a95d047d07.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1b6c8b94cec61ea42edb1e2cb6b45a31.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2334,6 +2628,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 965757574,
       icon: "https://www.bungie.net/common/destiny2_content/icons/9d1fc1679008fedbf57cb732aebe05bf.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png",
       destinyClassId: EDestinyClassId.Warlock,
       isFocusable: true,
       exoticArmorPerk: {
@@ -2356,6 +2652,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isWorldDrop: true,
       seasonHash: 2891088360,
       icon: "https://www.bungie.net/common/destiny2_content/icons/39a2f16e2f092e37f21eb5f61f107594.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/1448dde4efdb57b07f5473f87c4fccd7.png",
       destinyClassId: EDestinyClassId.Hunter,
       isFocusable: true,
       exoticArmorPerk: {

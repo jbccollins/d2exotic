@@ -11,11 +11,7 @@ import { ExoticArmor } from "@d2e/types/ExoticArmor";
 import { getExpansionBySeasonHash } from "@d2e/types/Expansion";
 import { EGroupById } from "@d2e/types/GroupBy";
 import { EExpansionId } from "@d2e/types/IdEnums";
-import {
-  getIconWatermarkIdFromSeasonHash,
-  getIconWatermarkUrlFromId,
-  getSeason,
-} from "@d2e/types/Season";
+import { getSeason } from "@d2e/types/Season";
 import WarningIcon from "@mui/icons-material/Warning";
 import { Box, useTheme } from "@mui/material";
 import BungieImage from "./BungieImage";
@@ -40,6 +36,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
     isWorldDrop,
     isPartialIntrinsicFocus,
     icon,
+    iconWatermark,
     name,
     hash,
     seasonHash,
@@ -81,12 +78,7 @@ export default function ExoticArmorItem({ item }: ExoticArmorItemProps) {
             height: 64,
             width: 64,
           }}
-          icons={[
-            icon,
-            getIconWatermarkUrlFromId(
-              getIconWatermarkIdFromSeasonHash(seasonHash)
-            ),
-          ]}
+          icons={[icon, iconWatermark]}
           src={icon}
         />
         <Box className="ml-2 text-xl">{name}</Box>

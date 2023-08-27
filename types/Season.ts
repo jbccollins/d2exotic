@@ -14,7 +14,7 @@ export type Season = {
 export const RED_WAR_ICON_WATERMARK_URL =
   "https://www.bungie.net/common/destiny2_content/icons/fb50cd68a9850bd323872be4f6be115c.png";
 
-const SeasonHashToArmorIconWatermarkIdMapping: Record<number, string | null> = {
+const SeasonHashToArmorIconWatermarkIdMapping: Record<number, string> = {
   965757574: "fb50cd68a9850bd323872be4f6be115c", /// 1, Red War (D2 Launch)
   2973407602: "2c024f088557ca6cceae1e8030c67169", // 2, Curse of Osiris
   4033618594: "ed6c4762c48bd132d538ced83c1699a6", // 3, Resurgence
@@ -36,12 +36,8 @@ const SeasonHashToArmorIconWatermarkIdMapping: Record<number, string | null> = {
   2809059432: "e775dcb3d47e3d54e0e24fbdb64b5763", // 19, Season of the Seraph // No exotics
   2758726568: "af00bdcd3e3b89e6e85c1f63ebc0b4e4", // 20, Season of Defiance
   2758726569: "6026e9d64e8c2b19f302dafb0286897b", // 21, Season of the Deep (Lightfall Launch)
-  // 2758726570: null, // 22, Season of Redacted
+  2758726570: "3de52d90db7ee2feb086ef6665b736b6", // 22, Season of the Witch
   // 2758726571: null, // 23, Season of Redacted
-};
-
-export const getIconWatermarkIdFromSeasonHash = (seasonHash: number) => {
-  return SeasonHashToArmorIconWatermarkIdMapping[seasonHash] ?? null;
 };
 
 function reverseRecord(input: Record<any, any>) {
@@ -58,10 +54,10 @@ export const getSeasonHashFromIconWatermarkId = (
   iconWatermarkId: string | null
 ) => {
   if (!iconWatermarkId) return 965757574; // Default to Red War
-  return (
-    Number(ArmorIconWatermarkIdToSeasonHashMapping[iconWatermarkId]) ??
-    undefined
-  );
+  if (ArmorIconWatermarkIdToSeasonHashMapping[iconWatermarkId]) {
+    return Number(ArmorIconWatermarkIdToSeasonHashMapping[iconWatermarkId]);
+  }
+  return 0;
 };
 
 export const extractArmorIconWatermarkIdFromUrl = (url: string | undefined) => {
@@ -71,11 +67,6 @@ export const extractArmorIconWatermarkIdFromUrl = (url: string | undefined) => {
     return match[1];
   }
   return null;
-};
-
-export const getIconWatermarkUrlFromId = (id: string | null) => {
-  if (!id) return null;
-  return `https://www.bungie.net/common/destiny2_content/icons/${id}.png`;
 };
 
 export const getSeason = (hash: number): Season => {

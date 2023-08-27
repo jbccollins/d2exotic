@@ -4,10 +4,11 @@ import { selectFilterByHasIntrinsicStats } from "@d2e/redux/slice/filterByHasInt
 import { selectGroupById } from "@d2e/redux/slice/groupById";
 import { selectSearch } from "@d2e/redux/slice/search";
 import { getExoticArmorNestedGroupList } from "@d2e/types/ExoticArmor";
+import { ENestedGroupItemType } from "@d2e/types/NestedGroup";
 import { Box } from "@mui/material";
 import NestedGroup from "./NestedGroup";
 
-export default function ExoticList() {
+export default function ExoticArmorList() {
   const searchTerm = useAppSelector(selectSearch);
   const groupById = useAppSelector(selectGroupById);
   const filterByHasIntrinsicFocus = useAppSelector(
@@ -26,6 +27,7 @@ export default function ExoticList() {
     <Box className="exotic-list">
       {exoticArmorNestedGroupList.map((exoticArmorNestedGroup) => (
         <NestedGroup
+          itemType={ENestedGroupItemType.ARMOR}
           key={exoticArmorNestedGroup.id}
           group={exoticArmorNestedGroup}
         />

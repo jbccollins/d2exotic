@@ -13,7 +13,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import * as React from "react";
-import ExoticList from "./ExoticList";
 import { HelpIcon } from "./HelpIcon";
 import Settings from "./Settings";
 const darkTheme = createTheme({
@@ -29,7 +28,7 @@ const darkTheme = createTheme({
 });
 
 const largeScreenDrawerWidth = 375;
-function MainLayout() {
+function MainLayout({ children }: { children: React.ReactNode }) {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -151,16 +150,20 @@ function MainLayout() {
         }}
       >
         <Toolbar />
-        <ExoticList />
+        {children}
       </Box>
     </Box>
   );
 }
 
-export default function ThemedLayout() {
+export default function ThemedLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <ThemeProvider theme={darkTheme}>
-      <MainLayout />
+      <MainLayout>{children}</MainLayout>
     </ThemeProvider>
   );
 }

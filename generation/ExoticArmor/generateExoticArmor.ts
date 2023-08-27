@@ -12,6 +12,7 @@ import {
 } from "@d2e/types/DestinyClass";
 import { ExoticArmor } from "@d2e/types/ExoticArmor";
 import {
+  RED_WAR_ICON_WATERMARK_URL,
   extractArmorIconWatermarkIdFromUrl,
   getSeasonHashFromIconWatermarkId,
 } from "@d2e/types/Season";
@@ -87,6 +88,9 @@ const buildExoticArmorData = (
       : false,
     seasonHash,
     icon: bungieNetPath(item.displayProperties.icon),
+    iconWatermark: item.iconWatermark
+      ? bungieNetPath(item.iconWatermark)
+      : RED_WAR_ICON_WATERMARK_URL,
     destinyClassId: getDestinyClassByItemCategoryHash(
       destinyClassItemCategoryHash
     ).id,

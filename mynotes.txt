@@ -1,0 +1,16 @@
+How to figure out what catalyst goes in what slot
+1. Search for the "Rat King Catalyst" InventoryItem (https://data.destinysets.com/i/InventoryItem:1758592809)
+2. Search "deep:1758592809" to find the SocketType associated with the catalyst
+3. The hash should show up in the SocketType under PlugWhitelist[x].reinitializationPossiblePlugHashes[0] = 1758592809 (https://data.destinysets.com/i/SocketType:3812783610)
+4. Take that SocketType hash and search "deep:3812783610". That should surface the Rat King InventoryItem
+5. Search the Rat King InventoryItem where sockets.socketEntries[x].socketTypeHash = 3812783610 (https://data.destinysets.com/i/InventoryItem:2362471601)
+6. Note that the "singleInitialItemHash" (2673643645) references the empty catalyst socket InventoryItem (https://data.destinysets.com/i/InventoryItem:2362471601/InventoryItem:2673643645)
+
+To associate the Record (https://data.destinysets.com/i/Record:209320411)
+That shows the source in statInfo.obscuredDescription follow this linking:
+
+1. The "Rat King Catalyst" Record: https://data.destinysets.com/i/Record:209320411
+2. Links to the "Fireteam Rat King Kills" Objective: https://data.destinysets.com/i/Objective:567017609
+3. Which links to the "Upgrade Masterwork" InventoryItem: https://data.destinysets.com/i/InventoryItem:3546470356
+4. Which links to the "Rat King" InventoryItem: https://data.destinysets.com/i/InventoryItem:2362471601
+
