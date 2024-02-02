@@ -37,7 +37,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
       {
         hash: 3871231066,
-        value: 30,
+        value: 60,
       },
       {
         hash: 4188031367,
@@ -92,6 +92,124 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
       {
         hash: 905869860,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
+  [17096506]: {
+    name: "Dragon's Breath",
+    hash: 17096506,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/49197babe16ed546cec94b26b44f3447.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/a2fb48090c8bc0e5785975fab9596ab5.png",
+    seasonHash: 0,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 20,
+      },
+      {
+        hash: 4284893193,
+        value: 40,
+      },
+      {
+        hash: 3614673599,
+        value: 90,
+      },
+      {
+        hash: 2523465841,
+        value: 72,
+      },
+      {
+        hash: 155624089,
+        value: 37,
+      },
+      {
+        hash: 3871231066,
+        value: 20,
+      },
+      {
+        hash: 4188031367,
+        value: 37,
+      },
+      {
+        hash: 1931675084,
+        value: 50,
+      },
+      {
+        hash: 943549884,
+        value: 82,
+      },
+      {
+        hash: 1345609583,
+        value: 70,
+      },
+      {
+        hash: 2715839340,
+        value: 55,
+      },
+      {
+        hash: 2714457168,
+        value: 10,
+      },
+    ],
+    catalyst: {
+      name: "Dragon's Breath Catalyst",
+      hash: 2924294393,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/2305fe129af716dae7af521e1537748c.jpg",
+      perks: [
+        {
+          hash: 3683663498,
+          icon: "https://www.bungie.net/common/destiny2_content/icons/40bdf10ef7b4fca75227980d5ad936bc.png",
+          name: "Pyromancer",
+          description:
+            "This weapon replenishes its fuel faster. Defeating targets with this weapon causes them to periodically drop Firesprites.",
+        },
+      ],
+    },
+    intrinsicTraits: [
+      {
+        hash: 2440389870,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/11bb35aced31adb1ccb493800ac8833e.png",
+        name: "Composite Propellant",
+        description:
+          "Rockets embed themselves in struck targets and periodically eject incendiary fuel that inflicts Scorch. The longer this weapon goes without firing, the more fuel the next rocket contains.",
+      },
+    ],
+    perks: [
+      {
+        hash: 1478423395,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d255c9140cf640cfc820f995d1c1e96a.png",
+        name: "Volatile Launch",
+        description:
+          "This weapon is optimized for an especially explosive payload.\n  •  Greatly increases blast radius\n  •  Slightly decreases handling speed\n  •  Slightly decreases projectile speed",
+      },
+      {
+        hash: 1996142143,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/19deadeab109c6a2907900d6fe0d6142.png",
+        name: "Black Powder",
+        description:
+          "This weapon's explosives are more effective.\n  •  Slightly increases blast radius\n  •  Decreases stability",
+      },
+      {
+        hash: 2727957645,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/74adaa8bd374d4b76f5282d1c4786c6b.png",
+        name: "High Octane",
+        description:
+          "Igniting nearby targets partially replenishes fuel. This weapon refills itself from reserves upon gaining maximum fuel.",
+      },
+      {
+        hash: 1067908860,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/47f90d3f25a517166933f2b4eb38e9aa.png",
+        name: "Short-Action Stock",
+        description:
+          "This weapon is especially easy to grip.\n  •  Greatly increases handling speed",
+      },
+      {
+        hash: 2240097604,
         icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
         name: "Kill Tracker",
         description:
@@ -1625,7 +1743,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
           icon: "https://www.bungie.net/common/destiny2_content/icons/b12c87b06407676957545de8a46d8c38.png",
           name: "Heat of the Moment",
           description:
-            "While Ignition Trigger is active, your health recovers much faster.",
+            "While Ignition Trigger is active, your health recovers more quickly, and sustained fire scorches your target.",
         },
       ],
     },
@@ -1656,8 +1774,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         hash: 3772485195,
         icon: "https://www.bungie.net/common/destiny2_content/icons/ec9620bac4391e2b325184fbd2b49b91.png",
         name: "Heat Sink",
-        description:
-          "Overheat damage is reduced while not aiming down sights. While overheated, sustained fire scorches your target.",
+        description: "Overheat damage is reduced while not aiming down sights.",
       },
       {
         hash: 990298390,
@@ -2000,7 +2117,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/e3dccec2d11f6c0ad18183f817419308.png",
         name: "Tithing Harvest",
         description:
-          "Destroyed Stasis crystals or precision final blows while Creeping Attrition is active create a Stasis shard that returns to you. Collecting Stasis shards refills the magazine.",
+          "While Creeping Attrition is active, destroying Stasis crystals or landing precision final blows creates a Stasis shard. The Stasis shard returns to you, and collecting Stasis shards refills the magazine.",
       },
       {
         hash: 4259401308,
@@ -2008,6 +2125,123 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         name: "Fitted Stock",
         description:
           "This stock makes the weapon stable but heavy\n  •  Increases stability\n  •  Moderately controls recoil\n  •  Slightly decreases handling speed",
+      },
+      {
+        hash: 2302094943,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
+  [1034055198]: {
+    name: "Necrochasm",
+    hash: 1034055198,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/52e8bb636771f4731da3f73f06fcad04.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/3de52d90db7ee2feb086ef6665b736b6.png",
+    seasonHash: 2758726570,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 17,
+      },
+      {
+        hash: 4284893193,
+        value: 100,
+      },
+      {
+        hash: 4043523819,
+        value: 0,
+      },
+      {
+        hash: 1240592695,
+        value: 34,
+      },
+      {
+        hash: 155624089,
+        value: 74,
+      },
+      {
+        hash: 3871231066,
+        value: 32,
+      },
+      {
+        hash: 4188031367,
+        value: 76,
+      },
+      {
+        hash: 1931675084,
+        value: 53,
+      },
+      {
+        hash: 943549884,
+        value: 55,
+      },
+      {
+        hash: 1345609583,
+        value: 85,
+      },
+      {
+        hash: 2715839340,
+        value: 55,
+      },
+      {
+        hash: 2714457168,
+        value: 24,
+      },
+    ],
+    catalyst: {
+      name: "Necrochasm Catalyst",
+      hash: 1931066670,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/0d23330a42b682cdec7ec72c1d024900.jpg",
+      perks: [
+        {
+          hash: 4128177584,
+          icon: "https://www.bungie.net/common/destiny2_content/icons/382df469a091c33e190ee583b64923e8.png",
+          name: "Outlaw",
+          description: "Precision kills greatly decrease reload time.",
+        },
+      ],
+    },
+    intrinsicTraits: [
+      {
+        hash: 4184462049,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d0479adc37e6df06e2535f97ff1e16a7.png",
+        name: "Cursebringer",
+        description:
+          "Precision final blows with this weapon trigger a Cursed Thrall explosion. Final blows with Cursed Thrall explosions refill the magazine.",
+      },
+    ],
+    perks: [
+      {
+        hash: 839105230,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/8f7fb54687aa52a9c2595d90ce9c9417.png",
+        name: "Arrowhead Brake",
+        description:
+          "Lightly vented barrel.\n  •  Greatly controls recoil\n  •  Increases handling speed",
+      },
+      {
+        hash: 1885400500,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/0a494d0442b32aff8c30d8b2b53561bd.png",
+        name: "Ricochet Rounds",
+        description:
+          "Rounds ricochet off hard surfaces. \n  •  Increases stability \n  •  Slightly increases range",
+      },
+      {
+        hash: 525593296,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/1fd0441fbd7dc24b0ec3f3ccbefe8435.png",
+        name: "Desperation",
+        description:
+          "Reloading after a precision final blow or a final blow with a Cursed Thrall explosion increases your rate of fire and improves stability and aim assist.",
+      },
+      {
+        hash: 990298390,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/11fe23229c61287c89916f094b26652f.png",
+        name: "Hand-Laid Stock",
+        description:
+          "This weapon is optimized for recoil control.\n  •  Increases stability",
       },
       {
         hash: 2302094943,
@@ -6655,7 +6889,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
           icon: "https://www.bungie.net/common/destiny2_content/icons/4aed2e5da8425b24df7a4db16e035c54.jpg",
           name: "Third Tail",
           description:
-            "Adds an additional Arc rocket to the second shot in a volley. The Arc rocket jolts targets.",
+            "Adds another rocket to the volley that deals Arc damage and jolts combatants.",
         },
       ],
     },
@@ -7393,6 +7627,118 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
       {
         hash: 905869860,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
+  [2910326942]: {
+    name: "Wish-Keeper",
+    hash: 2910326942,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/6b47d872840188bc913d6307fa537c3c.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/a2fb48090c8bc0e5785975fab9596ab5.png",
+    seasonHash: 0,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 18,
+      },
+      {
+        hash: 2961396640,
+        value: 60,
+      },
+      {
+        hash: 4043523819,
+        value: 40,
+      },
+      {
+        hash: 1591432999,
+        value: 67,
+      },
+      {
+        hash: 155624089,
+        value: 47,
+      },
+      {
+        hash: 447667954,
+        value: 60,
+      },
+      {
+        hash: 4188031367,
+        value: 40,
+      },
+      {
+        hash: 1931675084,
+        value: 54,
+      },
+      {
+        hash: 943549884,
+        value: 54,
+      },
+      {
+        hash: 1345609583,
+        value: 70,
+      },
+      {
+        hash: 2715839340,
+        value: 80,
+      },
+      {
+        hash: 2714457168,
+        value: 14,
+      },
+    ],
+    catalyst: {
+      name: "Increase Weapon Level",
+      hash: 4275472612,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/30551d7411af81eb4fde8c753f960e6f.jpg",
+      upgradeMasterwork: {
+        stats: [],
+      },
+    },
+    intrinsicTraits: [
+      {
+        hash: 214670074,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/4061fbc69bad26a23b8be567b8f2ed1e.png",
+        name: "Snareweaver",
+        description:
+          "Precision hits and final blows build energy towards a Snareweaver arrow that can be fired from the hip. On impact, Snareweaver arrows create a pattern of traps that suspend nearby targets.",
+      },
+    ],
+    perks: [
+      {
+        hash: 3768438372,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/6796bbe4e3f485fc610700d581d18475.png",
+        name: "Agile Bowstring",
+        description:
+          "Durable yet light bowstring.\n  •  Greatly increases handling speed\n  •  Slightly increases stability",
+      },
+      {
+        hash: 2154191829,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d9e1105b539034b94a2f195245860893.png",
+        name: "Carbon Arrow Shaft",
+        description:
+          "Light and stable shaft material. \n  •  Increases stability",
+      },
+      {
+        hash: 2799667909,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2096c2a2431760eb26fd0215682b5809.png",
+        name: "Silkbound Slayer",
+        description:
+          "This weapon deals bonus damage to suspended targets. Gain faster draw time for a short duration when you suspend a target from any source or damage a suspended target with this weapon.",
+      },
+      {
+        hash: 1012699414,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/02a60561b11d9abee82741981af12a3f.png",
+        name: "Heavy Grip",
+        description:
+          "This grip is weighted for recoil control.\n  •  Increases stability\n  •  Decreases handling speed",
+      },
+      {
+        hash: 2302094943,
         icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
         name: "Kill Tracker",
         description:
@@ -11592,6 +11938,123 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
     ],
   },
+  [3886719505]: {
+    name: "Buried Bloodline",
+    hash: 3886719505,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/fcae8edcd35227d35fca0a108d831840.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/a2fb48090c8bc0e5785975fab9596ab5.png",
+    seasonHash: 0,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 18,
+      },
+      {
+        hash: 4284893193,
+        value: 0,
+      },
+      {
+        hash: 1240592695,
+        value: 35,
+      },
+      {
+        hash: 2523465841,
+        value: 69,
+      },
+      {
+        hash: 155624089,
+        value: 52,
+      },
+      {
+        hash: 3871231066,
+        value: 20,
+      },
+      {
+        hash: 4188031367,
+        value: 21,
+      },
+      {
+        hash: 1931675084,
+        value: 50,
+      },
+      {
+        hash: 943549884,
+        value: 55,
+      },
+      {
+        hash: 1345609583,
+        value: 89,
+      },
+      {
+        hash: 2715839340,
+        value: 99,
+      },
+      {
+        hash: 2714457168,
+        value: 22,
+      },
+    ],
+    catalyst: {
+      name: "Buried Bloodline Catalyst",
+      hash: 2199828458,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/bd6993b1382825614f2c542c2a1d097b.jpg",
+      perks: [
+        {
+          hash: 4071634811,
+          icon: "https://www.bungie.net/common/destiny2_content/icons/5ebddb7e1552b6efb1f8e0cfecf13fb7.png",
+          name: "Splitvein Lineage",
+          description: "While Devour is active, this weapon weakens on hit.",
+        },
+      ],
+    },
+    intrinsicTraits: [
+      {
+        hash: 90392189,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c59f81b9e4fa8b9503de2ffdae2c41ed.png",
+        name: "Hungering Quarrel",
+        description:
+          "Double fires tracking bolts. Landing bolts leeches health from the target.",
+      },
+    ],
+    perks: [
+      {
+        hash: 981914802,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/8bedf618841b334417b8f95c2aa35d57.png",
+        name: "Hard Launch",
+        description:
+          "This weapon's launch barrel is optimized for projectile speed.\n  •  Greatly increases projectile speed\n  •  Decreases stability\n  •  Slightly decreases blast radius",
+      },
+      {
+        hash: 3230963543,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/f95e67e4ff37466505d66d3fa1030782.png",
+        name: "Flared Magwell",
+        description:
+          "Optimized for fast reloading.\n  •  Slightly increases stability\n  •  Greatly increases reload speed",
+      },
+      {
+        hash: 571791574,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d8cd30e72d44ced246d709f9fd5db3bd.png",
+        name: "Violent Reanimation",
+        description:
+          "Multiple final blows with this weapon grant Devour to the wielder.",
+      },
+      {
+        hash: 990298390,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/11fe23229c61287c89916f094b26652f.png",
+        name: "Hand-Laid Stock",
+        description:
+          "This weapon is optimized for recoil control.\n  •  Increases stability",
+      },
+      {
+        hash: 905869860,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
   [3899270607]: {
     name: "The Colony",
     hash: 3899270607,
@@ -11770,6 +12233,34 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         value: 21,
       },
     ],
+    catalyst: {
+      name: "Thorn Catalyst",
+      hash: 4091235251,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/c5efe44dfb505ff905c5cac4797c76fc.jpg",
+      stats: [
+        {
+          hash: 1240592695,
+          value: 15,
+        },
+        {
+          hash: 155624089,
+          value: 5,
+        },
+        {
+          hash: 2714457168,
+          value: 5,
+        },
+      ],
+      perks: [
+        {
+          hash: 1576266599,
+          icon: "https://www.bungie.net/common/destiny2_content/icons/d43b1ed91cb6373718810d614ada1f44.jpg",
+          name: "Refined Soul",
+          description:
+            "Grants bonus range and stability. Dealing a final blow or absorbing a Remnant grants additional increased weapon range, as well as increased mobility and handling for a short time.",
+        },
+      ],
+    },
     intrinsicTraits: [
       {
         hash: 1863355414,

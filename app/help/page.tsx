@@ -482,24 +482,12 @@ export default function Help() {
         <SectionBody>
           <Box>
             <Emphasis>Contraband Exotics</Emphasis> are exotic armor pieces that
-            do not abide by their <Emphasis>intrinsic stat focus</Emphasis>{" "}
-            (i.e. an exotic with less than 10 in the stat that corresponds to
-            its <Emphasis>intrinsic stat focus</Emphasis>).{" "}
+            break <Emphasis>intrinsic stat focus</Emphasis> rules (i.e. an
+            exotic with less than 10 in the stat that corresponds to its{" "}
+            <Emphasis>intrinsic stat focus</Emphasis>).{" "}
             <Emphasis>Contraband Exotics</Emphasis> can be very useful when
             making a build that not lean into the{" "}
             <Emphasis>intrinsic stat focus</Emphasis> of your preferred exotic.
-            As of writing this document, Intellect is not a very useful stat for
-            most PvE builds. Exotics with an{" "}
-            <Emphasis>intrinsic stat focus</Emphasis> of Intellect (e.g.{" "}
-            <CustomLink
-              internal
-              target="_blank"
-              href="/?s=Star-Eater+Scales&group=DestinyClass&focus=true"
-            >
-              Star-Eater Scales
-            </CustomLink>
-            ) could be used "more optimially" in a build where those 10
-            Intellect points were spent somewhere else.
             <Box sx={{ marginTop: theme.spacing(1) }}>
               <Emphasis>Contraband Exotics</Emphasis> come from a few sources:
             </Box>

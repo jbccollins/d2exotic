@@ -145,8 +145,16 @@ export const SeasonIdToSeasonMapping: Record<number, Season> = {
     endDate: "2023-11-28T17:00:00Z",
   },
   [2758726571]: {
-    name: "Season of [Redacted]",
+    name: "Season of the Wish",
     hash: 2758726571,
     number: 23,
+    startDate: "2023-11-28T17:00:00Z",
+    endDate: "2024-06-04T17:00:00Z",
+  },
+  [2758726572]: {
+    name: "Season of [Redacted]",
+    hash: 2758726572,
+    number: 24,
+    startDate: "2024-06-04T17:00:00Z",
   },
 };

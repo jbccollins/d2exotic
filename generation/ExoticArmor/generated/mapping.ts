@@ -68,7 +68,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Close Enough",
         description:
-          "Damaging targets with Chaos Reach extends its duration. Collecting Ionic Traces grants you energy for Chaos Reach.",
+          "Damaging targets with Chaos Reach extends its duration. Collecting ionic traces grants you energy for Chaos Reach.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/66fcc068afb7cda7082e338debf3c454.png",
         hash: 1939153390,
       },
@@ -157,7 +157,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Hydraulic Boosters",
         description:
-          "Increases sprint speed and slide distance while your dodge energy is full and improves High Jump, Strafe Jump, and Triple Jump.",
+          "Increases sprint speed and slide distance, and improves High Jump, Strafe Jump, and Triple Jump. Take less damage from targets when airborne.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/1f2c8873254a4d9f6e09f243123168ac.png",
         hash: 1694242450,
       },
@@ -225,7 +225,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Embers of Light",
         description:
-          "Defeating combatants or Guardians while Daybreak is active creates a healing and empowering rift at their location. While standing in any rift, [Solar] Solar weapon final blows grant Rift energy. When your Rift energy is full, final blows consume your Rift energy and create a healing and empowering rift at the target's location.",
+          "While Daybreak is active, defeating targets creates a healing and empowering rift at their location. Solar weapon final blows grant Rift energy and at an increased rate when standing in any rift. When standing in any rift and Rift energy is full, final blows consume class energy and create a healing and empowering rift at the target's location.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/c47e43df7db6047a5a8b0d9963e5043a.png",
         hash: 1095471953,
       },
@@ -268,7 +268,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Biotic Enhancements",
         description:
-          "Increased melee lunge range. Improved melee and Super damage when you're surrounded.",
+          "When you're surrounded, gain increased melee and Super damage, as well as improved weapon handling and reload speed.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/640d76fb6ab52e290116455379194b07.png",
         hash: 1155472384,
       },
@@ -353,7 +353,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Wish-Dragon Teeth",
         description:
-          "Increases Tripmine Grenade duration and blast radius. Ability damage grants Tripmine Grenade energy.",
+          "Increases Tripmine Grenade duration and blast radius. Gain Tripmine Grenade energy from ability final blows.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/28aa0f30e0e57d914bf5f12345c631f0.png",
         hash: 481860150,
       },
@@ -442,7 +442,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Sharp Edges",
         description:
-          "Hits and kills with Blade Barrage will return Super energy after the Super ends.",
+          "Throwing Knife final blows decrease the cooldown of your Super. Hits and final blows with Blade Barrage will return Super energy after the Super ends.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/467f441de1568bd8c6ad437a76671b5f.png",
         hash: 1449897497,
       },
@@ -511,7 +511,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isFocusable: true,
       exoticArmorPerk: {
         name: "Scissor Fingers",
-        description: "Grants two knives per charge.",
+        description:
+          "Gain a second knife per charge. Getting a final blow with a throwing knife grants consecutive knives a temporary stacking damage bonus. Gambler's Dodge refreshes the bonus timer.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/ab27032269b5faa817000b9d22ee751e.png",
         hash: 3666112472,
       },
@@ -603,7 +604,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Insatiable",
         description:
-          "Immediately regenerate health, melee, grenade, and Rift energy upon activating your Super. Nearby allies recharge class abilities faster.",
+          "Immediately regenerate health, melee, grenade, and Rift energy for you and your nearby allies upon activating your Super. After your Super ends, temporarily gain greatly increased melee and grenade regen.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/5ca9d0fa8f6c97999ac5927c679401af.png",
         hash: 4174493725,
       },
@@ -759,7 +760,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Hawkeye Hack",
         description:
-          "Modifies Golden Gun to fire a single high-damage shot. Enemies eliminated by the shot explode and grant you Super energy.",
+          "Precision final blows reduce the cooldown of your Super. Modifies Golden Gun to fire a single, high-damage shot. Targets defeated by that shot give you Super energy and explode.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/22e4a1934ecb6b95295ebcc2d5139ff4.png",
         hash: 2663272110,
       },
@@ -1161,7 +1162,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Spring-Loaded Mounting",
         description:
-          "Increases Sidearm ready and reload speed. While you're critically wounded, swapping to a Sidearm increases its damage. Provides a large benefit to the airborne effectiveness stat of Sidearms.",
+          "Increases Sidearm airborne effectiveness, ready speed, and reload speed. While you're critically wounded, swapping to a Sidearm reloads it and increases its damage. While this effect is active, Sidearm final blows reload the weapon and extend the effect's duration.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/cbea782469054e260fd336b5222adc23.png",
         hash: 481860151,
       },
@@ -1183,7 +1184,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Bring the Heat",
         description:
-          "Fusion Grenades now explode on impact and gain increased throw speed. Final blows with Fusion Grenades grant grenade energy.",
+          "Fusion Grenades gain increased throw speed, explode on impact, and stun Unstoppable Champions. Final blows with Fusion Grenades grant grenade energy.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/e62825791887bff24c2d044a250169eb.png",
         hash: 384759954,
       },
@@ -1206,7 +1207,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Burning Fists",
         description:
-          "Melee kills increase melee damage for a period of time. Additional kills extend duration and increase effects.",
+          "Defeating a target with melee or a finisher grants escalating melee damage, which decays over time. Higher levels of Burning Fists grant increased weapon damage.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/89777d9b91d348fc8d24e24edca139ae.png",
         hash: 384759955,
       },
@@ -1331,11 +1332,11 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       iconWatermark:
         "https://www.bungie.net/common/destiny2_content/icons/3de52d90db7ee2feb086ef6665b736b6.png",
       destinyClassId: EDestinyClassId.Titan,
-      isFocusable: false,
+      isFocusable: true,
       exoticArmorPerk: {
         name: "Percussive Flames",
         description:
-          "Modifies Burning Maul into a single high-damage slam of your hammer that creates five cyclones of flame. Consecration's second slam creates a cyclone of flame.",
+          "Modifies Burning Maul into a single, high-damage slam of your hammer that creates several cyclones of flame. Consecration's second slam creates a cyclone of flame.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/fee237f7f5a0d5aaa5a8442a73ae6cbe.png",
         hash: 1630940558,
       },
@@ -1462,7 +1463,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Peregrine Strike",
         description:
-          "All shoulder charge abilities (Seismic Strike, Hammer Strike, or Shield Bash) deal bonus damage when activated in the air. Provides a small benefit to the airborne effectiveness stat of all weapons.",
+          "All shoulder charge abilities (Seismic Strike, Hammer Strike, or Shield Bash) deal bonus damage when activated in the air. Damaging mini-bosses, Tormentors, or Champions with your shoulder charge refunds your melee. Provides a small benefit to the airborne effectiveness stat of all weapons.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/7713596356b90eec06db4b7c50523685.png",
         hash: 235075862,
       },
@@ -1646,7 +1647,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Reflective Vents",
         description:
-          "Improved slide. Sliding after sprinting for a short time reflects incoming projectiles.",
+          "While sliding with full class ability energy, you gain a frontal shield that reflects incoming damage. After reflecting damage, your class ability energy is depleted based on the amount of damage reflected.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/dfe3093d5854f9d2e956592604e8338b.png",
         hash: 242794439,
       },
@@ -2035,7 +2036,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       iconWatermark:
         "https://www.bungie.net/common/destiny2_content/icons/3de52d90db7ee2feb086ef6665b736b6.png",
       destinyClassId: EDestinyClassId.Warlock,
-      isFocusable: false,
+      isFocusable: true,
       exoticArmorPerk: {
         name: "One with the Void",
         description:
@@ -2241,7 +2242,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       iconWatermark:
         "https://www.bungie.net/common/destiny2_content/icons/3de52d90db7ee2feb086ef6665b736b6.png",
       destinyClassId: EDestinyClassId.Hunter,
-      isFocusable: false,
+      isFocusable: true,
       exoticArmorPerk: {
         name: "Winged Eclipse",
         description:
@@ -2418,7 +2419,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Hearts of Ice",
         description:
-          "Your Winter's Wrath Shockwave deals increased shatter damage. Allies in range of your Shockwave gain an overshield and increased damage with Stasis weapons.",
+          "Your Winter's Wrath Shockwave deals increased shatter damage. Allies in range of your Winter's Wrath Shockwave and Frostpulse gain an overshield and increased damage with Stasis weapons.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/8103cdb85a1fdca98d61a4d269cde387.png",
         hash: 2894608781,
       },
@@ -2438,7 +2439,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Vampire's Caress",
         description:
-          "Melee kills instantly restore a large amount of health and continue to restore health afterwards for a short duration.",
+          "Melee and finisher final blows instantly grant cure and provide restoration for a short duration.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/26ae0fb1750196126118d19464c63bf0.png",
         hash: 2731901710,
       },
@@ -2546,7 +2547,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Move to Survive",
         description:
-          "Blink further and more frequently. Weapon readies quickly out of Blink and radar remains up. Provides a moderate benefit to the airborne effectiveness stat of all weapons.",
+          "Blink further and more frequently, causing targets near you to become volatile. Weapon readies quickly out of Blink and radar remains up. While your Nova Warp Super is active, Dark Blink does not cost Super energy. Provides a moderate benefit to the airborne effectiveness stat of all weapons.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/3e0c0449da436384126e4cf4d3410086.png",
         hash: 3295796664,
       },
@@ -2569,7 +2570,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Kintsugi",
         description:
-          "Final blows from weapons with a damage type matching your subclass energy create a burst of healing around you. After reviving or being revived, you gain an aura that provides overshields to you and nearby allies.",
+          "Final blows from weapons with a damage type matching your subclass energy create a burst of healing around you that grants allies restoration. After reviving or being revived, you gain an aura that provides overshields to you and nearby allies.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/811e014f935edafdc52042602ca2429d.png",
         hash: 2979726427,
       },

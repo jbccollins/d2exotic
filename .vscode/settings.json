@@ -1,6 +1,6 @@
 {
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": false
+        "source.fixAll.eslint": "never"
     },
     "eslint.validate": [
         "typescript"
@@ -27,4 +27,9 @@
         "editor.tabSize": 2
     },
     "typescript.tsdk": "node_modules/typescript/lib",
+    "[typescript][typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
 }
