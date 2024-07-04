@@ -16,6 +16,7 @@ Ashen Wake                     Discipline
 Assassin's Cowl                -
 Astrocyte Verse                -
 Athrys's Embrace               Strength
+Balance of Power               -
 Ballidorse Wrathweavers        -
 Blight Ranger                  -
 Boots of the Assembler         -
@@ -44,10 +45,12 @@ Fr0st-EE5                      -
 Gemini Jester                  Mobility
 Geomag Stabilizers             -
 Getaway Artist                 Discipline
+Gifted Conviction              -
 Graviton Forfeit               -
 Gwisin Vest                    Intellect
 Gyrfalcon's Hauberk            -
 Hallowfire Heart               -
+Hazardous Propulsion           -
 Heart of Inmost Light          -
 Helm of Saint-14               Intellect
 Hoarfrost-Z                    -
@@ -65,6 +68,7 @@ Lunafaction Boots              Recovery
 Mantle of Battle Harmony       -
 Mask of Bakris                 Mobility
 Mask of the Quiet One          -
+Mataiodoxía                    -
 Mechaneer's Tricksleeves       -
 Mk. 44 Stand Asides            -
 Mothkeeper's Wraps             -
@@ -91,6 +95,7 @@ Radiant Dance Machines         -
 Raiden Flux                    Intellect
 Raiju's Harness                Intellect
 Rain of Fire                   -
+Relativism                     -
 Renewal Grasps                 -
 Sanguine Alchemy               Recovery
 Sealed Ahamkara Grasps         -
@@ -100,10 +105,13 @@ Severance Enclosure            -
 Shards of Galanor              Intellect
 Shinobu's Vow                  Discipline
 Skull of Dire Ahamkara         Intellect
+Solipsism                      -
+Speaker's Sight                -
 Speedloader Slacks             -
 St0mp-EE5                      -
 Star-Eater Scales              Intellect
 Starfire Protocol              Discipline
+Stoicism                       -
 Stormdancer's Brace            Intellect
 Stronghold                     -
 Sunbracers                     -
@@ -121,6 +129,7 @@ Verity's Brow                  -
 Vesper of Radius               Recovery
 Wings of Sacred Dawn           -
 Winter's Guile                 -
+Wishful Ignorance              -
 Wormgod Caress                 -
 Wormhusk Crown                 Mobility
 Young Ahamkara's Spine         Discipline

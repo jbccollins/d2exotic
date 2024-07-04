@@ -1,3 +1,10 @@
+# Setup this script:
+# python3 -m venv myenv
+# source myenv/bin/activate
+# pip install -r requirements.txt
+# python3 get-intrinsic-focuses.py
+
+
 import requests, os, json
 
 #######################################################
@@ -75,7 +82,15 @@ def get_stat_minimum(item):
         _["socketIndexes"][:4]
         for _ in item["sockets"]["socketCategories"]
         if _["socketCategoryHash"] == 3154740035
-    ][0]
+    ]
+
+    # Check if socketCategories is empty
+    if not socketCategories:
+        # Handle the case where no matching socketCategories are found
+        # For example, return -1 or another appropriate value
+        return -1
+
+    socketCategories = socketCategories[0]
     sockets = [
         sock
         for k, sock in enumerate(item["sockets"]["socketEntries"])
@@ -128,9 +143,10 @@ def get_stat_minimum(item):
 
 
 intrinsics = {
-    item["displayProperties"]["name"]: get_stat_minimum(item) for item in exotic_armor
+    item["displayProperties"]["name"]: get_stat_minimum(item)
+    for item in exotic_armor
+    if "displayProperties" in item and "name" in item["displayProperties"]
 }
-
 STAT_NAMES = [
     "Mobility",
     "Resilience",
@@ -150,5 +166,6 @@ STAT_NAMES = [
 # sort by name (key)
 intrinsics = {k: v for k, v in sorted(intrinsics.items(), key=lambda item: item[0])}
 
-for name in intrinsics:
-    print(f"{name:30} {STAT_NAMES[intrinsics[name]]}")
+for name, index in intrinsics.items():
+    stat_name = STAT_NAMES[index] if 0 <= index < len(STAT_NAMES) else "-"
+    print(f"{name:30} {stat_name}")
