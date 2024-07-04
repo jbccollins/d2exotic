@@ -124,6 +124,15 @@ const AdvancedDecryptionEngramIdToAdvancedDecryptionEngramMapping: Record<
     order: 8,
     icon: "https://www.bungie.net/common/destiny2_content/icons/4de4f34813fdbc2c0f87f12d788d5c61.png",
   },
+  // [EAdvancedDecryptionEngramId.TheFinalShape]: {
+  //   id: EAdvancedDecryptionEngramId.TheFinalShape,
+  //   name: "The Final Shape Armor Decryption",
+  //   shortName: "The Final Shape",
+  //   expansionId: EExpansionId.TheFinalShape,
+  //   armorSlotIdList: allArmorSlots,
+  //   order: 8,
+  //   icon: "https://www.bungie.net/common/destiny2_content/icons/4de4f34813fdbc2c0f87f12d788d5c61.png",
+  // },
 };
 
 export const getAdvancedDecryptionEngramById = (

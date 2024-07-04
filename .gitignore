@@ -39,3 +39,4 @@ generation/cached-definitions/*
 /manifest/*
 
 myenv/*
+certificates

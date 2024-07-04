@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "local-ssl-proxy --source 3001 --target 3000 --cert localhost.pem --key localhost-key.pem & next dev",
+    "dev": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -33,7 +33,7 @@
     "lodash": "4.17.21",
     "lodash.compact": "^3.0.1",
     "memoize-one": "6.0.0",
-    "next": "13.4.6",
+    "next": "14.2",
     "node-fetch": "^3.3.2",
     "postcss": "8.4.24",
     "prettier": "2.8.8",

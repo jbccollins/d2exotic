@@ -2,9 +2,9 @@
 
 import { getAccessToken } from "@d2e/lib/oauth/request";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 
-export default function OauthReturn() {
+function OauthReturn() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const code = searchParams.get("code");
@@ -26,4 +26,12 @@ export default function OauthReturn() {
   }, [code, router]);
 
   return <div>OAuth Return</div>;
+}
+
+export default function Page() {
+  return (
+    <Suspense>
+      <OauthReturn />
+    </Suspense>
+  );
 }

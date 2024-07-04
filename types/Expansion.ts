@@ -8,7 +8,7 @@ export const ExpansionIdList = ValidateEnumList(Object.values(EExpansionId), [
   EExpansionId.BeyondLight,
   EExpansionId.WitchQueen,
   EExpansionId.Lightfall,
-  EExpansionId.FinalShape,
+  EExpansionId.TheFinalShape,
 ]);
 
 export type Expansion = {
@@ -60,10 +60,10 @@ const ExpansionIdToExpansionMapping: Record<EExpansionId, Expansion> = {
     seasonHashList: [2758726568, 2758726569, 2758726570, 2758726571],
     number: 5,
   },
-  [EExpansionId.FinalShape]: {
-    id: EExpansionId.FinalShape,
+  [EExpansionId.TheFinalShape]: {
+    id: EExpansionId.TheFinalShape,
     name: "The Final Shape",
-    seasonHashList: [],
+    seasonHashList: [2758726572, 2758726573, 2758726574],
     number: 6,
   },
 };

@@ -28,7 +28,7 @@ export enum EExpansionId {
   BeyondLight = "BeyondLight",
   WitchQueen = "WitchQueen",
   Lightfall = "Lightfall",
-  FinalShape = "FinalShape",
+  TheFinalShape = "TheFinalShape",
 }
 
 export enum EAdvancedDecryptionEngramId {

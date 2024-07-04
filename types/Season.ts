@@ -37,7 +37,8 @@ const SeasonHashToArmorIconWatermarkIdMapping: Record<number, string> = {
   2758726568: "af00bdcd3e3b89e6e85c1f63ebc0b4e4", // 20, Season of Defiance
   2758726569: "6026e9d64e8c2b19f302dafb0286897b", // 21, Season of the Deep (Lightfall Launch)
   2758726570: "3de52d90db7ee2feb086ef6665b736b6", // 22, Season of the Witch
-  // 2758726571: null, // 23, Season of Redacted
+  2758726571: "d5a3f4d7d20fefc781fea3c60bde9434", // Season of the Wish
+  2758726572: "e3ea0bd2e889b605614276876667759c", // "Episode: Echoes"
 };
 
 function reverseRecord(input: Record<any, any>) {

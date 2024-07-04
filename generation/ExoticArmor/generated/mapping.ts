@@ -11,6 +11,25 @@ import {
 
 export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
   {
+    [50291571]: {
+      name: "Speaker's Sight",
+      hash: 50291571,
+      armorSlotId: EArmorSlotId.Helm,
+      isWorldDrop: false,
+      seasonHash: 2758726572,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/95a96d8b0ec34340d47d5e74ba45e794.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+      destinyClassId: EDestinyClassId.Warlock,
+      isFocusable: false,
+      exoticArmorPerk: {
+        name: "The Lost Voice",
+        description:
+          "Healing grenades spawn a Restorative Turret. Healing allies occasionally spawns an Orb of Power.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/de5fe717db761b124bed152675a3bfc7.png",
+        hash: 2710254013,
+      },
+    },
     [90009855]: {
       name: "Arbor Warden",
       hash: 90009855,
@@ -44,7 +63,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Starless Night",
         description:
-          "Targets that enter Ward of Dawn are blinded, while allies that pass through gain a Void overshield. Guarding with Sentinel Shield blinds nearby targets.",
+          "Targets that enter Ward of Dawn are blinded, while allies that pass through gain a weapon damage boost. Guarding with Sentinel Shield blinds nearby targets.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/d4a23b232372815d738f5009e8da29d4.png",
         hash: 1331592343,
       },
@@ -179,7 +198,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Illegally Modded Holster",
         description:
-          "When you ready a fully loaded Hand Cannon that deals Kinetic damage or a damage type that matches your subclass energy type, each hit from that Hand Cannon increases the damage of the next shot for a short time against a combatant. Hand Cannons ready faster and are more accurate immediately after swapping to them. Provides a small benefit to the airborne effectiveness stat of Hand Cannons while the buff is active.",
+          "When you ready a fully loaded Hand Cannon that deals Kinetic damage or a damage type that matches your equipped Super, each hit from that Hand Cannon increases the damage of the next shot for a short time against a target. Hand Cannons ready faster and are more accurate immediately after swapping to them. Provides a small benefit to the airborne effectiveness stat of Hand Cannons while the buff is active.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/efbc5e963de684734f9761785b51a375.png",
         hash: 1694242448,
       },
@@ -225,7 +244,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Embers of Light",
         description:
-          "While Daybreak is active, defeating targets creates a healing and empowering rift at their location. Solar weapon final blows grant Rift energy and at an increased rate when standing in any rift. When standing in any rift and Rift energy is full, final blows consume class energy and create a healing and empowering rift at the target's location.",
+          "Daybreak final blows create a healing and empowering Rift at the target's location. While a Solar Super is equipped, Solar weapon final blows grant Rift energy; standing in a Rift increases this energy. Final blows while in a Rift consume class ability energy to create a healing and empowering Rift at the target's location.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/c47e43df7db6047a5a8b0d9963e5043a.png",
         hash: 1095471953,
       },
@@ -277,6 +296,19 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
         Recovery: 1,
       },
     },
+    [266021826]: {
+      name: "Stoicism",
+      hash: 266021826,
+      armorSlotId: EArmorSlotId.ClassItem,
+      isWorldDrop: false,
+      seasonHash: 2758726572,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/9db95c112130c018f823f394668cfb5a.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+      destinyClassId: EDestinyClassId.Titan,
+      isFocusable: false,
+      exoticArmorPerk: null,
+    },
     [300502917]: {
       name: "Nothing Manacles",
       hash: 300502917,
@@ -311,7 +343,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Tome of Dawn",
         description:
-          "When Dawnblade is equipped, aiming weapons while you're midair suspends you there for a short time, reducing incoming flinch and granting damage resistance. Weapon hits extend this effect's duration, and weapon final blows reload your Solar weapons from reserves. Provides a large benefit to the airborne effectiveness stat of all weapons.",
+          "While you have a Solar super equipped, aiming weapons while you're midair suspends you there for a short time, reducing incoming flinch and granting damage resistance. Weapon hits extend this effect's duration, and weapon final blows reload your Solar weapons from reserves. Provides a large benefit to the airborne effectiveness stat of all weapons.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/bca803e50002410309460be0966fabe9.png",
         hash: 926349160,
       },
@@ -377,7 +409,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Devouring Rift",
         description:
-          "Casting an empowering rift will grant you Devour. Damage dealt by you and your allies from within your empowering rift will disrupt combatants.",
+          "While using a Void Super, casting an Empowering Rift will grant you Devour. Damage dealt by you and your allies from within your Empowering Rift will disrupt combatants.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/1d4c0be6150c4ca71bc7add447c5d86c.png",
         hash: 1341199512,
       },
@@ -466,7 +498,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Relentless Tracker",
         description:
-          "Damaging a powerful combatant or Guardian with an ability grants you a temporary bonus to weapon damage matching your subclass type. Defeating that target with a weapon matching the damage type of your subclass creates an elemental pickup.",
+          "Damaging a powerful combatant or Guardian with an ability temporarily increases weapon damage of the same type. Defeating that marked target with damage that matches the element creates an elemental pickup.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/c156b7906217d8b61e7573f9c9cc2dc7.png",
         hash: 2663272109,
       },
@@ -694,7 +726,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Sunfire Furnace",
         description:
-          "Solar takedowns while standing in a Sunspot create a Sunspot. Greatly improves recharge rate of your Solar abilities while your Super is charged. Provides a small benefit to the airborne effectiveness stat of all weapons.",
+          "Solar final blows while standing in a Sunspot create a Sunspot. Greatly improves recharge rate of your melee and grenade while your Solar Super is charged. Provides a small benefit to the airborne effectiveness stat of all weapons.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/7066c741806a4c30d4987a63f5b3b2d9.png",
         hash: 1667892708,
       },
@@ -717,7 +749,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Parting Gift",
         description:
-          "Dodging leaves behind an explosive that detonates after a short delay, damaging targets around it and creating a secondary effect based on your subclass energy type:\n• [Arc] Blinds targets.\n• [Solar] Scorches targets.\n• [Void] Suppresses targets.\n• [Stasis] Slows targets.\n• [Strand] Severs targets.",
+          "Dodging leaves behind an explosive that detonates after a short delay, damaging targets around it and creating a secondary effect based on your Super's element:\n• [Arc] Blinds targets.\n• [Solar] Scorches targets.\n• [Void] Suppresses targets.\n• [Stasis] Slows targets.\n• [Strand] Severs targets.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/97c352f8ad87a9c7ea68b2a643d821ed.png",
         hash: 1844314558,
       },
@@ -784,7 +816,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Glacial Fortification",
         description:
-          "When using the Stasis subclass, your Barricade becomes a wall of Stasis crystals that slows nearby targets when created. Standing behind this barricade will grant you and your allies increased weapon reload speed, stability, and range.",
+          "While you have a Stasis Super equipped, your Barricade becomes a wall of Stasis crystals that slows nearby targets when created. Standing behind this barricade will grant you and your allies increased weapon reload speed, stability, and range.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/f093d552bec2248e94fed1a960d62dde.png",
         hash: 2471523345,
       },
@@ -908,7 +940,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isFocusable: true,
       exoticArmorPerk: {
         name: "Double Dodge",
-        description: "Gain a second dodge charge.",
+        description:
+          "Gain a second dodge charge. Shortly after dodging, your next weapon final blow spawns an Orb of Power.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/aa2934eb8a1990f6a1e76402ba12f26a.png",
         hash: 2192678015,
       },
@@ -1001,7 +1034,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Light Shift",
         description:
-          "Replaces your Stasis subclass Dodge ability with a longer range, faster moving shift that partially cloaks you during use. After shifting, your Stasis and Arc weapons deal increased damage for a short time.",
+          "While you have a Stasis Super equipped, your dodge becomes a longer range, faster moving shift that partially cloaks you during use. After shifting, your Stasis and Arc weapons deal increased damage for a short time.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/201a9a1773ef1b4babff1e92b8447c69.png",
         hash: 692285813,
       },
@@ -1024,6 +1057,25 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
           "Air dodge reloads all of your weapons and improves the airborne effectiveness of Fusion Rifles and Linear Fusion Rifles; final blows with these weapons make you radiant. Provides a moderate benefit to the airborne effectiveness stat of Fusion Rifles and Linear Fusion Rifles.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/1018b32e9bed692b4766d1a870457eed.png",
         hash: 4222205045,
+      },
+    },
+    [1627691271]: {
+      name: "Gifted Conviction",
+      hash: 1627691271,
+      armorSlotId: EArmorSlotId.Chest,
+      isWorldDrop: false,
+      seasonHash: 2758726572,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/4365fd49261fb81d069d0db10acb9fd4.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+      destinyClassId: EDestinyClassId.Hunter,
+      isFocusable: false,
+      exoticArmorPerk: {
+        name: "The Gift of Certainty",
+        description:
+          "Activating Ascension or Tempest Strike throws bouncing explosives at nearby targets that jolt and damage them. Jolting nearby targets grants you damage resistance.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/445018df2003ca15a56cb62f07824577.png",
+        hash: 4234468055,
       },
     },
     [1654461647]: {
@@ -1138,7 +1190,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Planetary Torrent",
         description:
-          "Rifts periodically release Arc shockwaves. Final blows with these shockwaves create an Arc explosion. While an Arc subclass is equipped, the shockwaves and subsequent explosions blind nearby targets. Rift energy recharges faster when you are surrounded by targets.",
+          "Rifts periodically release Arc shockwaves. Final blows with these shockwaves create an Arc explosion. While an Arc Super is equipped, the shockwaves and subsequent explosions blind nearby targets. Rift energy recharges faster when you are surrounded by targets.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/ff55cfecf4c70924d0894b1d8a442a18.png",
         hash: 1142806944,
       },
@@ -1230,7 +1282,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Ursine Guard",
         description:
-          "Move faster while guarding when Sentinel Shield is active. Guarded damage converts to Super energy when the Super ends.",
+          "Move faster while guarding with Sentinel Shield or the Unbreakable shield. Damage blocked with either is converted to Super energy.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/c792f09ce9d03c03064724af10be0349.png",
         hash: 4190535237,
       },
@@ -1273,13 +1325,32 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Chaotic Exchanger",
         description:
-          "Resist incoming damage while charging your Void grenade. Charged Void grenades return grenade energy on a hit.",
+          "Resist incoming damage while charging your Void grenade with Chaos Accelerant. Charged Void grenades return grenade energy on a hit.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/565c5f4a70339697ddd4d554f47ea101.png",
         hash: 8507332,
       },
       intrinsicFocus: EArmorStatId.Discipline,
       intrinsicStats: {
         Recovery: 2,
+      },
+    },
+    [1909305643]: {
+      name: "Hazardous Propulsion",
+      hash: 1909305643,
+      armorSlotId: EArmorSlotId.Chest,
+      isWorldDrop: false,
+      seasonHash: 2758726572,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/54ff2f91d443bac8714037a2d37c77d7.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+      destinyClassId: EDestinyClassId.Titan,
+      isFocusable: false,
+      exoticArmorPerk: {
+        name: "Danger Close",
+        description:
+          "Weapon precision hits or final blows have a chance to load a Kinetic Exodus rocket. Activating your class ability fires loaded Exodus rockets. Damaging targets with Exodus rockets temporarily increases the damage you deal with all other rockets.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/6aac128fffa4deabc593e373299c4a9c.png",
+        hash: 3495263107,
       },
     },
     [1935198785]: {
@@ -1299,6 +1370,25 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
           "You gain a second Smoke Bomb charge and have damage resistance while invisible. When you make an ally invisible, they gain damage resistance while invisible and you gain melee energy.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/ae998d23b15b04136f563bcf18990d5a.png",
         hash: 553093017,
+      },
+    },
+    [1955548646]: {
+      name: "Mataiodoxía",
+      hash: 1955548646,
+      armorSlotId: EArmorSlotId.Chest,
+      isWorldDrop: false,
+      seasonHash: 2758726572,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/86e7918a1c286c31ded3093069ddb7b5.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+      destinyClassId: EDestinyClassId.Warlock,
+      isFocusable: false,
+      exoticArmorPerk: {
+        name: "Stylostixis",
+        description:
+          "Targets damaged by Arcane Needle emit a suspending detonation when defeated, and landing multiple Arcane Needles on the same target immediately triggers a larger, more powerful detonation. Defeating suspended targets grants melee energy. Your Arcane Needles are strong against [Shield-Piercing]Barrier Champions.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/6c7821c2b549c37d16c4af2d81b46a29.png",
+        hash: 1149655156,
       },
     },
     [1996008488]: {
@@ -1379,7 +1469,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Depths of Duskfield",
         description:
-          "Your Duskfield grenades have a much larger effect radius. Allies inside the Duskfield take reduced damage and targets inside the area deal reduced damage.",
+          "Your Duskfield grenades have a much larger effect radius. Allies inside the Duskfield gain Frost Armor and targets inside the area deal reduced damage.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/47fd782cc9b993709e25ca66035d13b8.png",
         hash: 1457189155,
       },
@@ -1492,6 +1582,19 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
         hash: 4251375227,
       },
       intrinsicFocus: EArmorStatId.Intellect,
+    },
+    [2273643087]: {
+      name: "Solipsism",
+      hash: 2273643087,
+      armorSlotId: EArmorSlotId.ClassItem,
+      isWorldDrop: false,
+      seasonHash: 2758726572,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/7b57cd041db1987c3f566b96535daf9f.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+      destinyClassId: EDestinyClassId.Warlock,
+      isFocusable: false,
+      exoticArmorPerk: null,
     },
     [2316914168]: {
       name: "Dawn Chorus",
@@ -1670,7 +1773,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "The Fourth Magic",
         description:
-          "Weapon final blows with a damage type matching your subclass energy grant Death Throes, which provides a grenade damage bonus and grants you grenade energy. When you have Death Throes and throw a grenade, nearby allies gain greatly increased grenade regeneration for a short time.",
+          "Weapon final blows with a damage type matching your grenade grant Death Throes, which provide a grenade damage bonus and grant you grenade energy. When you have Death Throes and throw a grenade, nearby allies gain greatly increased grenade regeneration for a short time.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/9732f284c71054229671287ab43444b7.png",
         hash: 1971489086,
       },
@@ -1852,7 +1955,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Grasp of the Devourer",
         description:
-          "Damaging combatants poisons them, dealing increasing damage over time. Defeating a poisoned combatant spreads the condition.\n\nProvides a moderate benefit to the airborne effectiveness stat of all Weapons of Sorrow.",
+          "Damaging a target with melee poisons them, dealing increasing damage over time. Defeating a poisoned target spreads the condition.\n\nProvides a moderate benefit to the airborne effectiveness stat of all Weapons of Sorrow.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/4c1a349c2723d3aa84598da98c7a8805.png",
         hash: 3824622015,
       },
@@ -1879,6 +1982,19 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       intrinsicStats: {
         Resilience: 2,
       },
+    },
+    [2809120022]: {
+      name: "Relativism",
+      hash: 2809120022,
+      armorSlotId: EArmorSlotId.ClassItem,
+      isWorldDrop: false,
+      seasonHash: 2758726572,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/58ae63b773059e5bd7a4d43298f73a50.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+      destinyClassId: EDestinyClassId.Hunter,
+      isFocusable: false,
+      exoticArmorPerk: null,
     },
     [2822465023]: {
       name: "Felwinter's Helm",
@@ -1916,6 +2032,25 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
         Recovery: 1,
       },
     },
+    [3001449507]: {
+      name: "Balance of Power",
+      hash: 3001449507,
+      armorSlotId: EArmorSlotId.Leg,
+      isWorldDrop: false,
+      seasonHash: 2758726572,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/4c9ab280a38a769fb4b3c504dadcfa78.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+      destinyClassId: EDestinyClassId.Hunter,
+      isFocusable: false,
+      exoticArmorPerk: {
+        name: "Double Down",
+        description:
+          "Your Threaded Specter has increased duration and durability, and damaging it releases additional Threadlings. While near your Threaded Specter, you do not appear on radar.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/36a16b32c69487cd4fa8b507bb84a67a.png",
+        hash: 3481195123,
+      },
+    },
     [3045642045]: {
       name: "Boots of the Assembler",
       hash: 3045642045,
@@ -1949,7 +2084,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Blood Magic",
         description:
-          "While standing in any rift, gain a bonus to weapons with a damage type matching your subclass damage type. Weapon final blows while standing in any rift pause the rift's countdown, extending its duration.",
+          "While standing in any rift, gain a bonus to weapons with a damage type matching your equipped Super. Weapon final blows while standing in any rift pause the rift's countdown, extending its duration.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/ef3b48bcd760b23563516e9b667ace5a.png",
         hash: 1420473289,
       },
@@ -1997,7 +2132,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Halberdier's Reach",
         description:
-          "Increases Glaive reload speed and melee damage when surrounded. Glaive melee final blows overflow a round to the magazine. Glaive projectile final blows detonate if the Glaive deals damage matching your subclass type.",
+          "Increases Glaive reload speed and melee damage when surrounded. Glaive melee final blows overflow a round to the magazine. Glaive projectile final blows detonate in an explosion.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/4f6f7f7ed33e3c274165705bba5aebc5.png",
         hash: 187957397,
       },
@@ -2079,7 +2214,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Force Multiplier",
         description:
-          "While using a Void subclass, rapid Shotgun final blows or defeating a powerful combatant with a Shotgun will grant a Void overshield and start health regeneration. While you have a Void overshield, Shotguns deal additional damage, and Shotgun final blows refresh the overshield. Provides a moderate benefit to Shotgun airborne effectiveness and reload speed.",
+          "While you have a Void Super equipped, rapid Shotgun final blows or defeating a powerful combatant with a Shotgun will grant a Void overshield and start health regeneration. While you have a Void overshield, Shotguns deal additional damage, and Shotgun final blows refresh the overshield. Provides a moderate benefit to Shotgun airborne effectiveness and reload speed.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/1008decd8282aaf6c9e20461722e4a92.png",
         hash: 569260333,
       },
@@ -2098,7 +2233,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "The Whispers",
         description:
-          "Gain an additional melee charge. Charged melee final blows spawn an Orb of Power.",
+          "Gain an additional melee charge. Powered melee final blows spawn an Orb of Power.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/569a1a4cbdd7a014159ebdf304c8a9b5.png",
         hash: 2637025676,
       },
@@ -2121,7 +2256,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Absorption Cells",
         description:
-          "Takedowns with weapons that have a damage type matching your subclass element grant you Super energy. While your Super energy is full, you instead gain a temporary bonus to weapon damage of the type matching your subclass element.",
+          "Final blows with weapons matching your equipped Super damage type grant you Super energy. When your Super energy is full, you instead gain a temporary bonus to weapon damage of that type.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/675540240cef9fc9e047d9f9d20a0722.png",
         hash: 2618534366,
       },
@@ -2140,7 +2275,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Cauterizing Flame",
         description:
-          "When you are critically wounded with full class ability energy or when you cast a Barricade, create a Sunspot at your location that has improved restoration effects.",
+          "While you have a Solar Super equipped, casting your Barricade or becoming critically wounded with full class ability energy creates a Sunspot at your location.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/112420b294bf86cb9911ed30c4d0669e.png",
         hash: 1163213078,
       },
@@ -2333,7 +2468,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Lancer's Vigil",
         description:
-          "Diamond Lances create Stasis crystals on impact when thrown, with more crystals created by hitting bosses and vehicles. While using a Stasis subclass and behind your rally barricade, rapid precision hits and combatant final blows with a Stasis weapon creates a Diamond Lance near you.",
+          "Thrown Diamond Lances create Stasis crystals, with more created by hitting bosses and vehicles. While a Stasis Super is equipped, rapid precision hits and precision final blows from behind a Rally Barricade will create a Diamond Lance near you.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/c23300e63ac0eedfaba2fd398b0901dd.png",
         hash: 1640501529,
       },
@@ -2376,11 +2511,30 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Puppeteer's Control",
         description:
-          "Drengr's Lash spawns two additional projectiles, tracks targets more aggressively, and travels farther. Gain Woven Mail when suspending targets.",
+          "Improves Drengr's Lash. Projectiles track targets more aggressively and travel farther. Gain Woven Mail when you suspend a target.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/245108de9d46cabc0ca3f16c665321dd.png",
         hash: 916484570,
       },
       legendaryCampaignSource: EExpansionId.Lightfall,
+    },
+    [3717431477]: {
+      name: "Wishful Ignorance",
+      hash: 3717431477,
+      armorSlotId: EArmorSlotId.Arms,
+      isWorldDrop: false,
+      seasonHash: 2758726572,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/e276ddbfe120ed49c38f24a5390143e1.jpg",
+      iconWatermark:
+        "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+      destinyClassId: EDestinyClassId.Titan,
+      isFocusable: false,
+      exoticArmorPerk: {
+        name: "Wish-Dragon's Talons",
+        description:
+          "Gain an additional Frenzied Blade charge. Frenzied Blade and Flechette Storm briefly increase their damage with each strike. Pulses from your Banner of War return melee energy based on the number of allies healed.",
+        icon: "https://www.bungie.net/common/destiny2_content/icons/5a233a91d9d5ee5b1ca6851bb8dbedf8.png",
+        hash: 1358612221,
+      },
     },
     [3787517196]: {
       name: "Sunbracers",
@@ -2419,7 +2573,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Hearts of Ice",
         description:
-          "Your Winter's Wrath Shockwave deals increased shatter damage. Allies in range of your Winter's Wrath Shockwave and Frostpulse gain an overshield and increased damage with Stasis weapons.",
+          "Your Winter's Wrath shockwave deals increased shatter damage. Allies in range of your Winter's Wrath shockwave and Frostpulse gain Frost Armor and deal increased damage with Stasis weapons.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/8103cdb85a1fdca98d61a4d269cde387.png",
         hash: 2894608781,
       },
@@ -2462,7 +2616,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Warlord's Sigil",
         description:
-          "Defeating targets with melee attacks increases your melee damage. Targets encased by Penumbral Blast automatically shatter.",
+          "Defeating targets with melee attacks increases your melee damage. Targets frozen by Penumbral Blast automatically shatter.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/afb8bae64742a8633975b1bc85c98923.png",
         hash: 2731901709,
       },
@@ -2483,7 +2637,8 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       isFocusable: true,
       exoticArmorPerk: {
         name: "And Another Thing",
-        description: "Gain an additional grenade charge.",
+        description:
+          "Gain an additional grenade charge. Grenade final blows spawn an Orb of Power.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/87ed6eb97c923d6a8d0e14639f4b7791.png",
         hash: 883550427,
       },
@@ -2570,7 +2725,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Kintsugi",
         description:
-          "Final blows from weapons with a damage type matching your subclass energy create a burst of healing around you that grants allies restoration. After reviving or being revived, you gain an aura that provides overshields to you and nearby allies.",
+          "Final blows from weapons with a damage type matching your Super create a burst of healing around you that grants allies restoration. After reviving or being revived, you gain an aura that provides overshields to you and nearby allies.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/811e014f935edafdc52042602ca2429d.png",
         hash: 2979726427,
       },
@@ -2589,7 +2744,7 @@ export const ExoticArmorHashToExoticArmorMapping: Record<number, ExoticArmor> =
       exoticArmorPerk: {
         name: "Crystalline Transistor",
         description:
-          "Precision final blows from Kinetic weapons create an explosion that deals damage in the element of your subclass and applies elemental effects.",
+          "Precision final blows from Kinetic weapons create an explosion in the element of your equipped Super and apply a matching elemental effect:\n• [Arc] Blinds targets.\n• [Solar] Scorches targets.\n• [Void] Weakens targets.\n• [Stasis] Slows targets.\n• [Strand] Severs targets.",
         icon: "https://www.bungie.net/common/destiny2_content/icons/d9d5643bc00f65638387f71709534c2b.png",
         hash: 2204713148,
       },

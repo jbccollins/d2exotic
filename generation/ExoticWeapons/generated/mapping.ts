@@ -88,7 +88,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/a217875d50f5041fc4aea3cce66e72b0.png",
         name: "Restorative Turret",
         description:
-          "[Alternate Weapon Action]  : When weapon energy is full, consume it before firing to make your next shot deploy a healing turret on impact.",
+          "[Alternate Weapon Action]  : When weapon energy is full, consume it before firing to make your next shot deploy a healing turret on impact that provides Cure and Restoration to nearby allies.",
       },
       {
         hash: 905869860,
@@ -355,7 +355,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
       {
         hash: 3614673599,
-        value: 100,
+        value: 50,
       },
       {
         hash: 2523465841,
@@ -729,7 +729,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
           icon: "https://www.bungie.net/common/destiny2_content/icons/840e57ef3667435ba4be1f44aa8f4c9b.png",
           name: "Flying Monster",
           description:
-            "Final blows with this weapon while airborne grant damage resistance.",
+            "While you are airborne, sustained damage and final blows with this weapon to difficult combatants grant a Void overshield, reduce combatant accuracy, and return ammo to the magazine.",
         },
       ],
     },
@@ -739,7 +739,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/2372be9b2d0052147af09745c3cbceab.png",
         name: "Soaring Fang",
         description:
-          "Dealing damage while grounded charges antigrav repulsors. Dealing damage while airborne extends antigrav repulsors.",
+          "Dealing damage while grounded charges antigrav repulsors. Dealing damage while airborne extends antigrav repulsors.\n[Alternate Weapon Action]  to disengage antigrav repulsors.",
       },
     ],
     perks: [
@@ -1362,6 +1362,124 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
     ],
   },
+  [427899681]: {
+    name: "Red Death Reformed",
+    hash: 427899681,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/262f0ef4547ca75c86d8eb5599b3eb60.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/0337ec21962f67c7c493fedb447c4a9b.png",
+    seasonHash: 0,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 17,
+      },
+      {
+        hash: 4284893193,
+        value: 20,
+      },
+      {
+        hash: 4043523819,
+        value: 80,
+      },
+      {
+        hash: 1240592695,
+        value: 65,
+      },
+      {
+        hash: 155624089,
+        value: 49,
+      },
+      {
+        hash: 3871231066,
+        value: 37,
+      },
+      {
+        hash: 4188031367,
+        value: 46,
+      },
+      {
+        hash: 1931675084,
+        value: 58,
+      },
+      {
+        hash: 943549884,
+        value: 39,
+      },
+      {
+        hash: 1345609583,
+        value: 32,
+      },
+      {
+        hash: 2715839340,
+        value: 66,
+      },
+      {
+        hash: 2714457168,
+        value: 24,
+      },
+    ],
+    catalyst: {
+      name: "Red Death Reformed Catalyst",
+      hash: 818393196,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/23f4656a3dd3f4ee0e42d140ba251974.jpg",
+      perks: [
+        {
+          hash: 2342802574,
+          icon: "https://www.bungie.net/common/destiny2_content/icons/84dd24ab44b146facb95d057ad61bdab.png",
+          name: "Helping Hand",
+          description:
+            "Final blows charge this weapon. When the weapon is charged, the next final blow creates a healing burst at your location and leaves a remnant behind that provides restoration to allies.",
+        },
+      ],
+    },
+    intrinsicTraits: [
+      {
+        hash: 3632437946,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/f1a416c81276310a2955e337286f7764.png",
+        name: "Redemption",
+        description:
+          "Final blows with this weapon cure you and increase reload speed; reloading after final blows cures nearby allies.",
+      },
+    ],
+    perks: [
+      {
+        hash: 202670084,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/40a4bdcf0f5a4e492927f9569eaf529d.png",
+        name: "Full Bore",
+        description:
+          "Barrel optimized for distance.\n  •  Greatly increases range\n  •  Decreases stability\n  •  Slightly decreases handling speed",
+      },
+      {
+        hash: 1561002382,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/9d1c49edb2d2b24c74067742c09fd5a5.png",
+        name: "High-Caliber Rounds",
+        description:
+          "Shots from this weapon knock the target back farther.\n  •  Slightly increases range",
+      },
+      {
+        hash: 1833111001,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/ad9061408244f8db1a40b677c2833b68.png",
+        name: "Inverse Relationship",
+        description:
+          "When you deal damage with this weapon, it gains increased handling, takes reduced flinch, and movement speed is increased for a short time.\n\nWhen you are at reduced health, this weapon deals additional damage.",
+      },
+      {
+        hash: 4259401308,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/a23363ab49857b303f2cfa238fe5045c.png",
+        name: "Fitted Stock",
+        description:
+          "This stock makes the weapon stable but heavy\n  •  Increases stability\n  •  Moderately controls recoil\n  •  Slightly decreases handling speed",
+      },
+      {
+        hash: 905869860,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
   [449318888]: {
     name: "Deterministic Chaos",
     hash: 449318888,
@@ -1423,9 +1541,9 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       {
         hash: 1468523096,
         icon: "https://www.bungie.net/common/destiny2_content/icons/433ca559ede74cf8ac9135c8862962e8.png",
-        name: "Heavy Metal",
+        name: "Vexadecimal",
         description:
-          "While holding down the trigger, every fourth bullet becomes a heavy projectile that weakens targets on impact.",
+          "Strong against [Shield-Piercing] Barrier Champions. While holding down the trigger, every fourth Heavy Metal projectile also weakens targets on impact.",
       },
     ],
     perks: [
@@ -1446,9 +1564,9 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       {
         hash: 1964414318,
         icon: "https://www.bungie.net/common/destiny2_content/icons/70a2e927e05cf9c3a971fa393c1d3cc3.png",
-        name: "Vexadecimal",
+        name: "Heavy Metal",
         description:
-          "While holding down the trigger, every fourth Heavy Metal projectile also makes targets volatile on impact.",
+          "While holding down the trigger, every fourth bullet becomes a heavy projectile that makes targets volatile on impact.",
       },
       {
         hash: 3465198467,
@@ -1548,7 +1666,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/9d415cea86046282dd233440de245827.png",
         name: "Lightning Seeker",
         description:
-          "[Alternate Weapon Action]  : When weapon energy is full, consume it before firing to make your next shot track targets across the ground and unleash chain lightning on impact.",
+          "[Alternate Weapon Action]  : When weapon energy is full, consume it before firing to make your next shot track targets across the ground, jolting them and unleashing chain lightning on impact.",
       },
       {
         hash: 905869860,
@@ -2198,10 +2316,11 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       icon: "https://www.bungie.net/common/destiny2_content/icons/0d23330a42b682cdec7ec72c1d024900.jpg",
       perks: [
         {
-          hash: 4128177584,
-          icon: "https://www.bungie.net/common/destiny2_content/icons/382df469a091c33e190ee583b64923e8.png",
-          name: "Outlaw",
-          description: "Precision kills greatly decrease reload time.",
+          hash: 2979397611,
+          icon: "https://www.bungie.net/common/destiny2_content/icons/0d23330a42b682cdec7ec72c1d024900.jpg",
+          name: "One for Thrall",
+          description:
+            "Hitting three separate targets increases damage, range, handling, and aim assist for a moderate duration.",
         },
       ],
     },
@@ -2211,7 +2330,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/d0479adc37e6df06e2535f97ff1e16a7.png",
         name: "Cursebringer",
         description:
-          "Precision final blows with this weapon trigger a Cursed Thrall explosion. Final blows with Cursed Thrall explosions refill the magazine.",
+          "Precision final blows with this weapon trigger a Cursed Thrall explosion and increase reload speed for a short time. Final blows with Cursed Thrall explosions refill the magazine.",
       },
     ],
     perks: [
@@ -3673,7 +3792,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
           icon: "https://www.bungie.net/common/destiny2_content/icons/408cc86c335c4bd9272df8c570780d89.png",
           name: "Focused Fire",
           description:
-            "[Alternate Weapon Action]  : Swap to a tighter, close-ranged spread.",
+            "After a final blow with this weapon, [Alternate Weapon Action]  to return ammo to the magazine and swap to a tighter spread that deals increased damage.",
         },
       ],
     },
@@ -4507,7 +4626,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
           icon: "https://www.bungie.net/common/destiny2_content/icons/22ca6e872824561b12e91517e1bde608.png",
           name: "Osmosis",
           description:
-            "Using your grenade ability changes this weapon's damage type to match your subclass until you stow it.",
+            "Using your grenade ability partially refills the magazine and changes this weapon's damage type to match your grenade until you stow it.",
         },
         {
           hash: 1886251741,
@@ -4912,6 +5031,110 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
     ],
   },
+  [1983149589]: {
+    name: "Whisper of the Worm",
+    hash: 1983149589,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/e47c31826843f6fd0aa863eac6fd093e.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/ed6c4762c48bd132d538ced83c1699a6.png",
+    seasonHash: 4033618594,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 40,
+      },
+      {
+        hash: 4284893193,
+        value: 0,
+      },
+      {
+        hash: 4043523819,
+        value: 100,
+      },
+      {
+        hash: 1240592695,
+        value: 75,
+      },
+      {
+        hash: 155624089,
+        value: 15,
+      },
+      {
+        hash: 3871231066,
+        value: 10,
+      },
+      {
+        hash: 4188031367,
+        value: 36,
+      },
+      {
+        hash: 1931675084,
+        value: 50,
+      },
+      {
+        hash: 943549884,
+        value: 28,
+      },
+      {
+        hash: 1345609583,
+        value: 39,
+      },
+      {
+        hash: 2715839340,
+        value: 74,
+      },
+      {
+        hash: 2714457168,
+        value: 80,
+      },
+    ],
+    intrinsicTraits: [
+      {
+        hash: 281315705,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/493f849c2ab78a52a049b3cfc3c222d7.png",
+        name: "White Nail",
+        description:
+          "Higher base precision damage. Rapidly landing three precision hits will refill the magazine.",
+      },
+    ],
+    perks: [
+      {
+        hash: 1392496348,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/7d7aaccee29cf450d4057a9de871cdc8.png",
+        name: "Polygonal Rifling",
+        description:
+          "Barrel optimized for recoil reduction.\n  •  Increases stability",
+      },
+      {
+        hash: 3142289711,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d85024478504205359c7fb52dbc4f6b6.png",
+        name: "Accurized Rounds",
+        description:
+          "This weapon can fire longer distances.\n  •  Increases range",
+      },
+      {
+        hash: 3337692349,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/8ca9b9caef4c4c5c0c19d3be25be3755.png",
+        name: "Mulligan",
+        description:
+          "Missing a shot has a chance to return ammo directly to the magazine.",
+      },
+      {
+        hash: 4259401308,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/a23363ab49857b303f2cfa238fe5045c.png",
+        name: "Fitted Stock",
+        description:
+          "This stock makes the weapon stable but heavy\n  •  Increases stability\n  •  Moderately controls recoil\n  •  Slightly decreases handling speed",
+      },
+      {
+        hash: 2240097604,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
   [2044500762]: {
     name: "The Queenbreaker",
     hash: 2044500762,
@@ -4950,7 +5173,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
       {
         hash: 1931675084,
-        value: 40,
+        value: 90,
       },
       {
         hash: 943549884,
@@ -5101,7 +5324,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/39f6a935aaebdea39c5d5b67aee16cd9.png",
         name: "Unforeseen Repercussions",
         description:
-          "This weapon's beam superheats its targets upon impact, causing delayed explosions.",
+          "This weapon's beam superheats its targets upon impact, causing delayed scorching explosions.",
       },
       {
         hash: 4259401308,
@@ -5428,7 +5651,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       perks: [
         {
           hash: 921877383,
-          icon: "https://www.bungie.net/common/destiny2_content/icons/307a998dca7f0b4c4ef4e5c6e7129c82.png",
+          icon: "https://www.bungie.net/common/destiny2_content/icons/8b70bd45b5e0a8bc747b00fdce81b26b.png",
           name: "The Rock",
           description:
             "For several seconds after a final blow, [Alternate Weapon Action]  to consume part of your ammo reserves, converting your next thrown grenade into a fragmentation grenade.",
@@ -6444,7 +6667,8 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         hash: 1186480754,
         icon: "https://www.bungie.net/common/destiny2_content/icons/07b8acd24d669b05a3c24321d36983f6.png",
         name: "Saint's Fists",
-        description: "Charge to fire 3 spreads of Kinetic slugs.",
+        description:
+          "Rapidly fires 3 spreads of pure force.\n\nAfter a successful melee hit, this weapon gains increased damage, reduced charge time, and improved reload speed for a short duration. Hitting a target with most of the pellets in a burst increases melee damage for a short duration.",
       },
     ],
     perks: [
@@ -6566,7 +6790,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/74becd5fc67ed24c152e838b73cd5eef.png",
         name: "Remote Shield",
         description:
-          "[Alternate Weapon Action]  : When weapon energy is full, consume it before firing to make your next shot deploy a protective shield on impact.",
+          "[Alternate Weapon Action]  : When weapon energy is full, consume it before firing to make your next shot deploy a protective shield on impact. Passing through the protective shield provides a Void Overshield and improves weapon damage, reload speed, and handling.",
       },
       {
         hash: 905869860,
@@ -6688,7 +6912,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/187c5049048eba567af9459dbffed7ce.png",
         name: "Leviathan's Sigh",
         description:
-          "When fully drawn, the bolt creates a large concussive blast that knocks combatants back.",
+          "When fully drawn, the bolt creates a large concussive blast that knocks combatants back and makes them volatile.",
       },
       {
         hash: 2240097604,
@@ -7062,7 +7286,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
       {
         hash: 3614673599,
-        value: 100,
+        value: 50,
       },
       {
         hash: 2523465841,
@@ -7393,6 +7617,110 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
     ],
   },
+  [2905188646]: {
+    name: "Still Hunt",
+    hash: 2905188646,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/b995885ef6216361e63a093896f75735.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+    seasonHash: 2758726572,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 40,
+      },
+      {
+        hash: 4284893193,
+        value: 50,
+      },
+      {
+        hash: 4043523819,
+        value: 50,
+      },
+      {
+        hash: 1240592695,
+        value: 64,
+      },
+      {
+        hash: 155624089,
+        value: 49,
+      },
+      {
+        hash: 3871231066,
+        value: 90,
+      },
+      {
+        hash: 4188031367,
+        value: 44,
+      },
+      {
+        hash: 1931675084,
+        value: 70,
+      },
+      {
+        hash: 943549884,
+        value: 47,
+      },
+      {
+        hash: 1345609583,
+        value: 68,
+      },
+      {
+        hash: 2715839340,
+        value: 69,
+      },
+      {
+        hash: 2714457168,
+        value: 4,
+      },
+    ],
+    intrinsicTraits: [
+      {
+        hash: 928399924,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/f942077c4b688452bc667d51483d5ae5.png",
+        name: "Cayde's Retribution",
+        description:
+          "Pick up Orbs of Power or land precision hits to charge this weapon's Super bar. Once full, [Alternate Weapon Action]  to fire Golden Gun shots.",
+      },
+    ],
+    perks: [
+      {
+        hash: 1392496348,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/7d7aaccee29cf450d4057a9de871cdc8.png",
+        name: "Polygonal Rifling",
+        description:
+          "Barrel optimized for recoil reduction.\n  •  Increases stability",
+      },
+      {
+        hash: 1753262462,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/64532a0815032847af0c6d2f674f4c71.png",
+        name: "Golden Munitions",
+        description:
+          "This magazine gains bonus ammo whenever a Golden Gun shot is acquired.",
+      },
+      {
+        hash: 1012780539,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/6992987251601d76b0f23f4778dc4214.png",
+        name: "Sharpshooter",
+        description:
+          "This weapon gains passive bonuses to target acquisition, aim down sight speed, and flinch resistance. The bonus increases when this weapon's super mode is active.",
+      },
+      {
+        hash: 1067908860,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/47f90d3f25a517166933f2b4eb38e9aa.png",
+        name: "Short-Action Stock",
+        description:
+          "This weapon is especially easy to grip.\n  •  Greatly increases handling speed",
+      },
+      {
+        hash: 905869860,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
   [2907129556]: {
     name: "Sturm",
     hash: 2907129556,
@@ -7616,7 +7944,8 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         hash: 4115637021,
         icon: "https://www.bungie.net/common/destiny2_content/icons/4ff1dfdeee6dbd253c39dbad3361c1d5.png",
         name: "Sun Blast",
-        description: "Targets killed with Sunshot explode in Solar energy.",
+        description:
+          "Targets defeated with Sunshot explode in Solar energy, scorching other nearby targets.",
       },
       {
         hash: 3917450714,
@@ -8231,6 +8560,20 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         value: 0,
       },
     ],
+    catalyst: {
+      name: "Final Warning Catalyst",
+      hash: 77818606,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/69144416733c3dc21fcadfdbb9fcb0a2.jpg",
+      perks: [
+        {
+          hash: 755023690,
+          icon: "https://www.bungie.net/common/destiny2_content/icons/69144416733c3dc21fcadfdbb9fcb0a2.jpg",
+          name: "String Theory",
+          description:
+            "Hits against marked targets deal increased damage and have a chance to refund ammo to the magazine.",
+        },
+      ],
+    },
     intrinsicTraits: [
       {
         hash: 1903618525,
@@ -8739,6 +9082,108 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
     ],
   },
+  [3284383335]: {
+    name: "Euphony",
+    hash: 3284383335,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/fe16110003f0cc75145eed012458a667.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+    seasonHash: 2758726572,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 25,
+      },
+      {
+        hash: 2961396640,
+        value: 30,
+      },
+      {
+        hash: 4043523819,
+        value: 70,
+      },
+      {
+        hash: 1240592695,
+        value: 47,
+      },
+      {
+        hash: 155624089,
+        value: 52,
+      },
+      {
+        hash: 3871231066,
+        value: 68,
+      },
+      {
+        hash: 4188031367,
+        value: 27,
+      },
+      {
+        hash: 1931675084,
+        value: 35,
+      },
+      {
+        hash: 943549884,
+        value: 33,
+      },
+      {
+        hash: 1345609583,
+        value: 62,
+      },
+      {
+        hash: 2715839340,
+        value: 79,
+      },
+      {
+        hash: 2714457168,
+        value: 13,
+      },
+    ],
+    intrinsicTraits: [
+      {
+        hash: 3894668351,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c9203c038eb442c9bfacd38bd0968e81.png",
+        name: "Unwound",
+        description:
+          "Dealing sustained damage with this weapon spawns Threadlings at your target's location.",
+      },
+    ],
+    perks: [
+      {
+        hash: 839105230,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/8f7fb54687aa52a9c2595d90ce9c9417.png",
+        name: "Arrowhead Brake",
+        description:
+          "Lightly vented barrel.\n  •  Greatly controls recoil\n  •  Increases handling speed",
+      },
+      {
+        hash: 3868766766,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/8a273117023794757631a34803314351.png",
+        name: "Particle Repeater",
+        description: "Improves stability. \n  •  Increases stability",
+      },
+      {
+        hash: 1180907940,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/923357a68159cadc7cd347641619f3ee.png",
+        name: "Spindle",
+        description: "Threadling damage increases this weapon's damage.",
+      },
+      {
+        hash: 1067908860,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/47f90d3f25a517166933f2b4eb38e9aa.png",
+        name: "Short-Action Stock",
+        description:
+          "This weapon is especially easy to grip.\n  •  Greatly increases handling speed",
+      },
+      {
+        hash: 2302094943,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
   [3325463374]: {
     name: "Thunderlord",
     hash: 3325463374,
@@ -9030,7 +9475,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/15b7e4e1c2aba9f0cb2b8fd8568ff995.png",
         name: "The Perfect Fifth",
         description:
-          "Precision hits return ammo to the mag. Landing 4 precision hits loads a delayed Solar explosive round for your next shot.",
+          "Precision hits return ammo to the mag. Landing 4 precision hits loads a delayed Solar explosive round that scorches targets for your next shot.",
       },
     ],
     perks: [
@@ -9932,7 +10377,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/d29733f43d0b1a21ead3d19f36298f05.png",
         name: "Looks Can Kill",
         description:
-          "This weapon fires special shield-piercing ammunition. It comes with a scope. Strong against [Shield-Piercing] Barrier Champions.",
+          "This weapon fires shield-piercing ammunition with a scope. Strong against [Shield-Piercing] Barrier Champions. Breaking a matched shield or piercing a Champion's barrier will cause the target to ignite.",
       },
     ],
     perks: [
@@ -10268,13 +10713,27 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         value: 9,
       },
     ],
+    catalyst: {
+      name: "Tessellation Catalyst",
+      hash: 2538516770,
+      icon: "https://www.bungie.net/common/destiny2_content/icons/b86db68bce5846e4d8767b519c0bcead.jpg",
+      perks: [
+        {
+          hash: 2208422697,
+          icon: "https://www.bungie.net/common/destiny2_content/icons/d1e003b3f904b54ae5f1da16a2b52e34.png",
+          name: "Property: Unavoidable",
+          description:
+            "Targets near the blast of Property: Irreducible are [afflicted|burdened|cursed] with an elemental effect matching your equipped grenade's damage type.",
+        },
+      ],
+    },
     intrinsicTraits: [
       {
         hash: 2769013282,
         icon: "https://www.bungie.net/common/destiny2_content/icons/8c1eb879e152cd98b93ac6e689097131.png",
         name: "Property: Undecidable",
         description:
-          "This [weapon|instrument|topology] adapts its damage type to match your equipped subclass. Final blows grant grenade energy.",
+          "This [weapon|instrument|topology] adapts its damage type to match your equipped grenade. Final blows grant grenade energy.",
       },
     ],
     perks: [
@@ -10972,7 +11431,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
           icon: "https://www.bungie.net/common/destiny2_content/icons/041974d03e7be809ab82f65587010ee2.png",
           name: "Dark-Forged Trigger",
           description:
-            "Removes hipfire accuracy penalties and increases rate of fire from hip. Stacks of Cranial Spike increase hip rate of fire further.",
+            "Removes hipfire accuracy penalties while increasing rate of fire. At maximum stacks of Cranial Spike, hipfiring deals increased damage.",
         },
       ],
     },
@@ -11706,6 +12165,116 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
     ],
   },
+  [3824673936]: {
+    name: "Outbreak Perfected",
+    hash: 3824673936,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/a1b6a5f3e52878610397249986300b23.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/1448dde4efdb57b07f5473f87c4fccd7.png",
+    seasonHash: 2891088360,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 17,
+      },
+      {
+        hash: 4284893193,
+        value: 90,
+      },
+      {
+        hash: 4043523819,
+        value: 10,
+      },
+      {
+        hash: 1240592695,
+        value: 44,
+      },
+      {
+        hash: 155624089,
+        value: 40,
+      },
+      {
+        hash: 3871231066,
+        value: 55,
+      },
+      {
+        hash: 4188031367,
+        value: 45,
+      },
+      {
+        hash: 1931675084,
+        value: 54,
+      },
+      {
+        hash: 943549884,
+        value: 45,
+      },
+      {
+        hash: 1345609583,
+        value: 65,
+      },
+      {
+        hash: 2715839340,
+        value: 80,
+      },
+      {
+        hash: 2714457168,
+        value: 29,
+      },
+    ],
+    intrinsicTraits: [
+      {
+        hash: 4208418110,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/245796e2ee1a517bb8fdf268fcfd0ce4.png",
+        name: "The Corruption Spreads",
+        description:
+          "This weapon creates SIVA nanite swarms on rapid hits and precision kills.",
+      },
+    ],
+    perks: [
+      {
+        hash: 1467527085,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d9e5e8fa07a84c29252b78b0e7b3106d.png",
+        name: "Extended Barrel",
+        description:
+          "Weighty barrel extension.\n  •  Increases range\n  •  Decreases handling speed\n  •  Moderately controls recoil",
+      },
+      {
+        hash: 3142289711,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/d85024478504205359c7fb52dbc4f6b6.png",
+        name: "Accurized Rounds",
+        description:
+          "This weapon can fire longer distances.\n  •  Increases range",
+      },
+      {
+        hash: 1168162263,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/382df469a091c33e190ee583b64923e8.png",
+        name: "Outlaw",
+        description: "Precision kills greatly decrease reload time.",
+      },
+      {
+        hash: 3242533954,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/187a9f4ee271926597225b701c1e7409.png",
+        name: "Parasitism",
+        description:
+          "This weapon does more damage to enemies based on the number of SIVA nanites that attach to them.",
+      },
+      {
+        hash: 4259401308,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/a23363ab49857b303f2cfa238fe5045c.png",
+        name: "Fitted Stock",
+        description:
+          "This stock makes the weapon stable but heavy\n  •  Increases stability\n  •  Moderately controls recoil\n  •  Slightly decreases handling speed",
+      },
+      {
+        hash: 2302094943,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
   [3844694310]: {
     name: "The Jade Rabbit",
     hash: 3844694310,
@@ -12135,7 +12704,7 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
         icon: "https://www.bungie.net/common/destiny2_content/icons/10c641a390f34b2ab26f91546d179335.png",
         name: "Insectoid Robot Grenades",
         description:
-          "This weapon's grenades are insectoid robots that chase targets and explode close to them.",
+          "This weapon's grenades are insectoid robots that chase targets and explode close to them. Consumes tougher combatants to create additional robots.",
       },
     ],
     perks: [
@@ -12369,7 +12938,24 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       name: "Symmetry Catalyst",
       hash: 4218954970,
       icon: "https://www.bungie.net/common/destiny2_content/icons/51c18c347866e7370597e0e155de4fb1.jpg",
+      stats: [
+        {
+          hash: 4188031367,
+          value: 10,
+        },
+        {
+          hash: 943549884,
+          value: 10,
+        },
+      ],
       perks: [
+        {
+          hash: 2202096694,
+          icon: "https://www.bungie.net/common/destiny2_content/icons/e0f3c00a8b2cbccb8f1f1b318026aeee.png",
+          name: "Eddy Current",
+          description:
+            "Temporarily increases reload speed and handling after sprinting or while amplified. This effect is improved when you are amplified.",
+        },
         {
           hash: 152737591,
           icon: "https://www.bungie.net/common/destiny2_content/icons/900d481d69449447888285f2fc3b0b2e.png",
@@ -12877,6 +13463,115 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
     ],
   },
+  [4129629253]: {
+    name: "Khvostov 7G-0X",
+    hash: 4129629253,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/23aac6d8454ee1bcd2234e303bd2d6bf.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+    seasonHash: 2758726572,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 17,
+      },
+      {
+        hash: 4284893193,
+        value: 80,
+      },
+      {
+        hash: 4043523819,
+        value: 20,
+      },
+      {
+        hash: 1240592695,
+        value: 37,
+      },
+      {
+        hash: 155624089,
+        value: 72,
+      },
+      {
+        hash: 3871231066,
+        value: 35,
+      },
+      {
+        hash: 4188031367,
+        value: 79,
+      },
+      {
+        hash: 1931675084,
+        value: 54,
+      },
+      {
+        hash: 943549884,
+        value: 66,
+      },
+      {
+        hash: 1345609583,
+        value: 87,
+      },
+      {
+        hash: 2715839340,
+        value: 97,
+      },
+      {
+        hash: 2714457168,
+        value: 27,
+      },
+    ],
+    intrinsicTraits: [
+      {
+        hash: 34498892,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/c3308465941fe4a45b71e04129df0e5c.png",
+        name: "The Right Choice",
+        description:
+          "Every seventh bullet from this weapon deals additional damage and ricochets to nearby targets.",
+      },
+    ],
+    perks: [
+      {
+        hash: 3250034553,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2b9eb6d4489cffc18c10223279198bcc.png",
+        name: "Hammer-Forged Rifling",
+        description: "Durable ranged barrel.\n  •  Increases range",
+      },
+      {
+        hash: 1431678320,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/069170916c98748b7b3e33b80bd7d689.png",
+        name: "Alloy Magazine",
+        description: "Faster reloads when the magazine is empty.",
+      },
+      {
+        hash: 2135276011,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/9af6410bfb765616b76ee7cf2823e132.png",
+        name: "Eyes Up, Guardian",
+        description:
+          "Collecting Orbs of Power strengthens this weapon's next several ricochet shots, allowing them to bounce between multiple targets.",
+      },
+      {
+        hash: 3700496672,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/e8c6e23afe3c4215f0dc0c2941500c28.png",
+        name: "Shoot to Loot",
+        description:
+          "Shooting an Orb of Power picks it up. Shooting an ammo brick picks it up and automatically reloads all of your equipped weapons from reserves.",
+      },
+      {
+        hash: 3465198467,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/7c616b3d2d0e97bf8948b1371b3007bb.png",
+        name: "Composite Stock",
+        description:
+          "This weapon has a versatile dual-purpose stock.\n  •  Slightly increases stability\n  •  Slightly increases handling speed",
+      },
+      {
+        hash: 2302094943,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
   [4174431791]: {
     name: "Hierarchy of Needs",
     hash: 4174431791,
@@ -13102,6 +13797,108 @@ export const ExoticWeaponHashToExoticWeaponMapping: Record<
       },
       {
         hash: 905869860,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
+        name: "Kill Tracker",
+        description:
+          "This weapon tracks the number of enemies you defeated with it.",
+      },
+    ],
+  },
+  [4207066264]: {
+    name: "Microcosm",
+    hash: 4207066264,
+    icon: "https://www.bungie.net/common/destiny2_content/icons/8fc373a11adc417aab9a3ef4bab3bbe3.jpg",
+    iconWatermark:
+      "https://www.bungie.net/common/destiny2_content/icons/e3ea0bd2e889b605614276876667759c.png",
+    seasonHash: 2758726572,
+    stats: [
+      {
+        hash: 3555269338,
+        value: 16,
+      },
+      {
+        hash: 4284893193,
+        value: 100,
+      },
+      {
+        hash: 4043523819,
+        value: 0,
+      },
+      {
+        hash: 1240592695,
+        value: 68,
+      },
+      {
+        hash: 155624089,
+        value: 80,
+      },
+      {
+        hash: 3871231066,
+        value: 85,
+      },
+      {
+        hash: 4188031367,
+        value: 25,
+      },
+      {
+        hash: 1931675084,
+        value: 47,
+      },
+      {
+        hash: 943549884,
+        value: 58,
+      },
+      {
+        hash: 1345609583,
+        value: 100,
+      },
+      {
+        hash: 2715839340,
+        value: 98,
+      },
+      {
+        hash: 2714457168,
+        value: 10,
+      },
+    ],
+    intrinsicTraits: [
+      {
+        hash: 2767894946,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/e393126db4d742ed7ca1b24482f60515.png",
+        name: "Paracausal Beam",
+        description:
+          "Fires a beam of Kinetic light, dealing massive bonus damage to shields.",
+      },
+    ],
+    perks: [
+      {
+        hash: 3250034553,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/2b9eb6d4489cffc18c10223279198bcc.png",
+        name: "Hammer-Forged Rifling",
+        description: "Durable ranged barrel.\n  •  Increases range",
+      },
+      {
+        hash: 2680121939,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/0ee59b61e99c52c85c2ea18ab705f700.png",
+        name: "Enhanced Battery",
+        description: "Strong battery life.\n  •  Increases magazine size",
+      },
+      {
+        hash: 877533329,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/3a88400826646fdf5ad1c92fd071856f.png",
+        name: "Paracausal Imbuement",
+        description:
+          "Final blows with this weapon grant Super energy. This weapon gains bonus damage once your Super expires.",
+      },
+      {
+        hash: 990298390,
+        icon: "https://www.bungie.net/common/destiny2_content/icons/11fe23229c61287c89916f094b26652f.png",
+        name: "Hand-Laid Stock",
+        description:
+          "This weapon is optimized for recoil control.\n  •  Increases stability",
+      },
+      {
+        hash: 2240097604,
         icon: "https://www.bungie.net/common/destiny2_content/icons/2fa9b8e2b358de10643b14a058094f4b.png",
         name: "Kill Tracker",
         description:
